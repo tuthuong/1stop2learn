@@ -1,0 +1,122 @@
+footer{
+	overflow: hidden;
+	background: #232529;
+	color:#d7dff3;
+	padding-top:45px;
+	padding-bottom:55px;
+	.copyright{
+		background: #e1e1e1;
+		text-align: center;
+		color: #666666;
+		line-height: 26px;
+		padding: 12px 0;
+		position: relative;
+		z-index: 1;
+		margin-top: 5px;
+		a:hover{
+			text-decoration: underline;
+		}
+	}
+	.map{
+		box-shadow: 3px 3px 15px 0 rgba(#000, 0.3);
+		iframe{
+			display: block;
+			height: 308px;
+		}
+	}
+	.fanpage{
+		max-height: 308px;
+		overflow: hidden;
+	}
+	.fb-page{
+		@include origin(0 0);
+		// @include scale(1.2);
+	
+	}
+	.about-company{
+		p{
+			margin-top:24px;
+		}
+	}
+	.footer{
+		min-height: 308px;
+		margin: 0 4px;
+		border-left: solid 1px #1d94d1;
+		border-right: solid 1px #1d94d1;
+		.name{
+			color: $c1;
+			font-weight: bold;
+			font-size: 18px;
+			text-align: center;
+			padding-top: 37px;
+			margin-bottom: 22px;
+		}
+		.f-line{
+			position: relative;
+			padding-left: 20px;
+			color: #666666;
+			line-height: 30px;
+			margin-left: 36px;
+			margin-right: 30px;
+			i{
+				position: absolute;
+				left: 0;
+				width: 14px;
+				text-align: center;
+				color: $c1;
+				top: 8px;
+			}
+		}
+	}
+	.social{
+		font-size: 24px;
+		text-align: center;
+		margin-top: 24px;
+		a{
+			margin-right: 15px;
+			@include middle;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+	.f-title{
+		color:#ffe20d;
+		font-size:24px;
+		font-weight:bold;
+	    margin-top: 35px;
+	    margin-bottom: 15px;
+	}
+	.f-line{
+		position: relative;
+	    padding-left: 30px;
+	    margin-bottom: 18px;
+	    i{
+    	    position: absolute;
+		    left: 0;
+		    top: 4px;
+	    }
+	}
+	ul{
+		li{
+			margin-bottom:10px;
+			&:before{
+				font-family: "FontAwesome";
+			    content: "\f0da";
+			    margin-right: 10px;
+			    display: inline-block;
+			    vertical-align: middle;
+			    margin-top: -3px;
+			}
+			&:hover{
+				color:#ffe20d;
+			}
+		}
+	}
+}
+.foot{
+	background:#232529;
+	border-top:1px solid #434750;
+	color:#d7dff3;
+    padding: 23px;
+}
