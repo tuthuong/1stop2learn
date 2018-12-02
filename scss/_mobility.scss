@@ -1,0 +1,257 @@
+@media screen and (max-width:576px){
+	.slide-banner{
+		width: 100%;
+		height: 240px;
+		.carousel{
+			display: block;
+			position: absolute;
+		    width: 100%;
+		    height: auto;
+		    left:0%;
+		    top: 20%;
+		    .pic{
+		    	margin-top: 5%;
+		    	height: 100px;
+		    	// border: 2px solid yellow;
+		    }
+			.carousel-caption{
+				display: block;
+				width: 100%;
+				h3{
+					font-size:14px;
+					margin-top: -10%;
+				}
+				p{
+					display: none;
+				}
+				a{
+					font-size: 10px;					
+					&.btn-light{
+						padding: 5px 7px;
+					}
+				}
+			}
+			.carousel-indicators{
+				top: 170px;
+				li{
+					width: 15px;
+					height: 15px;
+				}
+			}
+		}
+	}
+	.list{		
+			a{
+				display: block;
+				margin: 10px 0px;
+			}
+	}
+	
+	.list-course .rectangle{
+		top: -10px;
+	}
+	.list-course h1{
+		padding-top:30px;
+		font-size: 1.6rem;
+	}
+	.list-course .card{
+		width: 120%;
+		left: -10%;
+	}
+	.list-course .card .date-time{
+		width: 38% !important;
+	}
+	.list-course .line{
+		height: 53px;
+	}
+	.list-course .card .card-body .card-text .right-side {
+			padding-top: 13px;
+			padding-right: 1rem !important;
+		.fee{
+			font-size: 15px;
+		}
+	}
+	.list-course .btn-more{
+		margin-left: 0px;
+    	width: 100%;
+	}
+
+	.school-and-center{
+		.rectangle{
+			top: -10px;
+		}
+		h1{
+			display: block;
+			width: 100%;
+			height: auto;
+			font-size: 1.6rem !important;
+    		font-weight: bold;
+		}
+		.row-equal .card{
+			height: 290px;
+    		margin-bottom: 10px;
+		}
+		.carousel-inner{
+			width: 128%;
+		    left: -8%;
+		}
+		.carousel-indicators{
+			top: 100%;
+		}
+	}
+
+	.teacher{
+		h1{
+			font-size: 1.6rem;
+    		font-weight: bold;
+		}
+		.carousel-inner{
+			display: block;
+		    width: 116%;
+		    left: -9%;
+		}
+		div[class^='col']{
+			width: 100%;
+			display: contents;
+		}
+		.card{
+			margin-bottom: 13px;
+		}
+		.carousel-control-next, 
+		.carousel-control-prev{
+			display: none;
+		}
+		.carousel-indicators{
+			display: flex;
+		    bottom: -40px;
+		    position: absolute;
+		}
+	}
+
+	.most-choice-course{
+		h1{
+			font-size: 1.6rem;
+    		font-weight: bold;
+		}
+		.card{
+			margin-bottom: 10px;
+		}
+		.carousel-inner{
+			display: block;
+		    width: 116%;
+		    left: -9%;
+		}
+		.carousel-control-next, 
+		.carousel-control-prev{
+			display: none;
+		}
+	}
+	.customer-feedback{
+		width: 100%;
+		height: 600px;
+		blockquote{
+			height: 100%;			
+			img{
+				width: 100%;
+				height: auto;
+				margin-top: 0 !important;
+			}
+			p{
+				font-size: 16px;
+				&:before{
+					font-size: 80px;
+		    		margin-top: -15px;
+		    		margin-left: 0px;
+				}
+			}
+			.blockquote-footer{
+				font-size: 14px;
+			}
+		}
+
+	}
+}
+@media screen and (max-width:640px){
+	.list-course .list a{
+		margin: 8px;
+	}
+	.list-course .card .card-body .card-text .right-side{
+		padding-right: 1rem;
+	}
+	.list-course .btn-more{
+		width: 100%;
+    	margin-left: 0;
+	}
+	.school-and-center h1{
+		font-size: 35px;
+	}
+	.school-and-center .list a{
+		margin: 8px 0px;
+	}
+	.school-and-center .row-equal .card{
+		height: 420px !important;
+		margin-bottom: 10px;
+	}
+	.teacher .col{
+		float: left;
+		width: 19.3%;
+		margin: 0;
+		padding: 0;
+		a{
+			font-size: 1rem;
+			text-align: center;
+		}
+	}
+	.most-choice-course .card .card-footer .group-count .group-left, 
+	.most-choice-course .card .card-footer .group-count .group-right{
+		width: 50% !important;
+	}
+	.customer-feedback img{
+		width: 100%;
+		height: auto;
+		margin-top: 40%;
+	}
+
+}
+
+
+@media screen and (max-width:995px){
+	.slide-banner .pic img{
+		margin-top: 10%;
+	}
+	.slide-banner .carousel-caption h3{
+		font-size: 2.5rem;
+	}
+	.list-course .card .date-time{
+		width: 47%;
+	}
+	.list-course .card .card-body .card-text .right-side{
+		padding-right: .2rem;
+    	padding-top: 13px;
+	}
+	.list-course .card .card-body .card-text .right-side .fee{
+		font-size: 16px;
+	}
+	.list-course .card .card-body .card-title{
+		font-size: 1.1rem;
+	}
+	.list-course .card .overlay1 .overlay-content a.btn-buy,
+	.list-course .card .overlay2 .overlay-content a.btn-buy,
+	.list-course .card .overlay3 .overlay-content a.btn-buy{
+		font-size: 1.0rem;
+    	padding: 0.5rem 0;
+	}
+	.school-and-center .row-equal .card{
+		height: 310px;
+	}
+	.most-choice-course .card{
+		height: 400px;
+	}
+	.most-choice-course .card .card-footer span{
+		font-size: 1rem;
+	}
+	.most-choice-course .card .card-footer .group-count .group-left, 
+	.most-choice-course .card .card-footer .group-count .group-right{
+		width: 100%;
+	}
+}

@@ -1,0 +1,26 @@
+@font-face{
+	font-family: "Ayuthaya";
+	src: url("../fonts/Ayuthaya.ttf") format("truetype");
+}
+@font-face{
+	font-family: "FontAwesome";
+	src: url("../fonts/fontawesome-webfont.woff2")  format("woff2"),
+		 url("../fonts/fontawesome-webfont.woff") format("woff"),
+		 url("../fonts/fontawesome-webfont.ttf") format("truetype");
+}
+
+$font-stack:'Open Sans', sans-serif;
+$background-color-green:#1dbb90;
+$background-color-blue:#0ab1c8;
+$background-color-yellow: #ffba33;
+$background-color-white: #ffffff;
+$btn-color-green:#1dbb90;
+
+
+@import '_slide.scss';
+@import '_course.scss';
+@import '_school.scss';
+@import '_teacher.scss';
+@import '_choice.scss';
+@import '_feedback.scss';
+@import 'mobility.scss';
