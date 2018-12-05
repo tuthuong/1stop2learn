@@ -1,118 +1,134 @@
-.teacher{
-	position: relative;
-	width:100%;
-	height:auto;
-	background-color: #f6f6f6;
-	z-index: 10;
+.teacher {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #f6f6f6;
+    z-index: 10;
     top: 100px;
     margin-top: 20px;
     padding-bottom: 50px;
-    .carousel-indicators{
-    	display: none;
-    }
-    .carousel-indicators li{
-		width: 15px;
-		height: 15px;
-		border-radius: 50%;	
-		background: #C6C2C2;
-		&.active{
-			background: $background-color-blue;
-		}	
-	}
-	.rectangle{
-		content: '';
-	    display: block;
-	    position: absolute;
-	    z-index: 1;
-	    left: 50%;
-	    top: 0;
-	    width: 3em;
-	    height: 2.8em;
-	    background-color: #ffffff;
-	    margin: -1.4em 0 0 -1.3em;
-	    -webkit-transform: rotate(35deg) skewX(-20deg);
-	    -moz-transform: rotate(35deg) skewX(-20deg);
-	    transform: rotate(35deg) skewX(-20deg);
-	}
-	h1{
-		display: block;
-		width: 100%;
-		height: 100px;
-		color: #191919;
-		font-size: 45px;
-		text-transform: uppercase;
-		padding-top: 80px;
-		margin-bottom: 50px;
-		font-weight: 500;
-		font-family: $font-stack;
-	}
-	.card{
-		display: block;
-		width: 100%;
-		height: 335px;
-		overflow: hidden;
-		border: none;
-    	background: transparent;
-		img{
-			width: 100%;
-			height: 265px;
-		}
-		a{
-			display: block;
-			padding-top: 5px;
-			color: #333333;
-			font-weight: bold;
-			font-size: 18px;
-			font-family: $font-stack;
-		}
-		h6{
-			font-family: $font-stack;
-		}
-		.overlay{
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 0;			
-			transition: all 0.5s ease;
-			overflow: hidden;
-			// display: none;
-			background: rgba($background-color-blue, 0.5);
-			a{
-				display: block;
-				width: 40px;
-				height: 40px;
-				position: absolute;
-				top: 25%;
-				left:40%;
-				background: white;
-				border-radius: 50%;
-				line-height: 30px;
-				text-align: center;
-				color: $background-color-blue;
-				font-family: $font-stack;
-				&:hover{
-					background: $background-color-yellow;
-					color: $background-color-white;
-				}
-			}
 
-		}
-		&:hover .overlay{
-			display: block;
-			height:585px;			
-		}
-	}
-	
-	.carousel-control-next, .carousel-control-prev{
-		width: 2%;
-		color: #0ab1c8;
-	}
-	.carousel-control-next{
-		right: -30px;
-	}
-	.carousel-control-prev{
-		left: -30px;
-	}
-	
+    .carousel-indicators {
+        display: none;
+    }
+
+    .carousel-indicators li {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #C6C2C2;
+
+        &.active {
+            background: $background-color-blue;
+        }
+    }
+
+    .rectangle {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 0;
+        width: 3em;
+        height: 2.8em;
+        background-color: #ffffff;
+        margin: -1.4em 0 0 -1.3em;
+        -webkit-transform: rotate(35deg) skewX(-20deg);
+        -moz-transform: rotate(35deg) skewX(-20deg);
+        transform: rotate(35deg) skewX(-20deg);
+    }
+
+    h1 {
+        display: block;
+        width: 100%;
+        height: 100px;
+        color: #191919;
+        font-size: 45px;
+        text-transform: uppercase;
+        padding-top: 80px;
+        margin-bottom: 50px;
+        font-weight: 500;
+        font-family: $font-stack;
+    }
+
+    .card {
+        display: block;
+        width: 100%;
+        height: 335px;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+
+        img {
+            width: 100%;
+            height: 265px;
+        }
+
+        a {
+            display: block;
+            padding-top: 5px;
+            color: #333333;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: $font-stack;
+        }
+
+        h6 {
+            font-family: $font-stack;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            transition: all 0.5s ease;
+            overflow: hidden;
+            // display: none;
+            background: rgba($background-color-blue, 0.5);
+
+            a {
+                display: block;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 25%;
+                left: 40%;
+                background: white;
+                border-radius: 50%;
+                line-height: 30px;
+                text-align: center;
+                color: $background-color-blue;
+                font-family: $font-stack;
+
+                &:hover {
+                    background: $background-color-yellow;
+                    color: $background-color-white;
+                }
+            }
+
+        }
+
+        &:hover .overlay {
+            display: block;
+            height: 585px;
+        }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 2%;
+        color: #0ab1c8;
+    }
+
+    .carousel-control-next {
+        right: -30px;
+    }
+
+    .carousel-control-prev {
+        left: -30px;
+    }
+
 }
