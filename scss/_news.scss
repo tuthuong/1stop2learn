@@ -1,0 +1,128 @@
+.calendar-news{
+	position: relative;
+	top: 100px;
+	display: block;
+	width: 100%;
+	height:auto;
+	margin-bottom: 100px;
+	font-family: $font-stack;
+	h3{
+		width: 100%;
+		font-size: 30px;
+		padding: 30px 3px;
+		margin: 0;
+		color: #242424;		
+	}
+	.flatpickr-next-month i.fa-caret-right,
+	.flatpickr-prev-month i.fa-caret-left
+	{
+		font-size: 1.5rem;
+	}
+	.flatpickr-next-month i.fa-caret-right{
+		color: #6f6f6f;
+	}
+	.flatpickr-prev-month i.fa-caret-left{
+		color: #0ab1c8;
+	}
+	.flatpickr-months{
+		height: 50px;
+		.flatpickr-current-month{
+			height: 50px;
+			font-family: $font-stack;
+			font-size: 18px;
+			color: #b7b7b7;
+		}
+	}
+	.news-item{
+		width: 100%;
+		min-height: 90px;
+		.item-pic{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			img{
+				width: 100%;
+				height: 90px;
+				transition: 0.5s ease;
+			}
+		}				
+		.tips-date{
+			display: block;
+			width: 100%;
+			font-size: 13px;
+			color: #6b6b6b;
+			padding-top: 5px;
+			.tips{
+				width: 49.5%
+			}
+			.datetime{
+				width: 49.5%;
+			}
+		}
+		&:hover{
+			img{
+				transform: scale(1.2);
+			}
+			a{
+				color:$background-color-yellow
+			}
+		}
+	}
+	.news-item a,
+	.event-item a{
+			font-size: 14px;
+			font-weight: bold;
+			display: inline-block;
+    		padding-bottom: 10px;
+	}
+	.event-item{
+		width: 100%;
+		min-height: 90px;
+		margin-bottom: 16px;
+		.event-date{
+			display: block;
+			box-sizing: border-box;
+			width: 100%;
+			height: 90px;
+			border: 2px solid #0ab1c8;
+			border-radius: 5px;
+			p{
+				display: block;
+				width: 100%;
+				// padding: 8px 0;
+				font-size: 40px;
+				font-weight: bold;
+				// background: green;
+				margin: 0;
+				color: #373737;
+			}
+			span{
+				display: inline-block;
+				width: 100%;
+				padding: 0;
+			}
+		}
+		&:hover{
+			.event-date p{
+				color: $background-color-yellow;
+			}
+			.event-info a{
+				color: $background-color-yellow;
+			}
+		}
+		.event-info{
+			display: inline-block;
+			width: 100%;
+			// background: blue;
+			padding-left: 15px;
+			span{
+				padding: 0 15px;				
+				text-align: left;
+				padding-top: 4px;			
+			}
+			&:hover a span{
+				color: $background-color-blue;
+			}
+		}
+	}
+}

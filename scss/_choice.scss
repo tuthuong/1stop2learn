@@ -1,127 +1,150 @@
-.most-choice-course{
-	position: relative;
-	width: 100%;
-	height: auto;
-	background: $background-color-white;
-	top: 150px;
-	.carousel-control-next, 
-	.carousel-control-prev{
-		width: 2%;
-    	color: #0ab1c8;
-	}
-	.carousel-control-prev{
-		left: -30px;
-	}
-	.carousel-control-next{
-		right:-30px;
-	}
+.most-choice-course {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: $background-color-white;
+    top: 150px;
 
-	.carousel-indicators li{
-		top: 80px;
-		width: 15px;
-		height: 15px;
-		border-radius: 50%;
-		background: #C6C2C2;
-	}
-	.carousel-indicators li.active{
-		background: #0ab1c8;
-	}
-	h1{
-		display: block;
-		width: 100%;
-		color: #191919;
-		font-size: 45px;
-		text-transform: uppercase;
-		padding: 20px 0;
-		font-family: $font-stack;
-	}
-	.card{
-		width: 100%;
-		display: block;
-		height: 378px;
-		overflow: hidden;
-		.card-img-top{
-			display: block;
-			width: 100%;
-			height: 155px;
-			overflow: hidden;
-			img{
-				width: 100%;
-				height: 100%;
-				transition: 0.5s ease;
-			}
-		}
-		&:hover .card-img-top img{
-			transform: scale(1.2);
-		}
-		.card-block{
-			color: #707070;
-			padding: 1rem 1.2rem;
-			.card-title{
-				display: block;
-				font-size: 16px;			
-				font-family: $font-stack;
-				font-weight: bold;				
-				a{
-					color: #707070;
-				}
-			}
-			.card-subtitle{
-				font-size: 14px;
-				margin-top: 0;
-				span{
-					color: $background-color-blue;
-					font-weight: bold;
-					padding-top: 15px;
-				}
-			}
-		}
-		.card-footer{
-			a{
-				display: block;
-				width: 100%;
-				color: #d4d4d4; 
-				& i.voted{
-					color: $background-color-yellow;
-				}
-			}
-			span{
-				display: block;
-				width: 100%;
-				font-weight: bold;
-				font-size: 24px;
-				color: #333333;
-			}
-			.group-count{
-				display: block;
-				width: 100%;
-				height: 23px;
-				// background: blue;
-				float: left;
-				.group-left,
-				.group-right{
-					margin-top: 5px;
-					float: left;
-					width: 50%;
-					display: block;
-				}
-				img{
-					float: left;
-					width: 23px;
-					height: 23px;
-					margin-right: 5px;
-				}
-				span{
-					padding-top: 2px;
-					width: 100%;
-					height: 100%;
-					color: #333333;
-					font-family: $font-stack;
-					font-weight: bold;
-					font-size: 15px;
-				}
-			}
-			
-		}
-	}
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 2%;
+        color: #0ab1c8;
+    }
+
+    .carousel-control-prev {
+        left: -30px;
+    }
+
+    .carousel-control-next {
+        right: -30px;
+    }
+
+    .carousel-indicators li {
+        top: 80px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #C6C2C2;
+    }
+
+    .carousel-indicators li.active {
+        background: #0ab1c8;
+    }
+
+    h1 {
+        display: block;
+        width: 100%;
+        color: #191919;
+        font-size: 45px;
+        text-transform: uppercase;
+        padding: 20px 0;
+        font-family: $font-stack;
+    }
+
+    .card {
+        width: 100%;
+        display: block;
+        // height: 378px;
+        overflow: hidden;
+        margin-bottom: 10px;
+
+        .card-img-top {
+            display: block;
+            width: 100%;
+            height: 155px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                transition: 0.5s ease;
+            }
+        }
+
+        &:hover .card-img-top img {
+            transform: scale(1.2);
+        }
+
+        .card-block {
+            color: #707070;
+            padding: 1rem 1.2rem;
+
+            .card-title {
+                display: block;
+                font-size: 16px;
+                font-family: $font-stack;
+                font-weight: bold;
+
+                a {
+                    color: #707070;
+                }
+            }
+
+            .card-subtitle {
+                font-size: 14px;
+                margin-top: 0;
+
+                span {
+                    color: $background-color-blue;
+                    font-weight: bold;
+                    padding-top: 15px;
+                }
+            }
+        }
+
+        .card-footer {
+            a {
+                display: block;
+                width: 100%;
+                color: #d4d4d4;
+
+                & i.voted {
+                    color: $background-color-yellow;
+                }
+            }
+
+            span {
+                display: block;
+                width: 100%;
+                font-weight: bold;
+                font-size: 24px;
+                color: #333333;
+            }
+
+            .group-count {
+                display: block;
+                width: 100%;
+                // height: 23px;
+                // background: blue;
+                float: left;
+                margin-bottom: 9px;
+
+                .group-left,
+                .group-right {
+                    margin-top: 5px;
+                    float: left;
+                    width: 50%;
+                    display: block;
+                }
+
+                img {
+                    float: left;
+                    width: 23px;
+                    height: 23px;
+                    margin-right: 5px;
+                }
+
+                span {
+                    padding-top: 2px;
+                    width: 100%;
+                    height: 100%;
+                    color: #333333;
+                    font-family: $font-stack;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+
+        }
+    }
 }
