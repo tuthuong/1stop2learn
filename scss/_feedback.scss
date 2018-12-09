@@ -1,0 +1,70 @@
+.customer-feedback {
+    position: relative;
+    width: 100%;
+    height: 410px;
+    background: #02a5bc;
+    top: 270px;
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 2%;
+        color: $background-color-white;
+        height: 410px
+    }
+
+    .carousel-control-prev {
+        left: -30px;
+    }
+
+    .carousel-control-next {
+        right: -30px;
+    }
+
+    img {
+        width: 160px;
+        height: 160px;
+        box-sizing: border-box;
+        border: 3px solid white;
+    }
+
+    blockquote {
+        margin-top: 13%;
+        height: 410px;
+        font-family: $font-stack;
+        color: #ffffff;
+
+        p {
+            display: inline;
+            text-align: left;
+            font-size: 18px;
+            margin-left: 0px;
+        }
+
+        p:before {
+            content: "\201C";
+            font-family: 'Ayuthaya';
+            float: left;
+            color: #AEECF5;
+            font-size: 100px;
+            margin-top: -75px;
+            margin-left: -40px;
+        }
+
+        .blockquote-footer {
+            color: #ffffff;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-left: 20px;
+
+            &:before {
+                display: none;
+            }
+
+            .diff {
+                color: #bef7ff;
+            }
+        }
+    }
+
+}

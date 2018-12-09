@@ -1,0 +1,69 @@
+.slide-banner {
+    position: relative;
+    width: 100%;
+    z-index: 400;
+    overflow: hidden;
+    background-image: url(../images/bg-1.jpg);
+    background-repeat: repeat;
+
+    .carousel-indicators li {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+
+    .carousel {
+        // border: 2px solid red;
+        height: 545px;
+    }
+
+    .carousel-inner {
+        top: 7%;
+        display: block;
+    }
+
+    .pic {
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin-top: 8%;
+        display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .carousel-caption {
+        float: left;
+        width: 100%;
+        position: unset;
+        // border: 2px solid green;
+        margin-top: 5%;
+
+        h3 {
+            color: #ffffff;
+            font-family: "Myriad Pro";
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.12rem;
+            font-family: $font-stack;
+        }
+
+        a {
+            color: #ec6a01;
+            font-size: 1.12rem;
+            font-family: $font-stack;
+            font-weight: 700;
+
+            &.btn-light {
+                border-radius: 7px;
+                padding: 10px 30px;
+            }
+        }
+
+    }
+}
