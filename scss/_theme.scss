@@ -156,6 +156,78 @@
 		}
 	}
 }
+.services{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	.ser-slide{
+		.ser-item{
+			text-align: center;
+			margin: 0 9px;
+			a{
+				display: block;
+				background: #fafdfc;
+				border-radius: 10px;
+				padding: 15px 20px;
+				&:hover{
+					background: #1dbb90;
+					.sername{
+						color: #fff;
+					}
+					.icon{
+						img{
+							-webkit-filter: brightness(0) invert(1);
+							filter: brightness(0) invert(1);
+						}
+					}
+				}
+			}
+			.sername{
+				font-size: 18px;
+				font-weight: bold;
+				color: #1dbb90;
+				min-height: 55px;
+				max-height: 55px;
+				overflow: hidden;
+			}
+			.icon{
+				img{
+					margin: 0 auto;
+				}
+			}
+		}
+		.slick-arrow{
+			top:50%;
+			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+			filter: grayscale(100%);
+			&:hover{
+				-webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+				filter: grayscale(0);
+			}
+			&.next{
+				right: -30px;
+			}
+			&.prev{
+				left: -30px;
+			}
+		}
+	}
+}
+.h-about{
+	padding-bottom: 15rem;
+	.value {
+		color: #fff;
+		font-size: 60px;
+		font-weight: bold;
+		position: relative;
+		margin-bottom: 10px;
+	}
+	h2 {
+		font-size: 20px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+}
+
 .about-us{
 	padding-top:60px;
 	padding-bottom:75px;
@@ -227,6 +299,50 @@
 		}
 	}
 	
+}
+.intro {
+    padding-top: 58px;
+	padding-bottom: 40px;
+	.title{
+		font-size: 36px;
+		color: #292929;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		font-weight: bold;
+		position: relative;
+	  }
+	a{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: 700;
+		padding: 13px 38px;
+		background-color: #1dbb90;
+		color: #ffffff;
+		margin-left: 4px;
+		margin-bottom: 4px;
+		-webkit-box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+		box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		&:last-child{
+			background: #ffb20e;
+		}
+		&:hover{
+			// border: 1px solid #ef9b08;
+			background: #ef9b08;
+			color: #fff;
+		}
+	}
+	p{
+		text-align: justify;
+		line-height: 24px;
+		color: #5f5f5f;
+	}
+
 }
 .headbox{
 	text-align:center;
@@ -410,7 +526,7 @@
 
 .h-about{
 	padding-top: 89px;
-	margin-bottom: 72px;
+	// margin-bottom: 72px;
 	.h-title{
 		margin-bottom: 22px;
 		margin-top: -17px;
@@ -428,6 +544,64 @@
 		border-radius: 10px;
 		background: $c1;
 		i{margin-left: 4px;}
+	}
+}
+.form-regis{
+	background: #0ab1c8;
+    color: #fff;
+    padding: 50px 26px 26px;
+	border-radius: 10px;
+	margin-top: -15rem;
+	background-image: url(../images/bg-head-form.png);
+	background-repeat: no-repeat;
+    background-position: right 20px top 20px;
+	.form-title{
+		text-transform: uppercase;
+		font-size: 45px;
+		font-weight: bold;
+	}
+	.subform-title{
+		font-size: 27px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.form-head{
+		border-bottom: 1px solid #19c1d8;
+		margin-bottom: 20px;
+		line-height: 36px;
+		p{
+			color: #fff;
+			font-size: 16px;
+			margin: 30px 0;
+		}
+	}
+	select{
+		height: 52px !important;
+	}
+	.form-control{
+		padding: 12px;
+	}
+	.form-bottom{
+		text-align: center;
+		padding-top: 20px;
+		border-top: 1px solid #19c1d8;
+		.btn-primary{
+			padding: 10px 20px;
+			text-transform: uppercase;
+			background: #ffffff;
+			color: #ec6a01;
+			font-weight: bold;
+			font-size: 18px;
+			text-decoration: none;
+			-webkit-box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+			-moz-box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+			box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+			border: 0;
+			&:hover{
+				background-color: #ffba33;
+				color: #ffffff;
+			}
+		}
 	}
 }
 
@@ -451,11 +625,11 @@
 @media all and (min-width: 992px){
 	header.fixed{
 		position: fixed;
-		background: rgba(#fff, 1);
+		background: rgba(#018763, 1);
 		left: 0;
 		right: 0;
 		top: 0;
-		z-index: 9;
+		z-index: 999;
 		box-shadow: 0 0 5px 0 rgba(#666, 0.5);
 		-webkit-animation-name: fadeInDown;
 	    -webkit-animation-duration: 5s;
@@ -486,6 +660,7 @@
 		// 		max-height: 75px;
 		// 	}
 		// }
+		.header-bottom .container::after,
 		.header-top{display:none;}
 		.language{
 			margin-top: 0;

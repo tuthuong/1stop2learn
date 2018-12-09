@@ -9,27 +9,99 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link href="css/animate.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/slyle.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/flatpickr.min.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-2.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- <script src="js/jquery-migrate-1.2.1.min.js"></script> -->
-    <script src="js/wow.js" defer></script>
-    <script src="js/slick.min.js"></script>
-
-    <script src="fancybox/jquery.fancybox.pack.js" defer></script>
-    <script src="fancybox/helpers/jquery.fancybox-thumbs.js" defer></script>
-    <script src="js/flatpickr.js"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/jquery-2.2.1.min.js"></script> -->
+    
 </head>
 
 <body>
-
+     <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-8">
+                        <div class="header-contact-top">
+                            <ul>
+                                <li> 
+                                    <a href="#"><i class="icon-support" aria-hidden="true"></i> Tư vấn miễn phí</a>
+                                    
+                                    
+                                </li>
+                                <li> 
+                                    <a href="tel:0938887688"><i class="icon-hotline" aria-hidden="true"></i> 0938 88 76 88</a>
+                                </li>
+                                <li> 
+                                    <i class="fa fa-map-marker"></i>
+                                    <select name="" id="">
+                                        <option value="">TP Hồ Chí Minh</option>
+                                        <option value="">Hà Nội</option>
+                                        <option value="">Đà Nẵng</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>						
+                    <div class="col-lg-3 col-md-4 cart-link text-right">
+                            <ul>
+                                <li class="cart"><a href="#"><i class="icon-cart"></i></a></li>
+                                <li class="account"><a href="#"><i class="icon-login"></i> Đăng nhập</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row row-ibl">
+                    <div class="col-lg-3 col-xs-12 md-center">
+                        <a class="logo" href="#" title="">
+                            <img src="images/logo.png" alt="" title=""/>
+                        </a>
+                    </div>
+                    <div class="col-lg-9 col-xs-12 md-center static">
+                        <nav class="main-nav">
+                            <ul>
+                                <li class="active"><a class="smooth" href="#" title="">Trường</a></li>
+                                <li><a class="smooth" href="#" title="">Khóa học</a></li>
+                                <li><a class="smooth" href="#" title="">Giáo viên</a>
+                                    <ul>
+                                        <li><a class="smooth" href="#" title="">Giáo viên 1</a></li>
+                                        <li><a class="smooth" href="#" title="">Giáo viên 2</a></li>
+                                        <li><a class="smooth" href="#" title="">Giáo viên 3</a></li>
+                                        <li><a class="smooth" href="#" title="">Giáo viên 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="smooth" href="#" title="">Lớp học</a></li>
+                                <li><a class="smooth" href="#" title="">Học bổng</a></li>
+                                <li>
+                                    <a class="smooth" href="#" title="">
+                                        <span class="icon-search">
+                                            
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <button class="menu-btn nav-open d-lg-none" type="button"><i></i></button>
+    </header>
+    <div class="m-nav d-lg-none">
+			<button class="menu-btn act nav-close" type="button"><i></i></button>
+			<div class="nav-ct"></div>
+		</div>
+    <!-- end Header -->
+    
     <!-- Slideshow -->
     <div class="container-fluid slide-banner">
         <div class="container">
@@ -60,6 +132,61 @@
             </div>
         </div>
     </div>
+    <!-- Slide cate khóa học -->
+    <section class="services">
+        <div class="container">
+            <div class="ser-slide">
+                <div class="ser-item">
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/icon-service-1.png" alt="" />
+                        </div>
+                        <h3 class="sername">Ngoại ngữ</h3>
+                    </a>
+                </div>
+                <div class="ser-item">
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/icon-service-2.png" alt="" />
+                        </div>
+                        <h3 class="sername">Kinh tế - Kinh doanh</h3>
+                    </a>
+                </div>
+                <div class="ser-item">
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/icon-service-3.png" alt="" />
+                        </div>
+                        <h3 class="sername">Đồ họa - Thiết kế Mỹ thuật</h3>
+                    </a>
+                </div>
+                <div class="ser-item">
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/icon-service-4.png" alt="" />
+                        </div>
+                        <h3 class="sername">Kỹ thuật - Công nghệ</h3>
+                    </a>						
+                </div>
+                <div class="ser-item">
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/icon-service-5.png" alt="" />
+                        </div>
+                        <h3 class="sername">Âm nhạc</h3>
+                    </a>
+                </div>
+                <div class="ser-item">
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/icon-service-5.png" alt="" />
+                        </div>
+                        <h3 class="sername">Âm nhạc</h3>
+                    </a>
+                </div>
+            </div>
+        </div>			
+    </section>
 
     <!-- Cac Khoa hoc -->
     <div class="container-fluid list-course">
@@ -383,6 +510,87 @@
             </div>
         </div>
     </div>
+    <!-- About us -->
+    <div class="h-about bg" style="background-image: url('images/bg2.png');">
+        <div class="container wow fadeInUp">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 text-center">
+                    <img src="images/icon-info-1.png">
+                    <div class="value"><span class="counter">28,123</span>+
+                    </div>
+                    <h2>Trường học</h2>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <img src="images/icon-info-2.png">
+                    <div class="value"><span class="counter">6543</span>+
+                    </div>
+                    <h2>Học viên</h2>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <img src="images/icon-info-3.png">
+                    <div class="value"><span class="counter">465</span>+
+                    </div>
+                    <h2>Giáo viên</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="container">
+
+            <div class="row row-fluid ">
+                <div class="col-md-5 wow fadeInUp intro-img" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="form-regis">
+                        <div class="form-head">
+                            <h4 class="form-title">Đăng ký</h4>
+                            <h5 class="subform-title">Nhận thông báo</h5>
+                            <p>Vui lòng điền đầy đủ thông tin của bạn, khi có khoá học mới chùng tôi sẽ gửi email thông báo cho bạn.</p>
+                        </div>
+                        <form method="POST" action="/form/registration" class="form-horizontal form-validate" data-callback="reload_page" novalidate="novalidate">
+                            <div class="form-group">
+                                <!-- <label for="RegisName">Họ và tên:</label> -->
+                                <input type="text" class="form-control" placeholder="Full name" name="RegisName" id="RegisName">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="RegisEmail">Email:</label> -->
+                                <input type="text" class="form-control" id="RegisEmail" name="RegisEmail" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="RegisPhone">Số điện thoại:</label> -->
+                                <input type="text" class="form-control" id="RegisPhone" name="RegisPhone" placeholder="Phone">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="">Dịch vụ:</label> -->
+                                <select class="form-control" id="ProductId" name="ProductId" onchange="chonxethu()" required="required">
+                                    <option value="">Select Course</option>
+                
+                                    <option value="60">Khóa học tiếng Anh</option>
+                                
+                                    <option value="155">Khóa học tiếng Nhật</option>
+                                
+                                    <option value="156">Khóa học Âm nhạc</option>
+                                
+                                    <option value="157">Đồ học - thiết kế</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-bottom">
+                                <input type="submit" id="createButton" value="Đăng ký" class="btn btn-estimate btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-7 wow fadeInUp info" style="visibility: visible; animation-name: fadeInUp;">
+                    <h4 class="title">Giới thiệu 1s2l</h4>
+                    <p>Lorem ipsum dolor sit amet, ad autem erroribus eum, eum edu maluisset constituto, sam ut for has. Lorem ipsum dolor siters mar amet marcelleo. Lorem ipsum dolor sit amet, ad autem erroribus eum, eum edu maluisset constituto, sam ut for has. Lorem ipsum dolor siters mar amet marcelleo. Lorem ipsum dolor sit amet, ad autem erroribus eum, eum edu maluisset constituto, sam ut for has. Lorem ipsum dolor siters mar amet marcelleo.</p>
+                    <div class="readmore">
+                        <a href="#" title="">Xem thêm</a>
+                        <a href="#" title="">Liên hệ</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
     <!-- Truong hoc - Trung tam HOT -->
     <div class="container-fluid school-and-center">
@@ -464,12 +672,12 @@
     <div class="container calendar-news">
         <div class="row">
             <!-- Calendar -->
-            <div class="col-md-4 col-lg-4 col-sm-12">
+            <div class="col-md-6 col-lg-4 col-sm-12">
                 <h3 class="text-capitalize">Lịch khai giảng</h3>
                 <div class="calendar"></div>                
             </div>
             <!-- News -->
-            <div class="col-md-4 col-lg-4 col-sm-12 no-gutters">
+            <div class="col-md-6 col-lg-4 col-sm-12 no-gutters">
                 <h3>Tin tức mới</h3>
                 <div class="form-row news-item">
                     <div class="col-4 item-pic">
@@ -517,7 +725,7 @@
                 </div>
             </div>
             <!-- Events -->
-            <div class="col-md-4 col-lg-4 col-sm-12 no-gutters">
+            <div class="col-md-12 col-lg-4 col-sm-12 no-gutters">
                 <h3>Sự kiện mới</h3>
                 <div class="row event-item no-gutters">
                     <div class="col-3 event-date">
@@ -893,7 +1101,7 @@
                                 </div>
                                 <div class="col-sm-9 col-md-9">
                                     <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto atque autem consequuntur corporis ea facere fuga, illo in ipsam iure laboriosam laborum maiores minima modi nam, nulla obcaecati porro praesentium ratione reprehenderit sint sit sunt tempora vita</p>
-                                    <footer class="blockquote-footer"><span>AMADA NAWER </span><span class="diff">- DR. PHYSICS</span></footer>
+                                    <div class="blockquote-footer"><span>AMADA NAWER </span><span class="diff">- DR. PHYSICS</span></div>
                                 </div>
                             </div>
                         </blockquote>
@@ -907,7 +1115,7 @@
                                 </div>
                                 <div class="col-sm-9">
                                     <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto atque autem consequuntur corporis ea facere fuga, illo in ipsam iure laboriosam laborum maiores minima modi nam, nulla obcaecati porro praesentium ratione reprehenderit sint sit sunt tempora vita</p>
-                                    <footer class="blockquote-footer"><span>AMADA NAWER </span><span class="diff">- DR. PHYSICS</span></footer>
+                                    <div class="blockquote-footer"><span>AMADA NAWER </span><span class="diff">- DR. PHYSICS</span></div>
                                 </div>
                             </div>
                         </blockquote>
@@ -925,7 +1133,135 @@
             </div>
         </div>
     </div>
+    <footer>
+			<div class="container">
+				<div class="row row-ibl">
+					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp about">
+						<!-- <h4 class="f-title">Giới thiệu về <span class="company">Song Phát</span></h4> -->
+						<div class="about-company">
+							<img src="images/logo-foot.png" alt="" />
+							<p>184 Hong Ha Str, Ward. 9, Phu Nhuan District, Ho Chi Minh City</p>
+						</div>
+						<div class="f-line">
+							<i class="icon-hotline"></i> <strong>Hotline:</strong> (028) 6288 4260
+						</div>
+						<div class="f-line">
+							<i class="icon-email"></i> <strong>Email:</strong> info@1stop2learn.com
+						</div>
+						<div class="f-line">
+							<img src="images/logo-bct.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp our-blog" data-wow-delay="0.2s">
+						<h4 class="f-title">Our Blogs</h4>
+						<ul>
+							<li>
+								<div class="fea-img">
+									<img src="images/foot-our-blog-1.png" alt="">
+								</div>
+								<div class="content-news">
+									<h3 class="title_news">
+										<a href="#" title="">
+											New Science Research Facility in NewYork American
+										</a>
+									</h3>
+									<p class="post-cate">November 24 - 2018</p>
+								</div>
+							</li>
+							<li>
+								<div class="fea-img">
+									<img src="images/foot-our-blog-1.png" alt="">
+								</div>
+								<div class="content-news">
+									<h3 class="title_news">
+										<a href="#" title="">
+											New Science Research Facility in NewYork American
+										</a>
+									</h3>
+									<p class="post-cate">November 24 - 2018</p>
+								</div>
+							</li>
+							<li>
+								<div class="fea-img">
+									<img src="images/foot-our-blog-1.png" alt="">
+								</div>
+								<div class="content-news">
+									<h3 class="title_news">
+										<a href="#" title="">
+											New Science Research Facility in NewYork American
+										</a>
+									</h3>
+									<p class="post-cate">November 24 - 2018</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4  col-sm-6 col-xs-12 wow fadeInUp info-link" data-wow-delay="0.2s">
+						<h4 class="f-title">Liên kết với chúng tôi</h4>
+						<ul class="social-link">
+							<li>
+								<a href="#">
+									<img src="images/zalo.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/youtube.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/facebook.png" alt="">
+								</a>
+							</li>
+						</ul>
+						<h4 class="f-title">Newsletter</h4>
+						<p>Đăng ký nhận thông tin miễn phí từ chúng tôi</p>
+						<form class="subs-form">
+							<input type="text" placeholder="Nhập địa chỉ email của bạn">
+							<button type="submit">Go</button>
+						</form>
+						<h4 class="f-title">Mobile app</h4>
+						<ul class="social-link">
+							<li>
+								<a href="#">
+									<img src="images/app-icon.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+    </footer>
+    <div class="foot">
+        <div class="container">
+            <span class="f-left">© Copyright 2018 by 1stop2learn. All Right Reserved.</span>
+           <span><img src="images/icon-foot.png" alt=""></span>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="js/wow.js" defer></script>
+    <script src="js/slick.min.js"></script>
 
+    <script src="fancybox/jquery.fancybox.pack.js" defer></script>
+    <script src="fancybox/helpers/jquery.fancybox-thumbs.js" defer></script>
+    <script src="js/flatpickr.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    
+    <script src="js/script.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
 </body>
 
 </html>

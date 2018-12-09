@@ -1,3 +1,31 @@
+@media (max-width:1199px){
+	.main-nav {
+		> ul {
+			> li{
+				> a{
+					padding: 10px;
+				}
+			}
+		}
+	}
+	.header-bottom .container::after{
+		top: 4.5em;
+	}
+	.slide-banner .carousel{
+		height: 555px;
+	}
+}
+@media (max-width:991px){
+    .header-top .header-contact-top ul li::after{
+        margin: 0 5px;
+    }
+    .header-bottom {
+        padding: 10px 0;
+    }
+    .header-bottom .container::after {
+        top: 7.5em;
+    }
+}
 @media screen and (max-width: 480px){
     .school-and-center .slick-slide{
         height: 350px;
@@ -162,7 +190,7 @@
 
         .carousel-control-next,
         .carousel-control-prev {
-            display: none;
+            display: none !important;
         }
 
         .carousel-indicators {
@@ -190,7 +218,7 @@
 
         .carousel-control-next,
         .carousel-control-prev {
-            display: none;
+            display: none !important;
         }
     }
 
@@ -208,17 +236,23 @@
             }
 
             p {
+                text-align: center !important;
                 font-size: 16px;
-
+                padding-left: 24px;
+                display: block;
                 &:before {
-                    font-size: 80px;
+                    top: -9px;
+                    left: 14px;
+                    font-size: 36px;
                     margin-top: -15px;
                     margin-left: 0px;
+                    position: absolute;
                 }
             }
 
             .blockquote-footer {
                 font-size: 14px;
+                text-align: center;
             }
         }
 
@@ -287,7 +321,7 @@
 
     .customer-feedback .carousel-control-next,
     .customer-feedback .carousel-control-prev {
-        display: none;
+        display: none !important;
     }
 
 }

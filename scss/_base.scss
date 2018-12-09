@@ -1,47 +1,31 @@
 
 @font-face {
-	font-family: 'Pony';
-	src: url('../fonts/Pony.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Regular.ttf") format("truetype"); }
-@font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Light.ttf") format("truetype");
-  font-weight: 300; }
-@font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
-  font-weight: 500; }
+	font-family: 'OpenSans';
+	src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
   @font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
-  font-weight: 600; }
-    @font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
-  font-weight: 700; }
-@font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Black.ttf") format("truetype");
-  font-weight: 800; }
-@font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
-  font-weight: 900; }
-@font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
-  font-weight: bold; }
+	font-family: 'OpenSans';
+	src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+	font-weight: 300; }
+	@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+	font-weight: 600; }
+	  @font-face {
+	font-family: 'MontOpenSansserrat';
+	src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+	font-weight: 700; }
   @font-face {
-  font-family: 'OpenSans';
-  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
-  font-weight: bold; }
-    @font-face {
-  font-family: 'OpenSans';
-  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
-  font-weight: 500; }
+	font-family: 'OpenSans';
+	src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+	font-weight: 800; }
+	@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+	font-weight: bold; }
+	  @font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+	font-weight: 500; }
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, 

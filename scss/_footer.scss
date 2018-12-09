@@ -1,0 +1,236 @@
+footer{
+	overflow: hidden;
+	background: #eee;
+	color:#454545;
+	padding-top:45px;
+	padding-bottom:55px;
+	.copyright{
+		background: #e1e1e1;
+		text-align: center;
+		color: #666666;
+		line-height: 26px;
+		padding: 12px 0;
+		position: relative;
+		z-index: 1;
+		margin-top: 5px;
+		a:hover{
+			text-decoration: underline;
+		}
+	}
+	.map{
+		box-shadow: 3px 3px 15px 0 rgba(#000, 0.3);
+		iframe{
+			display: block;
+			height: 308px;
+		}
+	}
+	.fanpage{
+		max-height: 308px;
+		overflow: hidden;
+	}
+	.fb-page{
+		@include origin(0 0);
+		// @include scale(1.2);
+	
+	}
+	.about-company{
+		p{
+			margin-top:24px;
+		}
+	}
+	.footer{
+		min-height: 308px;
+		margin: 0 4px;
+		border-left: solid 1px #1d94d1;
+		border-right: solid 1px #1d94d1;
+		.name{
+			color: $c1;
+			font-weight: bold;
+			font-size: 18px;
+			text-align: center;
+			padding-top: 37px;
+			margin-bottom: 22px;
+		}
+		.f-line{
+			position: relative;
+			padding-left: 20px;
+			color: #666666;
+			line-height: 30px;
+			margin-left: 36px;
+			margin-right: 30px;
+			i{
+				position: absolute;
+				left: 0;
+				width: 14px;
+				text-align: center;
+				color: $c1;
+				top: 8px;
+			}
+		}
+	}
+	.social{
+		font-size: 24px;
+		text-align: center;
+		margin-top: 24px;
+		a{
+			margin-right: 15px;
+			@include middle;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+	.f-title{
+		color:#000000;
+		font-size:18px;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+		position: relative;
+		&::after{
+			content: '';
+			width: 90px;
+			height: 3px;
+			background: #009eb4;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 10px;
+			margin-bottom: 5px;
+		}
+	}
+	.f-line{
+		position: relative;
+	    margin-bottom: 18px;
+	    i{
+			display: inline-block;
+			vertical-align: middle;
+			width: 36px;
+			height: 36px;
+			background: #fff;
+			border-radius: 100%;
+			text-align: center;
+			line-height: 36px;
+			margin-right: 10px;
+			position: relative;
+			&.icon-hotline{
+				&::before{
+					content: '';
+					width: 15px;
+					height: 15px;
+					display: inline-block;
+					background: url(../images/sprite.png) no-repeat;
+					background-position: -4px -59px;
+					position: absolute;
+					top:50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			&.icon-email{
+				&::before{
+					content: '';
+					width: 15px;
+					height: 15px;
+					display: inline-block;
+					background: url(../images/sprite.png) no-repeat;
+					background-position: -26px -60px;
+					position: absolute;
+					top:50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			
+	    }
+	}
+	ul{
+		li{
+			margin-bottom:10px;
+			// &:before{
+			// 	font-family: "FontAwesome";
+			//     content: "\f0da";
+			//     margin-right: 10px;
+			//     display: inline-block;
+			//     vertical-align: middle;
+			//     margin-top: -3px;
+			// }
+			// &:hover{
+			// 	color:#ffe20d;
+			// }
+		}
+	}
+	.our-blog{
+		ul{
+			li{
+				margin-bottom: 23px;
+				.fea-img{
+					@include middle;
+					margin-right: 15px;
+				}
+				.content-news{
+					@include middle;
+					width: calc(100%  - 126px);
+					.title_news{
+						font-weight: bold;
+						margin-bottom: 10px;
+						&:hover{
+							color: #008763;
+						}
+					}
+					.post-cate{
+						color:#acacac;
+						font-size: 13px;
+						margin-bottom: 0;
+					}
+					
+				}
+			}
+		}
+	}
+	.social-link{
+		li{
+			@include middle;
+			margin-right: 10px;
+		}
+	}
+	.social-link,
+	.subs-form{
+		margin-bottom: 20px;
+	}
+
+	.subs-form{
+		position: relative;
+	
+		input{
+			height: 35px;
+			width: 100%;
+			border: none;
+			@include place(#666666);
+		}
+		button{
+			text-transform: uppercase;
+			color: #fff;
+			font-family: $f1;
+			padding: 0 12px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			color: #fff;
+			background: $c2;
+			font-size: 14px;
+			font-weight: bold;
+		}
+	}
+}
+.foot{
+	background: #009eb4;
+    border-top: 6px solid #bed62f;
+    color: #fff;
+    padding: 23px;
+    text-align: center;
+	text-transform: uppercase;
+	span{
+		display: block;
+		margin-bottom: 10px;
+	}
+}

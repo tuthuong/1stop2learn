@@ -11,7 +11,7 @@ var script = function () {
         var close = $('.nav-close');
 
         ct.append($('.header-contact-top').clone());
-        ct.append($('.language').clone());
+        // ct.append($('.language').clone());
         ct.append($('.main-nav').clone());
         ct.append($('.social-link').clone());
 
@@ -174,6 +174,59 @@ var script = function () {
             dots: true,
             dotsClass: 'slick-dots',
         })
+        $('.ser-slide').slick({
+            nextArrow: '<img src="images/next.png" class="next" alt="Next">',
+            prevArrow: '<img src="images/prev.png" class="prev" alt="Prev">',
+            slidesToShow: 5,
+            autoplay:true,
+            autoplaySpeed:1500,
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5,
+                        dots: true,
+                        dotsClass: 'slick-dots'
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: true,
+                        dotsClass: 'slick-dots'
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: true,                       
+                        dotsClass: 'slick-dots',
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 320,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: true,
+                        arrows: false,
+                        dotsClass: 'slick-dots'
+                    }
+                },
+                {
+                    breakpoint: 300,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: true,
+                        arrows: false,
+                        dotsClass: 'slick-dots'
+                    }
+                },
+            ],
+        })
 
         $('.hotschools').slick({
             autoplay: true,
@@ -245,7 +298,8 @@ var script = function () {
                     settings: {
                         slidesToShow: 1,
                         dots: true,
-                        dotsClass: 'slick-dots'
+                        dotsClass: 'slick-dots',
+                        arrows: false,
                     }
                 },
                 {
@@ -431,30 +485,30 @@ var script = function () {
         if (win.width() > 1025) {
             if (win.scrollTop() > 200) {
                 $('header').addClass('fixed');
-                body.css('margin-top', h2);
+                // body.css('margin-top', h2);
             }
         } else {
             if (win.scrollTop() > 0) {
                 $('header').addClass('fixed');
-                body.css('margin-top', h2);
+                // body.css('margin-top', h2);
             }
         }
         win.scroll(function (e) {
             if (win.width() > 1025) {
                 if (win.scrollTop() > 200) {
                     $('header').addClass('fixed');
-                    body.css('margin-top', h2);
+                    // body.css('margin-top', h2);
                 } else {
                     $('header').removeClass('fixed');
-                    body.css('margin-top', '');
+                    // body.css('margin-top', '');
                 }
             } else {
                 if (win.scrollTop() > 0) {
                     $('header').addClass('fixed');
-                    body.css('margin-top', h);
+                    // body.css('margin-top', h);
                 } else {
                     $('header').removeClass('fixed');
-                    body.css('margin-top', '');
+                    // body.css('margin-top', '');
                 }
             }
         });
