@@ -17,7 +17,7 @@
 				color: #fff;
 				font-size: 18px;
 				font-weight: bold;
-				padding: 10px 24px;
+				padding: 10px 20px;
 				&:not(:only-child):after{
 					@include font('\f0d7'); // caret
 					// @include font('\f107'); // angle
@@ -95,7 +95,7 @@
 			width: 29px;
 			height: 24px;
 			background: url(../images/sprite.png) no-repeat;
-			background-position: -39px -27px;
+			background-position: -5px -27px;
 		}
 	}
 }
@@ -105,5 +105,8 @@
 		-webkit-box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
 		-moz-box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
 		box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+		a{
+			color: #fff !important;
+		}
 	}
 }

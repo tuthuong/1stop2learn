@@ -483,3 +483,12 @@
 	}
 
 }
+@media (max-width: 368px){
+	header .logo-top{
+		text-align: left;
+	}
+	header .logo img {
+		max-height: 25px;
+	}
+
+}
