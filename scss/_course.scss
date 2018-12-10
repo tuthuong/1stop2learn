@@ -101,6 +101,8 @@
             width: 100%;
             height: 100%;
             margin: 0;
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
         }
 
         .card-body {
@@ -218,7 +220,12 @@
             right: 0;
             width: 100%;
             height: 0;
-            transition: all 0.3s ease;
+            opacity: 0;
+            // transition: all 0.5s ease;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(0,50%,0);
+            transform: translate3d(0,50%,0);
 
             .overlay-content {
                 width: 100%;
@@ -273,20 +280,32 @@
 
             }
         }
-
+         &:hover img{
+            -webkit-transform: translate3d(0,-20px,0);
+            transform: translate3d(0,-20px,0);
+        }
         &:hover .overlay1 {
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
             bottom: 0;
             height: 44%;
             background: $background-color-blue;
         }
 
         &:hover .overlay2 {
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
             bottom: 0;
             height: 44%;
             background: $background-color-green;
         }
 
         &:hover .overlay3 {
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
             bottom: 0;
             height: 44%;
             background: $background-color-yellow;
