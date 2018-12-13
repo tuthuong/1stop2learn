@@ -212,6 +212,28 @@
 		}
 	}
 }
+.header-contact-top{
+	.select2-container--default {
+		&.select2-container--open {
+			.select2-selection--single {
+				.select2-selection__arrow b{
+					border-color: transparent transparent #fff transparent;
+				}
+			}
+		}
+		.select2-selection--single{
+			background-color:transparent;
+			border: 0;
+			.select2-selection__rendered{
+				color: #fff;
+			}
+			.select2-selection__arrow b{
+				border-color: #fff transparent transparent transparent;
+			}
+		}
+	}
+}
+
 .h-about{
 	padding-bottom: 15rem;
 	.value {

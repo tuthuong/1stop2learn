@@ -580,6 +580,7 @@ jQuery(function ($) {
             });
         }
     }
+    $('.location').select2();
 
     $(".t-gallery:not(.slick-cloned) a").fancybox({
         prevEffect: 'fade',

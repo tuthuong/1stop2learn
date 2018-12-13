@@ -999,6 +999,40 @@ header select {
   vertical-align: middle;
   margin-top: -3px;
 }
+.main-nav > ul > li.actions {
+  position: relative;
+  font-size: 13px;
+}
+.main-nav > ul > li.actions .search {
+  color: #fff;
+  cursor: pointer;
+}
+.main-nav > ul > li.actions a::after {
+  display: none;
+}
+.main-nav > ul > li.actions input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #262626;
+}
+.main-nav > ul > li.actions .input-group-addon {
+  position: absolute;
+  right: 5px;
+  font-size: 18px;
+  background: transparent;
+  border: 0;
+  color: #262626;
+  top: 2px;
+  border-left: 1px solid #dddddd;
+  padding: 0px 10px;
+}
+.main-nav > ul > li.actions .action-control-search .form {
+  border: solid 1px #dcdcdc;
+  border-radius: 20px;
+  padding: 7px 20px;
+  position: relative;
+}
 .main-nav li {
   position: relative;
   text-align: left;
@@ -1049,6 +1083,25 @@ header select {
   height: 24px;
   background: url(../images/sprite.png) no-repeat;
   background-position: -5px -27px;
+}
+
+.action-control-search {
+  right: 0;
+  padding: 20px;
+  position: absolute;
+  display: none;
+  min-width: 342px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 9;
+  -webkit-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  padding: 20px;
+  top: 46px;
+}
+.action-control-search.active {
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -2460,6 +2513,20 @@ header select {
   left: -30px;
 }
 
+.header-contact-top .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #fff transparent;
+}
+.header-contact-top .select2-container--default .select2-selection--single {
+  background-color: transparent;
+  border: 0;
+}
+.header-contact-top .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #fff;
+}
+.header-contact-top .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #fff transparent transparent transparent;
+}
+
 .h-about {
   padding-bottom: 15rem;
 }
@@ -3047,7 +3114,7 @@ header.fixed .header-top {
     background: #f9f9f9;
     box-shadow: 0 0 8px 0 rgba(102, 102, 102, 0.5);
     position: fixed;
-    z-index: 99999999;
+    z-index: 9;
     top: 0;
     bottom: 0;
     width: 290px;
@@ -3066,6 +3133,25 @@ header.fixed .header-top {
     background: #1dbb90;
     color: #fff;
   }
+  .m-nav .nav-ct .header-contact-top ul li {
+    padding: 5px 0;
+  }
+  .m-nav .nav-ct .header-contact-top ul li .icon-support {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    background: url(../images/sprite.png) no-repeat;
+    background-position: -5px 0;
+  }
+  .m-nav .nav-ct .header-contact-top ul li .icon-hotline {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/sprite.png) no-repeat;
+    background-position: -30px -3px;
+  }
   .m-nav .nav-ct .header-contact-top select {
     background: none;
     color: #fff;
@@ -3075,6 +3161,7 @@ header.fixed .header-top {
     text-align: left !important;
     border-top: solid 1px #e6e6e6;
     padding-top: 10px;
+    padding-bottom: 10px;
   }
   .m-nav .nav-ct .social-link li {
     display: inline-block;
@@ -3116,6 +3203,20 @@ header.fixed .header-top {
   .m-nav .main-nav > ul > li:hover > a {
     color: #fff;
     background: #1dbb90;
+  }
+  .m-nav .main-nav > ul > li.actions a {
+    padding: 0;
+  }
+  .m-nav .main-nav > ul > li .action.search {
+    display: none;
+  }
+  .m-nav .main-nav > ul > li .action-control-search {
+    display: block;
+    min-width: 100%;
+    background: none;
+    box-shadow: none;
+    position: inherit;
+    top: 0;
   }
   .m-nav .main-nav li {
     position: relative;
@@ -3161,7 +3262,6 @@ header.fixed .header-top {
     font-weight: normal;
   }
   .m-nav .main-nav li ul li:hover > a {
-    background: #1dbb90 sss;
     color: #fff;
   }
   .m-nav .main-nav li ul ul a {
