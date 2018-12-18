@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/flatpickr.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -38,7 +39,7 @@
                                 </li>
                                 <li> 
                                     <i class="fa fa-map-marker"></i>
-                                    <select name="" id="">
+                                    <select name="" class="location">
                                         <option value="">TP Hồ Chí Minh</option>
                                         <option value="">Hà Nội</option>
                                         <option value="">Đà Nẵng</option>
@@ -59,12 +60,12 @@
         <div class="header-bottom">
             <div class="container">
                 <div class="row row-ibl">
-                    <div class="col-lg-3 col-xs-12 md-center">
+                    <div class="col-lg-3 col-xs-12 md-center logo-top">
                         <a class="logo" href="#" title="">
                             <img src="images/logo.png" alt="" title=""/>
                         </a>
                     </div>
-                    <div class="col-lg-9 col-xs-12 md-center static">
+                    <div class="col-lg-9 col-xs-12 md-center lg-right static">
                         <nav class="main-nav">
                             <ul>
                                 <li class="active"><a class="smooth" href="#" title="">Trường</a></li>
@@ -79,12 +80,19 @@
                                 </li>
                                 <li><a class="smooth" href="#" title="">Lớp học</a></li>
                                 <li><a class="smooth" href="#" title="">Học bổng</a></li>
-                                <li>
-                                    <a class="smooth" href="#" title="">
-                                        <span class="icon-search">
-                                            
-                                        </span>
-                                    </a>
+                                <li class="actions">
+                                        <a href="javascript:void(0);"><span class="action search"><i class="icon-search"></i></span></a>
+                                    <div class="action-control-search">
+                                        <div class="form">
+                                                <input id="search" type="text" name="" value="" placeholder="Nhập từ cần tìm..." class="input-text" maxlength="128">
+                                                <span class="input-group-addon">
+                                                <button type="submit">
+                                                    <span class="fa fa-search"></span>
+                                                </button>  
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
                                 </li>
                             </ul>
                         </nav>
@@ -1264,7 +1272,7 @@
     <!-- <script src="js/jquery-migrate-1.2.1.min.js"></script> -->
     <script src="js/wow.js" defer></script>
     <script src="js/slick.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="fancybox/jquery.fancybox.pack.js" defer></script>
     <script src="fancybox/helpers/jquery.fancybox-thumbs.js" defer></script>
     <script src="js/flatpickr.js"></script>

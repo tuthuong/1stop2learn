@@ -177,7 +177,11 @@ $f40: 40%;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
+@media(min-width:1200px){
+	.lg-right{
+		text-align: right;
+	}
+}
 @media all and (max-width: 1199px){
 	.md-left{text-align: left;}
 	.md-center{text-align: center;}

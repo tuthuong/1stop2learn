@@ -8,7 +8,9 @@ header{
 	    vertical-align: middle; 
 	    margin: 5px 0;
 	    img {
-	      display: block; 
+				display: block; 
+				-webkit-filter: brightness(0) invert(1);
+				filter: brightness(0) invert(1);
 	  }
 	}
 	.language {
