@@ -3720,10 +3720,254 @@ footer {
 /*Menu*/
 /*Breadcrum*/
 .breadcrum-detail {
+  position: relative;
   float: left;
   width: 100%;
   height: auto; }
   .breadcrum-detail .page-breadcrumb {
     top: 90px; }
+    .breadcrum-detail .page-breadcrumb .breadcrumb {
+      padding-left: 0;
+      margin-left: 0; }
+
+/*Detail content*/
+.detail-content {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin-top: 165px; }
+  .detail-content .contents {
+    display: block;
+    width: 100%; }
+    .detail-content .contents h3 {
+      display: inline-block;
+      color: #009eb4;
+      font-size: 30px;
+      font-family: "Open Sans", sans-serif; }
+    .detail-content .contents span.fa-star {
+      padding-top: 1.2rem;
+      padding-bottom: 1.5rem;
+      padding-right: 1.2rem; }
+    .detail-content .contents p {
+      font-size: 14px;
+      padding-bottom: 0.5rem;
+      margin: 0; }
+      .detail-content .contents p.article-address {
+        display: inline-block;
+        width: 100%; }
+      .detail-content .contents p i.fa {
+        color: #009eb4;
+        padding-right: 0.5rem; }
+      .detail-content .contents p span.e-mail {
+        padding-left: 2rem; }
+      .detail-content .contents p.img-gallery {
+        padding-top: 1.2rem; }
+        .detail-content .contents p.img-gallery a.big-image {
+          width: 100%;
+          height: 490px; }
+        .detail-content .contents p.img-gallery a.img-thumbnail {
+          float: left;
+          width: 25%;
+          height: 120px;
+          border: none;
+          padding: 0;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem; }
+          .detail-content .contents p.img-gallery a.img-thumbnail img {
+            width: 100%;
+            height: 100%; }
+        .detail-content .contents p.img-gallery a.img-padding {
+          padding-right: 0.5rem; }
+    .detail-content .contents a.btn-detail {
+      padding-top: 0.8rem; }
+    .detail-content .contents .school-branch {
+      display: block;
+      width: 100%; }
+      .detail-content .contents .school-branch h1 {
+        width: 100%;
+        text-transform: uppercase;
+        color: #333333;
+        font-size: 24px;
+        padding: 1rem 0; }
+      .detail-content .contents .school-branch .panel-group .panel {
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #EEEEEE; }
+      .detail-content .contents .school-branch .panel-default > .panel-heading {
+        padding: 0;
+        border-radius: 0;
+        color: #212121;
+        border-color: #EEEEEE;
+        padding: 0.5rem 0; }
+        .detail-content .contents .school-branch .panel-default > .panel-heading h4 {
+          color: #009eb4;
+          text-transform: uppercase;
+          font-size: 16px;
+          display: inline-block;
+          width: 100%;
+          padding-left: 1.5rem;
+          background-color: #e9e9e9;
+          font-weight: 600; }
+          .detail-content .contents .school-branch .panel-default > .panel-heading h4 i.fa, .detail-content .contents .school-branch .panel-default > .panel-heading h4 i.minus {
+            padding-top: 0.2rem;
+            font-size: 18px; }
+      .detail-content .contents .school-branch .panel-title {
+        font-size: 14px; }
+        .detail-content .contents .school-branch .panel-title a {
+          display: block;
+          padding: 15px;
+          text-decoration: none; }
+      .detail-content .contents .school-branch .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #EEEEEE; }
+      .detail-content .contents .school-branch .panel-body {
+        padding-top: 2rem;
+        padding-bottom: 2rem; }
+        .detail-content .contents .school-branch .panel-body p {
+          padding: 0.5rem 0;
+          font-size: 14px;
+          color: #666666; }
+        .detail-content .contents .school-branch .panel-body p.label {
+          padding-left: 1.5rem; }
+        .detail-content .contents .school-branch .panel-body .line {
+          width: 2px;
+          margin-top: 0.5rem;
+          height: 90%;
+          background: #e9e9e9; }
+  .detail-content .support-filter {
+    display: inline-block;
+    width: 100%;
+    /*Related schools*/ }
+    .detail-content .support-filter .location img {
+      width: 100%;
+      height: 175px;
+      margin-bottom: 1.8rem; }
+    .detail-content .support-filter .support {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-sizing: border-box;
+      border: 1px solid #17a2b8; }
+      .detail-content .support-filter .support h3 {
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        color: #333333;
+        font-weight: bold;
+        padding: 1.5rem 2rem 0.5rem 2rem; }
+      .detail-content .support-filter .support .line {
+        display: block;
+        width: 80%;
+        height: 2px;
+        background: #17a2b8;
+        margin: 0 auto; }
+      .detail-content .support-filter .support .support-form {
+        display: block;
+        width: 100%;
+        margin: 0 auto; }
+        .detail-content .support-filter .support .support-form form {
+          width: 90%;
+          margin-left: 5%; }
+        .detail-content .support-filter .support .support-form input {
+          margin-top: 1rem;
+          width: 100%;
+          font-size: 14px;
+          color: #b9b9b9;
+          font-weight: bold;
+          border-radius: 5px;
+          background-color: rgba(0, 158, 180, 0);
+          border: 1px solid #aeaeae;
+          padding: 0.6rem 1rem; }
+      .detail-content .support-filter .support a.btn-info {
+        margin: 0 auto;
+        width: 90%;
+        margin: 1rem 0; }
+    .detail-content .support-filter .related-schools {
+      display: block;
+      width: 100%;
+      margin-top: 2rem;
+      padding-bottom: 0; }
+      .detail-content .support-filter .related-schools h2 {
+        display: block;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #009eb4;
+        font-weight: bold;
+        padding-bottom: 1rem; }
+      .detail-content .support-filter .related-schools a.ima {
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        height: 80px;
+        margin-right: 0.5rem;
+        margin-bottom: 1.2rem; }
+        .detail-content .support-filter .related-schools a.ima img {
+          height: 100%;
+          margin-top: 0.5rem;
+          margin-bottom: 1rem;
+          transition: all 0.5s ease; }
+        .detail-content .support-filter .related-schools a.ima:hover img {
+          transform: scale(1.2); }
+      .detail-content .support-filter .related-schools .school-item {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding-left: 0.5rem; }
+        .detail-content .support-filter .related-schools .school-item h3 {
+          font-size: 14px;
+          color: #333333;
+          font-weight: bold; }
+          .detail-content .support-filter .related-schools .school-item h3 a {
+            padding-top: 0; }
+        .detail-content .support-filter .related-schools .school-item p.voted {
+          padding-top: 0.2rem; }
+        .detail-content .support-filter .related-schools .school-item a.btn-detail {
+          margin-top: -1rem; }
+          .detail-content .support-filter .related-schools .school-item a.btn-detail:hover {
+            color: yellow; }
+        .detail-content .support-filter .related-schools .school-item a:hover {
+          color: #ffba33; }
+        .detail-content .support-filter .related-schools .school-item a.btn-detail:hover {
+          color: #ffba33; }
+
+.fa-star {
+  color: #ffba33;
+  width: 15px;
+  height: 15px;
+  padding: 0 1.2rem 0 0; }
+
+a.btn-detail {
+  color: #009eb4;
+  font-size: 14px;
+  font-weight: 600; }
+  a.btn-detail i.fa {
+    padding-right: 0.2rem; }
+
+p.voted {
+  display: inline-block;
+  color: #666666;
+  font-size: 12px;
+  font-style: italic;
+  padding-left: 1rem;
+  padding-top: 1rem; }
+
+/*Courses*/
+.list-course {
+  position: unset;
+  display: inline-block; }
+  .list-course .btn-more {
+    margin-top: 2.5rem;
+    margin-bottom: 5rem; }
+
+@media screen and (max-width: 767px) {
+  .support .line {
+    width: 86% !important; }
+
+  .detail-content .contents .school-branch {
+    display: contents; } }
+@media screen and (max-width: 480px) {
+  .support .line {
+    width: 82% !important; } }
 
 /*# sourceMappingURL=style.css.map */
