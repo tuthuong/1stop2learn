@@ -10,8 +10,7 @@
         url("../fonts/fontawesome-webfont.ttf") format("truetype");
 }
 
-$font-stack:'Open Sans',
-sans-serif;
+$font-stack:'Open Sans', sans-serif;
 $background-color-green:#1dbb90;
 $background-color-blue:#0ab1c8;
 $background-color-yellow: #ffba33;
@@ -35,6 +34,7 @@ $btn-color-green:#1dbb90;
 @import '_call.scss';
 @import '_footer.scss';
 @import '_school_page.scss';
+@import '_detail_page.scss';
 
 
 

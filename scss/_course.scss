@@ -152,7 +152,7 @@
                     .language {
                         margin: 0;
                         font-weight: bold;
-//                        color: $btn-color-green;
+                        //                        color: $btn-color-green;
                         display: inline-block;
                         width: 100%;
                     }
@@ -224,8 +224,8 @@
             // transition: all 0.5s ease;
             -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
             transition: opacity 0.35s, transform 0.35s;
-            -webkit-transform: translate3d(0,50%,0);
-            transform: translate3d(0,50%,0);
+            -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
 
             .overlay-content {
                 width: 100%;
@@ -280,14 +280,16 @@
 
             }
         }
-         &:hover img{
-            -webkit-transform: translate3d(0,-20px,0);
-            transform: translate3d(0,-20px,0);
+
+        &:hover img {
+            -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
         }
+
         &:hover .overlay1 {
             opacity: 1;
-            -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
             bottom: 0;
             height: 44%;
             background: $background-color-blue;
@@ -295,8 +297,8 @@
 
         &:hover .overlay2 {
             opacity: 1;
-            -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
             bottom: 0;
             height: 44%;
             background: $background-color-green;
@@ -304,38 +306,43 @@
 
         &:hover .overlay3 {
             opacity: 1;
-            -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
             bottom: 0;
             height: 44%;
             background: $background-color-yellow;
         }
     }
-    .card-item-type-1 .card-text .language{
-       color: $background-color-blue;
+
+    .card-item-type-1 .card-text .language {
+        color: $background-color-blue;
     }
-    .card-item-type-2 .card-text .language{
-       color: $background-color-green;
+
+    .card-item-type-2 .card-text .language {
+        color: $background-color-green;
     }
-    .card-item-type-3 .card-text .language{
-       color: $background-color-yellow;
+
+    .card-item-type-3 .card-text .language {
+        color: $background-color-yellow;
     }
+
     .btn-more {
         padding: 10px 20px;
-		text-transform: uppercase;
-		background:$background-color-green;
-		color: $background-color-white;
-		font-weight: bold;
-		font-size: 18px;
+        text-transform: uppercase;
+        background: $background-color-green;
+        color: $background-color-white;
+        font-weight: bold;
+        font-size: 18px;
         text-decoration: none;
         margin: 30px auto;
         -webkit-box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
         box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
-		&:hover{
-			background:$background-color-blue;
-			color: $background-color-white;
-		}
+
+        &:hover {
+            background: $background-color-blue;
+            color: $background-color-white;
+        }
     }
 
 }

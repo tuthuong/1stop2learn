@@ -174,6 +174,15 @@ var script = function () {
             dots: true,
             dotsClass: 'slick-dots',
         })
+        
+        $('.subpage_slideshow').slick({
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 1,
+            autoplaySpeed: 3000,
+            arrows: false,
+        })
+
         $('.ser-slide').slick({
             nextArrow: '<img src="images/next.png" class="next" alt="Next">',
             prevArrow: '<img src="images/prev.png" class="prev" alt="Prev">',

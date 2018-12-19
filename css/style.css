@@ -2929,6 +2929,9 @@ header {
 
   .header-bottom .container::after {
     top: 7.5em; } }
+@media screen and (max-width: 767px) {
+  .school-and-center h1 {
+    font-size: 35px; } }
 @media screen and (max-width: 480px) {
   .school-and-center .slick-slide {
     height: 350px; }
@@ -3086,7 +3089,8 @@ header {
     font-size: 35px; }
 
   .school-and-center .list a {
-    margin: 8px 0px; }
+    margin: 8px 0px;
+    width: 100%; }
 
   .school-and-center .row-equal .card {
     height: 280px !important;
@@ -3500,5 +3504,226 @@ footer {
   .foot span {
     display: block;
     margin-bottom: 10px; }
+
+.second-menu {
+  display: inline-block;
+  width: 100%;
+  height: 85px;
+  background-color: green;
+  opacity: 0.5;
+  color: white;
+  text-transform: uppercase; }
+
+.second-slide-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 400px; }
+  .second-slide-banner .subpage_slideshow {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 100%; }
+    .second-slide-banner .subpage_slideshow img {
+      width: 100%;
+      height: 100%; }
+
+/*Breadcrumb*/
+.page-breadcrumb {
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  width: 100%;
+  height: 75px; }
+  .page-breadcrumb .breadcrumb {
+    background: white;
+    margin-top: 0.8rem; }
+    .page-breadcrumb .breadcrumb a {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #bed62f;
+      font-family: "Open Sans", sans-serif; }
+    .page-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      color: #bed62f; }
+
+/*School and Center*/
+.school-subpage {
+  background-color: white; }
+  .school-subpage h1.subpage {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 0; }
+  .school-subpage .card {
+    margin-bottom: 30px;
+    height: 470px; }
+    .school-subpage .card .card-img-top-445 {
+      height: 440px; }
+    .school-subpage .card .item2 {
+      background: #0ab1c8; }
+    .school-subpage .card .item3 {
+      background: #ffba33; }
+  .school-subpage .btn-more {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background: #1dbb90;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 0px auto;
+    -webkit-box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2); }
+    .school-subpage .btn-more:hover {
+      background: #0ab1c8;
+      color: #ffffff; }
+
+/*Location Filter and Course*/
+.location-card {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .location-card .location-filter {
+    display: block;
+    height: auto; }
+    .location-card .location-filter img {
+      width: 100%;
+      height: 150px; }
+    .location-card .location-filter h3 {
+      display: inline-block;
+      width: 100%;
+      text-transform: uppercase;
+      color: #009eb4;
+      font-weight: bold;
+      padding-top: 45px;
+      padding-bottom: 20px;
+      font-size: 18px; }
+    .location-card .location-filter label {
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 5px 0px;
+      color: #333333; }
+  .location-card .location-form {
+    display: inline-block;
+    width: 100%;
+    height: auto; }
+    .location-card .location-form select {
+      color: #8c8c8c;
+      font-size: 14px; }
+  .location-card .card-items {
+    display: inline-block;
+    /*Pagination*/ }
+    .location-card .card-items .card {
+      display: inline-block;
+      border: none;
+      height: 270px;
+      margin-bottom: 20px;
+      width: 100%; }
+      .location-card .card-items .card::before, .location-card .card-items .card::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: scale3d(0, 0, 1);
+        -webkit-transition: transform .3s ease-out 0s;
+        -moz-transition: transform .3s ease-out 0s;
+        -ms-transition: transform .3s ease-out 0s;
+        -o-transition: transform .3s ease-out 0s;
+        transition: transform .3s ease-out 0s;
+        background: rgba(255, 255, 255, 0.1);
+        content: '';
+        pointer-events: none;
+        z-index: 1; }
+      .location-card .card-items .card::before {
+        transform-origin: left top; }
+      .location-card .card-items .card::after {
+        transform-origin: right bottom; }
+      .location-card .card-items .card:hover::before, .location-card .card-items .card:hover::after, .location-card .card-items .card:focus::before, .location-card .card-items .card:focus::after {
+        transform: scale3d(1, 1, 1); }
+      .location-card .card-items .card .card-img-top {
+        position: abolute;
+        top: 0;
+        text-overflow: hidden; }
+      .location-card .card-items .card .card-body {
+        position: absolute;
+        bottom: -7%;
+        width: 100%;
+        background: white;
+        padding: 1rem; }
+      .location-card .card-items .card .card-title {
+        color: #464646;
+        font-weight: bold;
+        font-size: 18px; }
+      .location-card .card-items .card .card-text {
+        transition: opacity 0.5s ease-out;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        z-index: 400; }
+      .location-card .card-items .card:hover .card-text {
+        opacity: 1;
+        height: auto;
+        margin: 0px 0px 10px 0px; }
+      .location-card .card-items .card .worksheet p {
+        color: #8e8e8e;
+        font-size: 14px; }
+      .location-card .card-items .card .fa-star {
+        color: #ffba33;
+        width: 13px;
+        height: 13px; }
+    .location-card .card-items .page-item {
+      margin-left: 8px; }
+      .location-card .card-items .page-item .page-link {
+        width: 35px;
+        height: 35px;
+        background-color: #e3e7e7;
+        border-radius: 50%;
+        padding: .5rem .5rem; }
+        .location-card .card-items .page-item .page-link span {
+          padding-left: 0.3rem; }
+      .location-card .card-items .page-item.active .page-link {
+        background-color: #009eb4; }
+
+/*Footer*/
+.footer {
+  clear: both; }
+
+@media screen and (max-width: 767px) {
+  .card-items {
+    display: block;
+    width: 100%; } }
+@media screen and (max-width: 667px) {
+  .subpage_slideshow {
+    top: 10% !important; }
+
+  .page-breadcrumb {
+    bottom: 15% !important; } }
+@media screen and (max-width: 480px) {
+  .subpage_slideshow {
+    top: 15% !important; }
+
+  .page-breadcrumb {
+    bottom: 25% !important; }
+    .page-breadcrumb a {
+      font-size: 0.8rem; }
+
+  .school-subpage .card .card-block {
+    bottom: 0; } }
+/*Menu*/
+/*Breadcrum*/
+.breadcrum-detail {
+  float: left;
+  width: 100%;
+  height: auto; }
+  .breadcrum-detail .page-breadcrumb {
+    top: 90px; }
 
 /*# sourceMappingURL=style.css.map */
