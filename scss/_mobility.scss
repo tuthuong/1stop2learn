@@ -1,36 +1,49 @@
-@media (max-width:1199px){
-	.main-nav {
-		> ul {
-			> li{
-				> a{
-					padding: 10px;
-				}
-			}
-		}
-	}
-	.header-bottom .container::after{
-		top: 4.5em;
-	}
-	.slide-banner .carousel{
-		height: 555px;
-	}
+@media (max-width:1199px) {
+    .main-nav {
+        > ul {
+            > li {
+                > a {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .header-bottom .container::after {
+        top: 4.5em;
+    }
+
+    .slide-banner .carousel {
+        height: 555px;
+    }
 }
-@media (max-width:991px){
-    .header-top .header-contact-top ul li::after{
+
+@media (max-width:991px) {
+    .header-top .header-contact-top ul li::after {
         margin: 0 5px;
     }
+
     .header-bottom {
         padding: 10px 0;
     }
+
     .header-bottom .container::after {
         top: 7.5em;
     }
 }
-@media screen and (max-width: 480px){
-    .school-and-center .slick-slide{
+
+@media screen and (max-width: 767px) {
+    .school-and-center h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .school-and-center .slick-slide {
         height: 350px;
     }
-    .school-and-center .card .card-block{
+
+    .school-and-center .card .card-block {
         bottom: 50px;
     }
 }
@@ -240,6 +253,7 @@
                 font-size: 16px;
                 padding-left: 24px;
                 display: block;
+
                 &:before {
                     top: -9px;
                     left: 14px;
@@ -279,6 +293,7 @@
 
     .school-and-center .list a {
         margin: 8px 0px;
+        width: 100%;
     }
 
     .school-and-center .row-equal .card {
