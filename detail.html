@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Education Course</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link href="css/animate.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/flatpickr.min.css">
+    <link href="fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet" />
+    <link href="fancybox/helpers/jquery.fancybox-thumbs.css" type="text/css" rel="stylesheet" />	
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="js/jquery-2.2.1.min.js"></script> -->
+    
+</head>
+
+
+<body>
+     <!-- Header -->
+    <header>
+        <!-- <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-8">
+                        <div class="header-contact-top">
+                            <ul>
+                                <li> 
+                                    <a href="#"><i class="icon-support" aria-hidden="true"></i> Tư vấn miễn phí</a>
+                                    
+                                    
+                                </li>
+                                <li> 
+                                    <a href="tel:0938887688"><i class="icon-hotline" aria-hidden="true"></i> 0938 88 76 88</a>
+                                </li>
+                                <li> 
+                                    <i class="fa fa-map-marker"></i>
+                                    <select name="" class="location">
+                                        <option value="">TP Hồ Chí Minh</option>
+                                        <option value="">Hà Nội</option>
+                                        <option value="">Đà Nẵng</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>						
+                    <div class="col-lg-3 col-md-4 cart-link text-right">
+                            <ul>
+                                <li class="cart"><a href="#"><i class="icon-cart"></i></a></li>
+                                <li class="account"><a href="#"><i class="icon-login"></i> Đăng nhập</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row row-ibl">
+                    <div class="col-lg-3 col-xs-12 md-center logo-top">
+                        <a class="logo" href="#" title="">
+                            <img src="images/logo.png" alt="" title=""/>
+                        </a>
+                    </div>
+                    <div class="col-lg-9 col-xs-12 md-center lg-right static">
+                        <nav class="main-nav">
+                            <ul>
+                                <li class="active"><a class="smooth" href="#" title="">Trường</a></li>
+                                <li><a class="smooth" href="#" title="">Khóa học</a></li>
+                                <li><a class="smooth" href="#" title="">Giáo viên</a>
+                                    <ul>
+                                        <li><a class="smooth" href="#" title="">Giáo viên 1</a></li>
+                                        <li><a class="smooth" href="#" title="">Giáo viên 2</a></li>
+                                        <li><a class="smooth" href="#" title="">Giáo viên 3</a></li>
+                                        <li><a class="smooth" href="#" title="">Giáo viên 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="smooth" href="#" title="">Lớp học</a></li>
+                                <li><a class="smooth" href="#" title="">Học bổng</a></li>
+                                <li class="actions">
+                                        <a href="javascript:void(0);"><span class="action search"><i class="icon-search"></i></span></a>
+                                    <div class="action-control-search">
+                                        <div class="form">
+                                                <input id="search" type="text" name="" value="" placeholder="Nhập từ cần tìm..." class="input-text" maxlength="128">
+                                                <span class="input-group-addon">
+                                                <button type="submit">
+                                                    <span class="fa fa-search"></span>
+                                                </button>  
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <button class="menu-btn nav-open d-lg-none" type="button"><i></i></button>
+    </header>
+    <div class="m-nav d-md-none">
+			<button class="menu-btn act nav-close" type="button"><i></i></button>
+			<div class="nav-ct"></div>
+		</div>
+    <!-- end Header -->
+    <!-- Content Detail -->
+    <div class="page-main-detail">
+        <div class="container detail-content">
+            <div class="row">
+                <div class="page-breadcrumb">
+                    <nav class="breadcrumb">
+                        <a href="#" class="breadcrumb-item">Trang chủ</a>
+                        <a href="#" class="breadcrumb-item">Trường học</a>
+                        <a href="#" class="breadcrumb-item">Chi tiết trường học</a>
+                    </nav>
+                </div>
+                <!-- Content detail with Branch collapse (Accordion) -->
+                <div class="col-md-8 col-lg-9 col-sm-12 col-12 contents">
+                    <h3>Trường đại học Kinh tế TP. Hồ Chí minh</h3>
+                    <div class="row no-gutters">
+                        <a href="#"><span class="fa fa-star"></span></a>
+                        <a href="#"><span class="fa fa-star"></span></a>
+                        <a href="#"><span class="fa fa-star"></span></a>
+                        <a href="#"><span class="fa fa-star"></span></a>
+                        <a href="#"><span class="fa fa-star"></span></a>
+                        <p class="voted">365 đánh giá</p>
+                        <p class="text-justify article-address"><i class="fa fa-map-marker"></i>59C Nguyễn Ðình Chiểu, phường 6, quận 3, TP. Hồ Chí Minh</p>
+                        <p class="contact-info">
+                            <span><i class="fa fa-volume-control-phone"></i>84.28.38295299</span>
+                            <span class="e-mail"><i class="fa fa-envelope-open"></i>info@ueh.edu.vn</span>
+                            <span><i class="fa fa-globe" aria-hidden="true"></i>www.ueh.edu.vn/</span>
+                        </p>
+                    </div>
+                    <!-- Content with image gallery -->
+                    <div class="info-main">
+                        <div class="pro-imgs">
+                            <div class="main-pro-img">
+                                <div class="item">
+                                    <a class="fancybox" rel="gallery" data-fancybox="images" data-thumbnail="images/content-image-big.jpg" data-type="image" href="images/content-image-big.jpg" title="" >
+                                        <img src="images/content-image-big.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="item slick-slide">
+                                    <a class="fancybox" rel="gallery" data-fancybox="images" data-thumbnail="images/content-image-big.jpg" data-type="image" href="images/content-image-big.jpg" title="" >
+                                        <img src="images/content-image-big.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="item slick-slide">
+                                    <a class="fancybox" rel="gallery" data-fancybox="images" data-thumbnail="images/content-image-big.jpg" data-type="image" href="images/content-image-big.jpg" title="" >
+                                        <img src="images/content-image-big.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="item slick-slide">
+                                    <a class="fancybox" rel="gallery" data-fancybox="images" data-thumbnail="images/content-image-big.jpg" data-type="image" href="images/content-image-big.jpg" title="" >
+                                        <img src="images/content-image-big.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="item slick-slide">
+                                    <a class="fancybox" rel="gallery" data-fancybox="images" data-thumbnail="images/content-image-big.jpg" data-type="image" href="images/content-image-big.jpg" title="">
+                                        <img src="images/content-image-big.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="pro-thumb">
+                                <div class="item">
+                                    <img src="images/content-image-big.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="images/content-image-big.jpg" alt="">                       
+                                </div>
+                                <div class="item">
+                                    <img src="images/content-image-big.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="images/content-image-big.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="images/content-image-big.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <p class="img-gallery"> 
+                            <a data-fancybox-trigger="gallery" href="javascript:;" class="big-image">
+                                <img src="images/content-image-big.jpg" alt="" />
+                            </a>                         
+                            <a href="images/content-image-big.jpg" data-fancybox="gallery" data-caption="Caption #1" class="img-thumbnail img-padding">
+                                <img src="images/content-image.jpg" alt="Thumnail image" />
+                            </a> 
+                            <a href="images/content-image-big.jpg" data-fancybox="gallery" data-caption="Caption #1" class="img-thumbnail img-padding">
+                                <img src="images/content-image.jpg" alt="Thumnail image"  />
+                            </a>
+                            <a href="images/content-image-big.jpg" data-fancybox="gallery" data-caption="Caption #1"  class="img-thumbnail img-padding">
+                                <img src="images/content-image.jpg" alt="Thumnail image" />
+                            </a>
+                            <a href="images/content-image-big.jpg" data-fancybox="gallery" data-caption="Caption #1" class="img-thumbnail">
+                                <img src="images/content-image.jpg" alt="Thumnail image"  />
+                            </a>                   
+                        </p> -->
+                        <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                        <br>
+                        <br>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        <br>
+                        <br>
+                        Dlorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+                        </p>
+                        <a href="" class="btn-detail"><i class="fa fa-arrow-circle-right"></i>Chi tiết</a>
+                    </div>
+                    <!-- Branch School and Center collapse (Accordion) -->
+                    <div class="row school-branch">
+                        <h1>Chi nhanh trường / Trung tâm</h1>
+                        <!-- collapse -->
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <!-- Tab collapse -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                            <i class="fa fa-plus-circle float-right minus" aria-hidden="true"></i>
+                                            Chi nhánh 1
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-1" class="collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="row col-12 no-gutters">
+                                            <div class="col-3">
+                                                <p class="label">Địa chỉ</p>
+                                                <p class="label">Email</p>
+                                                <p class="label">Số điện thoại</p>
+                                            </div>
+                                            <div class="col-1">
+                                                <div class="line"></div>
+                                            </div>
+                                            <div class="col-8">
+                                                <p>ABC LÊ Duẩn, Q.1, Tp. HCM</p>
+                                                <p>info@gmail.com</p>
+                                                <p>0909 090909</p>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Tab Collapse -->
+                            <!-- Tab collapse -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="true">
+                                            <i class="fa fa-plus-circle float-right minus" aria-hidden="true"></i>
+                                            Chi nhánh 2
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-2" class="collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="row col-12 no-gutters">
+                                            <div class="col-3">
+                                                <p class="label">Địa chỉ</p>
+                                                <p class="label">Email</p>
+                                                <p class="label">Số điện thoại</p>
+                                            </div>
+                                            <div class="col-1">
+                                                <div class="line"></div>
+                                            </div>
+                                            <div class="col-8">
+                                                <p>ABC LÊ Duẩn, Q.1, Tp. HCM</p>
+                                                <p>info@gmail.com</p>
+                                                <p>0909 090909</p>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Tab Collapse -->
+                            <!-- Tab collapse -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="true">
+                                            <i class="fa fa-plus-circle float-right minus" aria-hidden="true"></i>
+                                            Chi nhánh 3
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-3" class="collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="row col-12 no-gutters">
+                                            <div class="col-3">
+                                                <p class="label">Địa chỉ</p>
+                                                <p class="label">Email</p>
+                                                <p class="label">Số điện thoại</p>
+                                            </div>
+                                            <div class="col-1">
+                                                <div class="line"></div>
+                                            </div>
+                                            <div class="col-8">
+                                                <p>ABC LÊ Duẩn, Q.1, Tp. HCM</p>
+                                                <p>info@gmail.com</p>
+                                                <p>0909 090909</p>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Tab Collapse -->
+                            <!-- Tab collapse -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="true">
+                                            <i class="fa fa-plus-circle float-right minus" aria-hidden="true"></i>
+                                            Chi nhánh 4
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-4" class="collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="row col-12 no-gutters">
+                                            <div class="col-3">
+                                                <p class="label">Địa chỉ</p>
+                                                <p class="label">Email</p>
+                                                <p class="label">Số điện thoại</p>
+                                            </div>
+                                            <div class="col-1">
+                                                <div class="line"></div>
+                                            </div>
+                                            <div class="col-8">
+                                                <p>ABC LÊ Duẩn, Q.1, Tp. HCM</p>
+                                                <p>info@gmail.com</p>
+                                                <p>0909 090909</p>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Tab Collapse -->
+                        </div>
+                        <!-- end collapse -->
+                    </div>
+                </div>
+                <!-- Left Side -->
+                <div class="col-md-4 col-lg-3 col-sm-12 col-12 support-filter">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.589948823473!2d106.63852683134176!3d10.766051892193106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e9990941ae1%3A0x62719997dfc801f9!2zQ8O0bmcgVmnDqm4gVsSDbiBIw7NhIMSQ4bqnbSBTZW4!5e0!3m2!1svi!2s!4v1545449762922" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="support">
+                        <h3>Tư vấn chọn Đại học Kinh Tế Tp.HCM</h3>
+                        <div class="line"></div>
+                        <div class="row col-12 support-form">
+                            <form role="form">    
+                                <div class="form-group">                                    
+                                    <input type="text" name="" class="form-control" placeholder="Họ và tên">
+                                </div>                            
+                               
+                                <input type="text" name="" class="form-control w-100" placeholder="Chuyên ngành bạn muốn học">
+                                <input type="text" name="" class="form-control w-100" placeholder="Số điện thoại">
+                                <input type="text" name="" class="form-control w-100" placeholder="Địa chỉ email">
+                            </form>
+                        </div>
+                        <div class="row col-12 no-gutters justify-content-center">
+                            <a href="" class="btn-info btn">Đăng ký</a>
+                        </div>
+                    </div>
+                    <!-- Related Schools -->
+                    <div class="related-schools">
+                        <h2>Các trường liên quan</h2>                        
+                        <div class="row no-gutters">
+                            <!-- Related schools -->
+                            <div class="col-md-4 col-lg-4 col-sm-2 col-3">
+                                <a href="" class="ima"><img src="images/university.jpg" class="img-fluid" alt="University Image"></a>
+                            </div>
+                            <div class="col-md-8 col-lg-8 col-sm-4 col-9 school-item">
+                                <h3><a href="">Trường Đại học Ngân Hàng TP.HCM</a></h3>
+                                <div class="row no-gutters">
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <p class="voted">365 đánh giá</p>                                    
+                                </div>
+                                <div class="row no-gutters">
+                                    <a href="#" class="btn-detail">
+                                        <i class="fa fa-arrow-circle-right"></i>Chi tiết
+                                    </a>
+                                </div>
+                            </div>                       
+                            <!-- End Related School -->
+                            <!-- Related schools -->
+                            <div class="col-md-4 col-lg-4 col-sm-2 col-3">
+                                <a href="" class="ima"><img src="images/university.jpg" class="img-fluid" alt="University Image"></a>
+                            </div>
+                            <div class="col-md-8 col-lg-8 col-sm-4 col-9 school-item">
+                                <h3><a href="">Trường Đại học Ngân Hàng TP.HCM</a></h3>
+                                <div class="row no-gutters">
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <p class="voted">365 đánh giá</p>                                    
+                                </div>
+                                <div class="row no-gutters">
+                                    <a href="#" class="btn-detail">
+                                        <i class="fa fa-arrow-circle-right"></i>Chi tiết
+                                    </a>
+                                </div>
+                            </div>                       
+                            <!-- End Related School -->
+                            <!-- Related schools -->
+                            <div class="col-md-4 col-lg-4 col-sm-2 col-3">
+                                <a href="" class="ima"><img src="images/university.jpg" class="img-fluid" alt="University Image"></a>
+                            </div>
+                            <div class="col-md-8 col-lg-8 col-sm-4 col-9 school-item">
+                                <h3><a href="">Trường Đại học Ngân Hàng TP.HCM</a></h3>
+                                <div class="row no-gutters">
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <p class="voted">365 đánh giá</p>                                    
+                                </div>
+                                <div class="row no-gutters">
+                                    <a href="#" class="btn-detail">
+                                        <i class="fa fa-arrow-circle-right"></i>Chi tiết
+                                    </a>
+                                </div>
+                            </div>                       
+                            <!-- End Related School -->
+                            <!-- Related schools -->
+                            <div class="col-md-4 col-lg-4 col-sm-2 col-3">
+                                <a href="" class="ima"><img src="images/university.jpg" class="img-fluid" alt="University Image"></a>
+                            </div>
+                            <div class="col-md-8 col-lg-8 col-sm-4 col-9 school-item">
+                                <h3><a href="">Trường Đại học Ngân Hàng TP.HCM</a></h3>
+                                <div class="row no-gutters">
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <p class="voted">365 đánh giá</p>                                    
+                                </div>
+                                <div class="row no-gutters">
+                                    <a href="#" class="btn-detail">
+                                        <i class="fa fa-arrow-circle-right"></i>Chi tiết
+                                    </a>
+                                </div>
+                            </div>                       
+                            <!-- End Related School -->
+                            <!-- Related schools -->
+                            <div class="col-md-4 col-lg-4 col-sm-2 col-3">
+                                <a href="" class="ima"><img src="images/university.jpg" class="img-fluid" alt="University Image"></a>
+                            </div>
+                            <div class="col-md-8 col-lg-8 col-sm-4 col-9 school-item">
+                                <h3><a href="">Trường Đại học Ngân Hàng TP.HCM</a></h3>
+                                <div class="row no-gutters">
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <p class="voted">365 đánh giá</p>                                    
+                                </div>
+                                <div class="row no-gutters">
+                                    <a href="#" class="btn-detail">
+                                        <i class="fa fa-arrow-circle-right"></i>Chi tiết
+                                    </a>
+                                </div>
+                            </div>                       
+                            <!-- End Related School -->
+                            <!-- Related schools -->
+                            <div class="col-md-4 col-lg-4 col-sm-2 col-3">
+                                <a href="" class="ima"><img src="images/university.jpg" class="img-fluid" alt="University Image"></a>
+                            </div>
+                            <div class="col-md-8 col-lg-8 col-sm-4 col-9 school-item">
+                                <h3><a href="">Trường Đại học Ngân Hàng TP.HCM</a></h3>
+                                <div class="row no-gutters">
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <p class="voted">365 đánh giá</p>                                    
+                                </div>
+                                <div class="row no-gutters">
+                                    <a href="#" class="btn-detail">
+                                        <i class="fa fa-arrow-circle-right"></i>Chi tiết
+                                    </a>
+                                </div>
+                            </div>                       
+                            <!-- End Related School -->
+                            <!-- Related schools -->
+                            <div class="col-md-4 col-lg-4 col-sm-2 col-3">
+                                <a href="" class="ima"><img src="images/university.jpg" class="img-fluid" alt="University Image"></a>
+                            </div>
+                            <div class="col-md-8 col-lg-8 col-sm-4 col-9 school-item">
+                                <h3><a href="">Trường Đại học Ngân Hàng TP.HCM</a></h3>
+                                <div class="row no-gutters">
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <p class="voted">365 đánh giá</p>                                    
+                                </div>
+                                <div class="row no-gutters">
+                                    <a href="#" class="btn-detail">
+                                        <i class="fa fa-arrow-circle-right"></i>Chi tiết
+                                    </a>
+                                </div>
+                            </div>                       
+                            <!-- End Related School -->
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list-course">
+        <div class="container">
+            <h1 class="text-center col-12">Khoá học của trường</h1>
+            <div class="list text-center align-middle ">
+                <a href="" class="btn active col-md-3 col-sm-6 col-12">Tất cả</a>
+                <a href="" class="btn same col-md-3 col-sm-6 col-12">Khoá học nổi bật</a>
+                <a href="" class="btn same col-md-3 col-sm-6 col-12">Khóa học mới</a>
+            </div>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 col-lg-4 col-sm-6 col-12 no-gutters">
+                    <div class="card card-item-type-1">
+                        <a href="#">
+                            <img src="images/course-1.jpg" class="card-img-top img-fluid" alt="Khoa hoc 1">
+                        </a>                        
+                        <div class="card-body no-gutters">
+                            <a href="#">
+                                <h5 class="card-title item1">Principles of Written English, Part 2</h5>
+                            </a>
+                            <div class="card-text">
+                                <div class="left-side float-left">
+                                    <p class="language text-left">Language</p>
+                                    <a href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="line"></div>
+                                <div class="right-side float-right">
+                                    <p class="time text-right"><span class="fa fa-clock-o"></span> 30 ngày</p>
+                                    <p class="fee text-right">10.000.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay1">
+                            <div class="overlay-content">
+                                <a href="#">
+                                    <h5 class="card-title text-left">Principles of Written English, Part 2</h5>
+                                </a>
+                                <a href="#" class="btn btn-light btn-buy">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End card -->
+                <!-- Card 2 -->
+                <div class="col-md-4 col-lg-4 col-sm-6 col-12 no-gutters">
+                    <div class="card card-item-type-2">
+                        <a href="#">
+                            <img src="images/course-2.jpg" class="card-img-top img-fluid" alt="Khoa hoc 2">
+                        </a>                       
+                        <div class="card-body no-gutters">
+                            <a href="#">
+                                <h5 class="card-title item2">Principles of Written English, Part 2</h5>
+                            </a>
+                            <div class="card-text">
+                                <div class="left-side float-left">
+                                    <p class="language text-left">Language</p>
+                                    <a href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="line"></div>
+                                <div class="right-side float-right">
+                                    <p class="time text-right"><span class="fa fa-clock-o"></span> 30 ngày</p>
+                                    <p class="fee text-right">10.000.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay2">
+                            <div class="overlay-content">
+                                <a href="#">
+                                    <h5 class="card-title text-left">Principles of Written English, Part 2</h5>
+                                </a>
+                                <a href="#" class="btn btn-light btn-buy">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End card -->
+                <!-- Card 3 -->
+                <div class="col-md-4 col-lg-4 col-sm-6 col-12 no-gutters">
+                    <div class="card card-item-type-3">
+                        <a href="#">
+                            <img src="images/course-3.jpg" class="card-img-top img-fluid" alt="Khoa hoc 3">
+                        </a>                       
+                        <div class="card-body no-gutters">
+                            <a href="#">
+                                <h5 class="card-title item3">Principles of Written English, Part 2</h5>
+                            </a>
+                            <div class="card-text">
+                                <div class="left-side float-left">
+                                    <p class="language text-left">Language</p>
+                                    <a href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="line"></div>
+                                <div class="right-side float-right">
+                                    <p class="time text-right"><span class="fa fa-clock-o"></span> 30 ngày</p>
+                                    <p class="fee text-right">10.000.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay3">
+                            <div class="overlay-content">
+                                <a href="#">
+                                    <h5 class="card-title text-left">Principles of Written English, Part 2</h5>
+                                </a>
+                                <a href="#" class="btn btn-light btn-buy">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End card -->
+                <!-- Card 4 -->
+                <div class="col-md-4 col-lg-4 col-sm-6 col-12 no-gutters">
+                    <div class="card card-item-type-3">
+                        <a href="#">
+                            <img src="images/course-4.jpg" class="card-img-top img-fluid" alt="Khoa hoc 4">
+                        </a>                        
+                        <div class="card-body no-gutters">
+                            <a href="#">
+                                <h5 class="card-title item3">Principles of Written English, Part 2</h5>
+                            </a>
+                            <div class="card-text">
+                                <div class="left-side float-left">
+                                    <p class="language text-left">Language</p>
+                                    <a href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="line"></div>
+                                <div class="right-side float-right">
+                                    <p class="time text-right"><span class="fa fa-clock-o"></span> 30 ngày</p>
+                                    <p class="fee text-right">10.000.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay3">
+                            <div class="overlay-content">
+                                <a href="#">
+                                    <h5 class="card-title text-left">Principles of Written English, Part 2</h5>
+                                </a>
+                                <a href="#" class="btn btn-light btn-buy">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End card -->
+                <!-- Card 5 -->
+                <div class="col-md-4 col-lg-4 col-sm-6 col-12 no-gutters">
+                    <div class="card card-item-type-1">
+                        <a href="#">
+                            <img src="images/course-5.jpg" class="card-img-top img-fluid" alt="Khoa hoc 2">
+                        </a>                        
+                        <div class="card-body no-gutters">
+                            <a href="#">
+                                <h5 class="card-title item1">Principles of Written English, Part 2</h5>
+                            </a>
+                            <div class="card-text">
+                                <div class="left-side float-left">
+                                    <p class="language text-left">Language</p>
+                                    <a href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="line"></div>
+                                <div class="right-side float-right">
+                                    <p class="time text-right"><span class="fa fa-clock-o"></span> 30 ngày</p>
+                                    <p class="fee text-right">10.000.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay1">
+                            <div class="overlay-content">
+                                <a href="#">
+                                    <h5 class="card-title text-left">Principles of Written English, Part 2</h5>
+                                </a>
+                                <a href="#" class="btn btn-light btn-buy">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End card -->
+                <!-- Card 6 -->
+                <div class="col-md-4 col-lg-4 col-sm-6 col-12 no-gutters">
+                    <div class="card card-item-type-2">
+                        <a href="#">
+                            <img src="images/course-6.jpg" class="card-img-top img-fluid" alt="Khoa hoc 2">
+                        </a>                      
+                        <div class="card-body no-gutters">
+                            <a href="#">
+                                <h5 class="card-title item2">Principles of Written English, Part 2</h5>
+                            </a>
+                            <div class="card-text">
+                                <div class="left-side float-left">
+                                    <p class="language text-left">Language</p>
+                                    <a href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="line"></div>
+                                <div class="right-side float-right">
+                                    <p class="time text-right"><span class="fa fa-clock-o"></span> 30 ngày</p>
+                                    <p class="fee text-right">10.000.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay2">
+                            <div class="overlay-content">
+                                <a href="#">
+                                    <h5 class="card-title text-left">Principles of Written English, Part 2</h5>
+                                </a>
+                                <a href="#" class="btn btn-light btn-buy">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End card -->                
+            </div>
+            <div class="row mx-auto justify-content-center">
+                <a href="#" class="btn btn-more col-sm-12 col-md-auto">Xem thêm</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+			<div class="container">
+				<div class="row row-ibl">
+					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp about">
+						<!-- <h4 class="f-title">Giới thiệu về <span class="company">Song Phát</span></h4> -->
+						<div class="about-company">
+							<img src="images/logo-foot.png" alt="" />
+							<p>184 Hong Ha Str, Ward. 9, Phu Nhuan District, Ho Chi Minh City</p>
+						</div>
+						<div class="f-line">
+							<i class="icon-hotline"></i> <strong>Hotline:</strong> (028) 6288 4260
+						</div>
+						<div class="f-line">
+							<i class="icon-email"></i> <strong>Email:</strong> info@1stop2learn.com
+						</div>
+						<div class="f-line">
+							<img src="images/logo-bct.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp our-blog" data-wow-delay="0.2s">
+						<h4 class="f-title">Our Blogs</h4>
+						<ul>
+							<li>
+								<div class="fea-img">
+									<img src="images/foot-our-blog-1.png" alt="">
+								</div>
+								<div class="content-news">
+									<h3 class="title_news">
+										<a href="#" title="">
+											New Science Research Facility in NewYork American
+										</a>
+									</h3>
+									<p class="post-cate">November 24 - 2018</p>
+								</div>
+							</li>
+							<li>
+								<div class="fea-img">
+									<img src="images/foot-our-blog-1.png" alt="">
+								</div>
+								<div class="content-news">
+									<h3 class="title_news">
+										<a href="#" title="">
+											New Science Research Facility in NewYork American
+										</a>
+									</h3>
+									<p class="post-cate">November 24 - 2018</p>
+								</div>
+							</li>
+							<li>
+								<div class="fea-img">
+									<img src="images/foot-our-blog-1.png" alt="">
+								</div>
+								<div class="content-news">
+									<h3 class="title_news">
+										<a href="#" title="">
+											New Science Research Facility in NewYork American
+										</a>
+									</h3>
+									<p class="post-cate">November 24 - 2018</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4  col-sm-6 col-xs-12 wow fadeInUp info-link" data-wow-delay="0.2s">
+						<h4 class="f-title">Liên kết với chúng tôi</h4>
+						<ul class="social-link">
+							<li>
+								<a href="#">
+									<img src="images/zalo.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/youtube.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/facebook.png" alt="">
+								</a>
+							</li>
+						</ul>
+						<h4 class="f-title">Newsletter</h4>
+						<p>Đăng ký nhận thông tin miễn phí từ chúng tôi</p>
+						<form class="subs-form">
+							<input type="text" placeholder="Nhập địa chỉ email của bạn">
+							<button type="submit">Go</button>
+						</form>
+						<h4 class="f-title">Mobile app</h4>
+						<ul class="social-link">
+							<li>
+								<a href="#">
+									<img src="images/app-icon.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+    </footer>
+    <div class="foot">
+        <div class="container">
+            <span class="f-left">© Copyright 2018 by 1stop2learn. All Right Reserved.</span>
+           <span><img src="images/icon-foot.png" alt=""></span>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="js/wow.js" defer></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="fancybox/jquery.fancybox.pack.js" defer></script>
+    <script src="fancybox/helpers/jquery.fancybox-thumbs.js" defer></script>
+    <script src="js/flatpickr.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>

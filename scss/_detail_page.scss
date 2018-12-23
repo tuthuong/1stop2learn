@@ -1,0 +1,356 @@
+/*Menu*/
+/*Breadcrum*/
+.breadcrum-detail{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: auto;
+	.page-breadcrumb{
+		top: 90px;
+		.breadcrumb{
+			padding-left: 0;
+    		margin-left: 0;
+		}
+	}
+}
+.info-main{
+	.pro-imgs{
+		margin-left:-5px;
+	}
+	.main-pro-img{
+		.slick-list{
+			margin: 0;
+			.slick-slide{
+				margin: 0 5px;
+			}
+		}
+		.slick-slide {
+			img{
+				width:100%;
+			}
+		}
+	}
+	.pro-thumb{
+		.slick-list{
+			margin: 0;
+			.slick-slide{
+				margin: 10px 5px;
+				img{
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+/*Detail content*/
+.detail-content{
+	// display: inline-block;
+	// width: 100%;
+	// float: left;
+	// margin-top: 165px;
+	// background-color: green;	
+	.contents{
+		display: block;
+		width: 100%;
+		h3{
+			display: inline-block;
+			color: #009eb4;
+			font-size: 30px;
+			font-family: $font-stack;
+		}
+		span.fa-star{
+	    	padding-top: 1.2rem;    			
+			padding-bottom: 1.5rem;
+			padding-right: 1.2rem;
+	    }
+		p{
+			font-size: 14px;
+			padding-bottom: 0.5rem;
+    		margin: 0;    		
+			&.article-address{
+				display: inline-block;
+				width: 100%;				
+			}
+			& i.fa{
+				color: #009eb4;
+				padding-right: 0.5rem;
+			}
+			& span{
+				padding-right: 2rem;
+			}
+			&.img-gallery{
+				padding-top: 1.2rem;
+				a.big-image{
+					width: 100%;
+					height: 490px;
+				}
+				a.img-thumbnail{
+					float: left;
+					width: 25%;
+					height: 120px;
+					border: none;
+					padding: 0;
+					padding-top:0.5rem;
+					padding-bottom:0.5rem;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+				}
+				a.img-padding{
+					padding-right: 0.5rem;
+				}
+			}
+		}
+		
+		a.btn-detail{
+			padding-top: 0.8rem;
+		}
+		.school-branch{
+			display: block;
+			width: 100%;
+			h1{
+				width: 100%;
+				text-transform: uppercase;
+				color: #333333;
+				font-size: 24px;
+				padding: 1rem 0;
+			}
+			.panel-group .panel {
+				border-radius: 0;
+				box-shadow: none;
+				border-color: #EEEEEE;
+			}
+
+			.panel-default > .panel-heading
+			{
+				padding: 0;
+				border-radius: 0;
+				color: #212121;
+				// background-color: #FAFAFA;
+				border-color: #EEEEEE;
+				padding:0.5rem 0;
+				h4{
+					color: #009eb4;
+					text-transform: uppercase;
+					font-size: 16px;
+					display: inline-block;
+					width: 100%;
+					padding-left: 1.5rem;
+					background-color: #e9e9e9;
+					font-weight: 600;
+					i.fa, i.minus{
+						padding-top: 0.2rem;
+						font-size: 18px;
+					}
+				}
+			}
+
+			.panel-title {
+				font-size: 14px;
+				 a {
+					display: block;
+					padding: 15px;
+					text-decoration: none;
+				}
+			}		
+			.panel-default > .panel-heading + .panel-collapse > .panel-body {
+				border-top-color: #EEEEEE;				
+			}
+			.panel-body{
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+				p{
+					padding: 0.5rem 0;
+					font-size: 14px;
+					color: #666666;					
+				}
+				p.label{
+					padding-left: 1.5rem;
+				}
+				.line{
+					width: 2px;	
+					margin-top: 0.5rem;	
+					height: 90%;			
+					background: #e9e9e9;
+				}
+			}
+		}
+	}
+	.support-filter{
+		display: inline-block;
+		width: 100%;
+		.location img{
+			width: 100%;
+			height: 175px;
+			margin-bottom: 1.8rem;
+		}
+		.support{
+			display: block;
+			width: 100%;
+			height: auto;
+			border-radius: 5px;
+			box-sizing: border-box;
+			border: 1px solid #17a2b8;
+			h3{
+				display: inline-block;
+				width: 100%;
+				font-size: 18px;
+				color: #333333;
+				font-weight: bold;
+				padding: 1.5rem 2rem 0.5rem 2rem;
+				// text-align: center;
+			}
+			.line{
+				display: block;
+				width: 80%;
+				height: 2px;
+				background: #17a2b8;
+				margin: 0 auto;
+				// float: left;
+			}
+			.support-form{
+				// float: left;
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				// background: green;
+				form{
+					width: 90%;
+					margin-left: 5%;
+				}
+				input{
+					margin-top: 1rem;
+					width: 100%;
+					font-size: 14px;
+					color: #b9b9b9;
+					font-weight: bold;
+					border-radius: 5px;
+					background-color: rgba(0,158,180,0);
+					border: 1px solid #aeaeae;
+					padding: 0.6rem 1rem;
+				}
+			}
+			a.btn-info{
+				margin: 0 auto;
+				width: 90%;
+				margin: 1rem 0;
+			}
+		}
+		/*Related schools*/	
+		.related-schools{
+			display: block;
+			width: 100%;
+			margin-top: 2rem;
+			padding-bottom: 0;
+			h2{
+				display: block;
+				width: 100%;
+				text-transform: uppercase;
+				font-size: 18px;
+				color: #009eb4;
+				font-weight: bold;
+				padding-bottom: 1rem;
+			}
+			a.ima{
+				overflow: hidden;
+				display: flex;
+				width: 100%;
+				height: 80px;
+				margin-right: 0.5rem;
+				margin-bottom: 1.2rem;
+				img{
+					height: 100%;
+					// padding-right: 0.5rem;
+					margin-top: 0.5rem;
+	    			margin-bottom: 1rem;
+	    			transition: all 0.5s ease;
+				}
+				&:hover img{
+					transform: scale(1.2);
+				}
+			}
+			.school-item{
+				display: inline-block;
+				width: 100%;
+				height: auto;
+				padding-left: 0.5rem;
+				h3{				
+					font-size: 14px;
+					color: #333333;
+					font-weight: bold;
+					a{
+						padding-top: 0;
+					}
+				}
+				p.voted{
+					padding-top: 0.2rem;
+				}
+				a.btn-detail{
+					margin-top: -1rem;
+					&:hover{
+						color:yellow;
+					}
+				}
+				a{
+					&:hover{
+						color: #ffba33;
+					}
+					&.btn-detail:hover{
+						color: #ffba33;
+					}
+				}
+			}
+			
+		}	
+	}
+}
+.fa-star{
+	color: #ffba33;
+	width: 15px;
+	height: 15px;
+	padding: 0 1.2rem 0 0;
+}
+a.btn-detail{
+	color: #009eb4;
+	font-size: 14px;
+	font-weight: 600;
+
+	i.fa{
+		padding-right: 0.2rem;
+	}
+}
+p.voted{
+	display: inline-block;
+	color: #666666;
+	font-size: 12px;
+	font-style: italic;
+	// font-family: "Myriad Pro";
+	padding-left: 	1rem;
+	padding-top: 1rem;
+}
+/*Courses*/
+.list-course{
+	// position: unset;
+	// display: inline-block;
+	.btn-more{
+		margin-top: 2.5rem;
+    	margin-bottom: 5rem;
+	}
+}
+.page-main-detail{
+	padding-bottom: 30px;
+}
+@media screen and (max-width: 767px){
+	.support .line{
+		width: 86% !important;
+	}
+	.detail-content .contents .school-branch{
+		display: contents;
+	}
+}
+@media screen and (max-width: 480px){
+	.support .line{
+		width: 82% !important;
+	}
+}

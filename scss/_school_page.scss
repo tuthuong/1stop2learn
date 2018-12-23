@@ -1,0 +1,298 @@
+.second-menu{
+	display: inline-block;
+	width: 100%;
+	height: 85px;
+	background-color: green;
+	opacity: 0.5;
+	color: white;
+	text-transform: uppercase;
+}
+.second-slide-banner{
+	position: relative;
+	width: 100%;	
+	overflow: hidden;
+	height: 400px;
+	// margin-top: 30px;   
+    // background: blue;
+	.subpage_slideshow{
+		position: absolute;
+		top: 0;
+		display: inline-block;
+		width: 100%;		
+		img{
+			width: 100%;
+			height: 100%;
+		}
+
+	}	
+}
+/*Breadcrumb*/
+.page-breadcrumb{
+		// position: absolute;	
+		// background-color: white;
+		// bottom:0;		
+		// width: 100%;
+		// height: 75px;
+		.breadcrumb{
+			background: white;
+			margin-top: 0.8rem;
+			a{
+				font-size: 16px;
+				//text-transform: uppercase;
+				color: #bed62f;
+				font-family: $font-stack;
+			}
+			.breadcrumb-item+.breadcrumb-item::before{
+				color: #bed62f;
+			}
+		}
+}	
+
+/*School and Center*/
+.school-subpage{
+	background-color: white;	
+	h1.subpage{
+		height: auto;
+		padding-top: 40px;
+		padding-bottom: 0;
+	}
+	.card{
+		margin-bottom: 30px;
+		height: 470px;
+		.card-img-top-445{
+			height: 440px;
+		}
+		.item2{
+			background: $background-color-blue;
+		}
+		.item3{
+			background: $background-color-yellow;
+		}
+	}
+	.btn-more {
+        padding: 10px 20px;
+		text-transform: uppercase;
+		background:$background-color-green;
+		color: $background-color-white;
+		font-weight: bold;
+		font-size: 18px;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin: 0px auto;
+        -webkit-box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+		&:hover{
+			background:$background-color-blue;
+			color: $background-color-white;
+		}
+    }
+}
+.map{
+	max-height: 163px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	// border: 4px solid #fdbe50;
+	iframe{
+		width: 100%;
+		height: 157px;
+	  }
+}
+/*Location Filter and Course*/
+.location-card{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	// float: left;
+	.location-filter{
+		display: block;		
+		height: auto;
+		// float: left;
+		// width: 23%;
+		// margin-left: 1.5%;
+		img{
+			width: 100%;
+			height: 150px;
+		}
+		
+		h3{
+			display: inline-block;
+			width: 100%;
+			text-transform: uppercase;
+			color: #009eb4;
+			font-weight: bold;
+			padding-top: 45px;
+			padding-bottom: 20px;
+			font-size: 18px;
+		}
+		label{
+			text-transform: uppercase;
+			font-weight: bold;
+			padding: 5px 0px;
+			color: #333333;
+		}		
+	}
+	.location-form{
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		// position: static;
+		select{
+			color: #8c8c8c;
+			font-size: 14px;
+		}
+	}
+	.card-items{
+		display: inline-block;
+		// float: left;
+		// width: 73%;
+		// margin-left: 2.5%;
+		.card{
+			display: inline-block;
+			border: none;	
+			height: 270px;
+	    	margin-bottom: 20px;
+	    	width: 100%;
+			&::before,
+			&::after {
+			    position: absolute;
+			    top: 0;
+			    right: 0;
+			    bottom: 0;
+			    left: 0;
+			    transform: scale3d(0, 0, 1);
+			    -webkit-transition: transform .3s ease-out 0s;
+				-moz-transition: transform .3s ease-out 0s;
+				-ms-transition: transform .3s ease-out 0s;
+				-o-transition: transform .3s ease-out 0s;
+			    transition: transform .3s ease-out 0s;
+			    background: rgba(255, 255, 255, .1);
+			    content: '';
+			    pointer-events: none;	  
+			    z-index: 1; 
+			  }
+			  &::before {
+			    transform-origin: left top;
+			  }
+
+			  &::after {
+			    transform-origin: right bottom;
+			  }
+
+			 &:hover,
+			 &:focus {		  	
+			    &::before,
+			    &::after {
+			      transform: scale3d(1, 1, 1);	
+			      // background: rgba(29, 187, 144, .8);
+			    }
+			    		    
+			}		
+			.card-img-top{
+				position: abolute;
+				top: 0;
+				text-overflow: hidden;			
+			}
+			.card-body{
+				position: absolute;
+				bottom:-7%;
+				width: 100%;
+				background: white;
+				padding: 1rem;			 
+			}
+			.card-title{
+				color: #464646;
+				font-weight: bold;
+				font-size: 18px;
+			}
+			.card-text{		
+				// transition: opacity 0.5s ease-out;
+			    opacity: 0; 
+			    height: 0;
+			    overflow: hidden; 
+			    padding: 0;
+	    		margin: 0;
+				z-index: 400;
+				transition: 0.3s all ease;
+			}
+			&:hover .card-text{  	
+				// display: inline-block;
+	  			opacity: 1;
+	  			height: auto;	
+	  			// padding: 5px 0px;	
+	  			margin: 0px 0px 10px 0px;    
+			}
+			.worksheet p{
+				color: #8e8e8e;
+				font-size: 14px;
+			}
+			.fa-star{
+				color: #ffba33;
+				width: 13px;
+				height: 13px;
+			}
+		}
+		/*Pagination*/
+		.page-item{
+			margin-left: 8px;
+			.page-link{
+				width: 35px;
+				height: 35px;
+				background-color: #e3e7e7;
+				border-radius: 50%;
+				padding: .5rem .5rem;
+				border: 0;
+				text-align: center;
+				&:hover{
+					background-color: #009eb4;
+					color: #fff;
+				}
+			}
+			&.active .page-link{
+				background-color: #009eb4;
+			}
+		}		
+	}
+
+}
+
+/*Footer*/
+.footer{
+	clear: both;
+}
+@media screen and (max-width: 767px){
+	.card-items{
+		display: block;
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 667px){
+	.subpage_slideshow{
+		top: 10% !important;
+	}
+	.page-breadcrumb{
+		bottom: 15% !important;
+	}
+}
+@media screen and (max-width: 480px){
+	.subpage_slideshow{
+		top: 15% !important;
+	}
+	.page-breadcrumb{
+		bottom: 25% !important;	
+		a{
+			font-size: 0.8rem;
+		}
+	}
+	.school-subpage{
+		.card .card-block{
+			bottom:0;
+		}
+	}
+}	

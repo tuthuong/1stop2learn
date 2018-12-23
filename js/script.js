@@ -438,6 +438,70 @@ var script = function () {
     }
 
     var uiSlick = function () {
+        $('.main-pro-img').slick({
+            nextArrow: '<i class="fa fa-angle-right smooth next"></i>',
+            prevArrow: '<i class="fa fa-angle-left smooth prev"></i>',
+            arrows: false,
+            dots: false,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            infinite: true,
+            asNavFor: '.pro-thumb',
+        });
+        $('.pro-thumb').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            nextArrow: '<i class="fa fa-angle-down smooth next"></i>',
+            prevArrow: '<i class="fa fa-angle-up smooth prev"></i>',
+            arrows: false,
+            autoplay: false,
+            swipeToSlide: true,
+            autoplaySpeed: 5000,
+            asNavFor: '.main-pro-img',
+            focusOnSelect: true,
+            //vertical: true,
+            //verticalSwiping: true,
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 4,
+                        //vertical: false,
+                        //verticalSwiping: false,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 4,
+                        //vertical: false,
+                        //verticalSwiping: false,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 3,
+                        //vertical: false,
+                        //verticalSwiping: false,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 3,
+                        //vertical: false,
+                        //verticalSwiping: false,
+                        infinite: true,
+
+                    }
+                }
+            ],
+        });
         // $('.pro-cas').slick({
         //     slidesToShow: 4,
         //     slidesToScroll: 1,
@@ -478,6 +542,21 @@ var script = function () {
 
         // })
     }
+    var fancybox = function(){
+        $(".fancybox")
+          .attr('rel', 'gallery')
+          .fancybox({
+              helpers: {
+                  thumbs: {
+                      width  : 40,
+                      height : 40,
+                      source  : function(current) {
+                          return $(current.element).data('thumbnail');
+                      }
+                  }
+              }
+          });
+      }
 
     var uiScroll = function () {
         var h = $('header').innerHeight();
@@ -485,30 +564,30 @@ var script = function () {
         if (win.width() > 1025) {
             if (win.scrollTop() > 200) {
                 $('header').addClass('fixed');
-                // body.css('margin-top', h2);
+                $("body:not(.homepage").css('margin-top', h);
             }
         } else {
             if (win.scrollTop() > 0) {
                 $('header').addClass('fixed');
-                // body.css('margin-top', h2);
+                $("body:not(.homepage").css('margin-top', h);
             }
         }
         win.scroll(function (e) {
             if (win.width() > 1025) {
                 if (win.scrollTop() > 200) {
                     $('header').addClass('fixed');
-                    // body.css('margin-top', h2);
+                    $("body:not(.homepage").css('margin-top', h);
                 } else {
                     $('header').removeClass('fixed');
-                    // body.css('margin-top', '');
+                    $("body:not(.homepage").css('margin-top', '');
                 }
             } else {
                 if (win.scrollTop() > 0) {
                     $('header').addClass('fixed');
-                    // body.css('margin-top', h);
+                    $("body:not(.homepage").css('margin-top', h);
                 } else {
                     $('header').removeClass('fixed');
-                    // body.css('margin-top', '');
+                    $("body:not(.homepage").css('margin-top', '');
                 }
             }
         });
@@ -541,6 +620,10 @@ var script = function () {
                 case 'uiCalendar':
                     uiCalendar();
                     break;
+                case 'fancybox':
+                    fancybox();
+                    break;
+                    
 
                 default:
                     mMenu();
@@ -551,6 +634,7 @@ var script = function () {
                     uiScroll();
                     uiDrop();
                     uiCalendar();
+                    fancybox();
             }
         }
     }
