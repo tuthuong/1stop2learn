@@ -7,50 +7,38 @@
 	color: white;
 	text-transform: uppercase;
 }
-.second-slide-banner{
-	position: relative;
-	width: 100%;	
-	overflow: hidden;
-	height: 400px;
-	// margin-top: 30px;   
-    // background: blue;
-	.subpage_slideshow{
-		position: absolute;
-		top: 0;
-		display: inline-block;
-		width: 100%;		
-		img{
-			width: 100%;
-			height: 100%;
-		}
+// .second-slide-banner{
+// 	position: relative;
+// 	width: 100%;	
+// 	overflow: hidden;
+// 	height: 400px;
+// 	// margin-top: 30px;   
+//     // background: blue;
+// 	.subpage_slideshow{
+// 		position: absolute;
+// 		top: 0;
+// 		display: inline-block;
+// 		width: 100%;		
+// 		img{
+// 			width: 100%;
+// 			height: 100%;
+// 		}
 
-	}	
-}
+// 	}	
+// }
 /*Breadcrumb*/
 .page-breadcrumb{
-<<<<<<< HEAD
 		// position: absolute;	
 		// background-color: white;
 		// bottom:0;		
 		// width: 100%;
 		// height: 75px;
-=======
-		position: absolute;	
-		background-color: white;
-		bottom:0;		
-		width: 100%;
-		height: 75px;
->>>>>>> 289df29e55a108881c638b4971f2a50926aed958
 		.breadcrumb{
 			background: white;
 			margin-top: 0.8rem;
 			a{
 				font-size: 16px;
-<<<<<<< HEAD
 				//text-transform: uppercase;
-=======
-				text-transform: uppercase;
->>>>>>> 289df29e55a108881c638b4971f2a50926aed958
 				color: #bed62f;
 				font-family: $font-stack;
 			}
@@ -59,13 +47,36 @@
 			}
 		}
 }	
+/*Pagination*/
+.pagination{
+	flex-wrap: wrap;
+}
+.page-item{
+	margin: 5px;
+	.page-link{
+		width: 35px;
+		height: 35px;
+		background-color: #e3e7e7;
+		border-radius: 50% !important; 
+		padding: .5rem .5rem;
+		border: 0;
+		text-align: center;
+		&:hover{
+			background-color: #009eb4;
+			color: #fff;
+		}
+	}
+	&.active .page-link{
+		background-color: #009eb4;
+	}
+}	
 
 /*School and Center*/
 .school-subpage{
 	background-color: white;	
 	h1.subpage{
 		height: auto;
-		padding-top: 40px;
+		padding-top: 0;
 		padding-bottom: 0;
 	}
 	.card{
@@ -101,7 +112,16 @@
 		}
     }
 }
-<<<<<<< HEAD
+#portfoliolist .portfolio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width: calc(100% / 3);
+	padding: 0 15px;
+	display: none;
+    float: left;
+    overflow: hidden;
+}
 .map{
 	max-height: 163px;
 	overflow: hidden;
@@ -112,9 +132,6 @@
 		height: 157px;
 	  }
 }
-=======
-
->>>>>>> 289df29e55a108881c638b4971f2a50926aed958
 /*Location Filter and Course*/
 .location-card{
 	position: relative;
@@ -134,10 +151,7 @@
 			width: 100%;
 			height: 150px;
 		}
-<<<<<<< HEAD
 		
-=======
->>>>>>> 289df29e55a108881c638b4971f2a50926aed958
 		h3{
 			display: inline-block;
 			width: 100%;
@@ -229,22 +243,14 @@
 				font-size: 18px;
 			}
 			.card-text{		
-<<<<<<< HEAD
 				// transition: opacity 0.5s ease-out;
-=======
-				transition: opacity 0.5s ease-out;
->>>>>>> 289df29e55a108881c638b4971f2a50926aed958
 			    opacity: 0; 
 			    height: 0;
 			    overflow: hidden; 
 			    padding: 0;
 	    		margin: 0;
-<<<<<<< HEAD
 				z-index: 400;
 				transition: 0.3s all ease;
-=======
-	    		z-index: 400;
->>>>>>> 289df29e55a108881c638b4971f2a50926aed958
 			}
 			&:hover .card-text{  	
 				// display: inline-block;
@@ -262,32 +268,7 @@
 				width: 13px;
 				height: 13px;
 			}
-		}
-		/*Pagination*/
-		.page-item{
-			margin-left: 8px;
-			.page-link{
-				width: 35px;
-				height: 35px;
-				background-color: #e3e7e7;
-				border-radius: 50%;
-				padding: .5rem .5rem;
-<<<<<<< HEAD
-				border: 0;
-				text-align: center;
-				&:hover{
-					background-color: #009eb4;
-					color: #fff;
-=======
-				span{
-					padding-left: 0.3rem;
->>>>>>> 289df29e55a108881c638b4971f2a50926aed958
-				}
-			}
-			&.active .page-link{
-				background-color: #009eb4;
-			}
-		}		
+		}	
 	}
 
 }

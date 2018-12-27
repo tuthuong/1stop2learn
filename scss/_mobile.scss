@@ -38,7 +38,7 @@
 				display: block;
 				margin: auto;
 				width: 17px;
-				border-bottom: solid 2px #ffe630;
+				border-bottom: solid 2px #333;
 			}
 			&:after{
 				@include rotate(-45deg);
@@ -63,7 +63,7 @@
 		background: #f9f9f9;
 		box-shadow: 0 0 8px 0 rgba(#666, 0.5);
 		position: fixed;
-		z-index: 9;
+		z-index: 99999;
 		top: 0;
 		bottom: 0;
 		width: 290px;
@@ -73,7 +73,7 @@
 			height: 100%;
 			overflow-y: auto;
 			overflow-x: hidden;
-			// padding-top: 15px;
+			// padding-top: 50px;
 			.header-contact-top {
 			    padding: 15px;
 			    background: #1dbb90;
