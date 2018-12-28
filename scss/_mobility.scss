@@ -25,6 +25,9 @@
     .header-bottom .container::after {
         top: 7.5em;
     }
+    .news-banner .news-intro{
+        opacity: 0.7;
+    }
 }
 @media screen and (max-width: 480px){
     .school-and-center .slick-slide{
@@ -36,6 +39,22 @@
 }
 
 @media screen and (max-width:576px) {
+    .scholaship-event{
+        .event-date{
+            margin-left: 0 !important;
+        }
+        h3.event{
+            margin-left: 0rem;
+        }
+        hr{
+            width: 96%;
+            margin-left: 0;
+        }
+        hr.event{
+            width: 100%;
+            margin-left: 0rem;
+        }
+    }
     .slide-banner {
         width: 100%;
         height: 240px;
@@ -256,7 +275,8 @@
             }
         }
 
-    }
+    }   
+    
 }
 
 @media screen and (max-width:640px) {
@@ -323,6 +343,10 @@
     .customer-feedback .carousel-control-prev {
         display: none !important;
     }
+    .news-banner .news-intro{
+        height: auto;
+        top: 10%;
+    }
 
 }
 
@@ -335,6 +359,9 @@
             display: block;
             width: 100%;
         }
+    }
+    .news-banner .news-intro{
+        height: 100px;
     }
 }
 

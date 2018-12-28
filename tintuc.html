@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tin tức</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link href="css/animate.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/flatpickr.min.css">
+    <link href="fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet" />
+    <link href="fancybox/helpers/jquery.fancybox-thumbs.css" type="text/css" rel="stylesheet" />	
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="js/jquery-2.2.1.min.js"></script> -->
+    
+</head>
+<body>
+<!-- Header -->
+<header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-8">
+                        <div class="header-contact-top">
+                            <ul>
+                                <li> 
+                                    <a href="#"><i class="icon-support" aria-hidden="true"></i> Tư vấn miễn phí</a>
+                                    
+                                    
+                                </li>
+                                <li> 
+                                    <a href="tel:0938887688"><i class="icon-hotline" aria-hidden="true"></i> 0938 88 76 88</a>
+                                </li>
+                                <li> 
+                                    <i class="fa fa-map-marker"></i>
+                                    <select name="" class="location">
+                                        <option value="">TP Hồ Chí Minh</option>
+                                        <option value="">Hà Nội</option>
+                                        <option value="">Đà Nẵng</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>						
+                    <div class="col-lg-3 col-md-4 cart-link text-right">
+                            <ul>
+                                <li class="cart"><a href="#"><i class="icon-cart"></i></a></li>
+                                <li class="account"><a href="#"><i class="icon-login"></i> Đăng nhập</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row row-ibl">
+                    <div class="col-lg-3 col-xs-12 md-center logo-top">
+                        <a class="logo" href="#" title="">
+                            <img src="images/logo.png" alt="" title=""/>
+                        </a>
+                    </div>
+                    <div class="col-lg-9 col-xs-12 md-center lg-right static">
+                        <nav class="main-nav">
+                            <ul>
+                                <li class="active"><a class="smooth" href="#" title="">Trường</a></li>
+                                <li><a class="smooth" href="#" title="">Khóa học</a></li>
+                                <li><a class="smooth" href="#" title="">Giáo viên</a>
+                                    <ul>
+                                        <li><a class="smooth" href="#" title="">Giáo viên 1</a></li>
+                                        <li><a class="smooth" href="#" title="">Giáo viên 2</a></li>
+                                        <li><a class="smooth" href="#" title="">Giáo viên 3</a></li>
+                                        <li><a class="smooth" href="#" title="">Giáo viên 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="smooth" href="#" title="">Lớp học</a></li>
+                                <li><a class="smooth" href="#" title="">Học bổng</a></li>
+                                <li class="actions">
+                                        <a href="javascript:void(0);"><span class="action search"><i class="icon-search"></i></span></a>
+                                    <div class="action-control-search">
+                                        <div class="form">
+                                                <input id="search" type="text" name="" value="" placeholder="Nhập từ cần tìm..." class="input-text" maxlength="128">
+                                                <span class="input-group-addon">
+                                                <button type="submit">
+                                                    <span class="fa fa-search"></span>
+                                                </button>  
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+	<button class="menu-btn nav-open d-lg-none" type="button"><i></i></button>
+</header>
+<div class="m-nav d-md-none">
+	<button class="menu-btn act nav-close" type="button"><i></i></button>
+	<div class="nav-ct"></div>
+</div>
+<!-- end Header -->
+ 
+<div class="second-slide-banner news-banner">
+        <img src="images/tintuc-banner.jpg" alt="">
+        <div class="container">
+        	<div class="row no-gutters">
+        		<div class="news-intro col-md-5 col-xl-3 col-lg-4 col-sm-6 col-12">
+		        	<blockquote>
+		        		<h3>Ideas are worth spreading</h3>
+		        		<p>Education & School PSD Template</p>
+		        	</blockquote>
+		        </div>
+        	</div>
+        	
+        </div>
+       
+</div>
+<!-- Content Detail -->
+<div class="page-main-detail">
+    <div class="container">
+        <div class="row">
+        	<!-- breadcrumb -->
+            <div class="page-breadcrumb">
+                <nav class="breadcrumb">
+                    <a href="#" class="breadcrumb-item">Trang chủ</a>
+                    <a href="#" class="breadcrumb-item">Trường học</a>
+                	<a href="#" class="breadcrumb-item">Chi tiết trường học</a>
+                </nav>
+            </div>
+         </div>
+        <!-- News content area -->
+        <div class="row main-news">       
+        	<!-- news item --> 	
+        	<div class="col-xl-6 col-lg-6 col-md-6 col-12 news-item">
+        		<div class="row no-gutters">
+        			<div class="col-6">
+	            		<a href="#" class="news-ima"><img src="images/tintuc-1.jpg" class="img-fluid" alt=""></a> 
+	            	</div>
+	            	<div class="col-6 news-item-content">
+	            		<h3><a href="">The Expennes You Are Thing</a></h3>
+	            		<span class="news-date"><i class="fa fa-calendar"></i>23 June, 2018</span>
+	            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut voluptate aliqua.</p>
+	            		<a href="#" class="view-more">Chi tiết <i class="fa fa-arrow-right"></i></a>
+	            	</div>
+        		</div>            	
+            </div>  
+            <!-- end news item --> 
+            <!-- news item --> 	
+        	<div class="col-xl-6 col-lg-6 col-md-6 col-12 news-item">
+        		<div class="row no-gutters">
+        			<div class="col-6">
+	            		<a href="#" class="news-ima"><img src="images/tintuc-2.jpg" class="img-fluid" alt=""></a> 
+	            	</div>
+	            	<div class="col-6 news-item-content">
+	            		<h3><a href="">The Expennes You Are Thing</a></h3>
+	            		<span class="news-date"><i class="fa fa-calendar"></i>23 June, 2018</span>
+	            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut voluptate aliqua.</p>
+	            		<a href="#" class="view-more">Chi tiết <i class="fa fa-arrow-right"></i></a>
+	            	</div>
+        		</div>            	
+            </div>  
+            <!-- end news item --> 
+            <!-- news item --> 	
+        	<div class="col-xl-6 col-lg-6 col-md-6 col-12 news-item">
+        		<div class="row no-gutters">
+        			<div class="col-6">
+	            		<a href="#" class="news-ima"><img src="images/tintuc-3.jpg" class="img-fluid" alt=""></a> 
+	            	</div>
+	            	<div class="col-6 news-item-content">
+	            		<h3><a href="">The Expennes You Are Thing</a></h3>
+	            		<span class="news-date"><i class="fa fa-calendar"></i>23 June, 2018</span>
+	            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut voluptate aliqua.</p>
+	            		<a href="#" class="view-more">Chi tiết <i class="fa fa-arrow-right"></i></a>
+	            	</div>
+        		</div>            	
+            </div>  
+            <!-- end news item --> 
+             <!-- news item --> 	
+        	<div class="col-xl-6 col-lg-6 col-md-6 col-12 news-item">
+        		<div class="row no-gutters">
+        			<div class="col-6">
+	            		<a href="#" class="news-ima"><img src="images/tintuc-4.jpg" class="img-fluid" alt=""></a> 
+	            	</div>
+	            	<div class="col-6 news-item-content">
+	            		<h3><a href="">The Expennes You Are Thing</a></h3>
+	            		<span class="news-date"><i class="fa fa-calendar"></i>23 June, 2018</span>
+	            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut voluptate aliqua.</p>
+	            		<a href="#" class="view-more">Chi tiết <i class="fa fa-arrow-right"></i></a>
+	            	</div>
+        		</div>            	
+            </div>  
+            <!-- end news item --> 
+            <!-- news item --> 	
+        	<div class="col-xl-6 col-lg-6 col-md-6 col-12 news-item">
+        		<div class="row no-gutters">
+        			<div class="col-6">
+	            		<a href="#" class="news-ima"><img src="images/tintuc-5.jpg" class="img-fluid" alt=""></a> 
+	            	</div>
+	            	<div class="col-6 news-item-content">
+	            		<h3><a href="">The Expennes You Are Thing</a></h3>
+	            		<span class="news-date"><i class="fa fa-calendar"></i>23 June, 2018</span>
+	            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut voluptate aliqua.</p>
+	            		<a href="#" class="view-more">Chi tiết <i class="fa fa-arrow-right"></i></a>
+	            	</div>
+        		</div>            	
+            </div>  
+            <!-- end news item --> 
+            <!-- news item --> 	
+        	<div class="col-xl-6 col-lg-6 col-md-6 col-12 news-item">
+        		<div class="row no-gutters">
+        			<div class="col-6">
+	            		<a href="#" class="news-ima"><img src="images/tintuc-6.jpg" class="img-fluid" alt=""></a> 
+	            	</div>
+	            	<div class="col-6 news-item-content">
+	            		<h3><a href="">The Expennes You Are Thing</a></h3>
+	            		<span class="news-date"><i class="fa fa-calendar"></i>23 June, 2018</span>
+	            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut voluptate aliqua.</p>
+	            		<a href="#" class="view-more">Chi tiết <i class="fa fa-arrow-right"></i></a>
+	            	</div>
+        		</div>            	
+            </div>  
+            <!-- end news item -->
+            <!-- Paginate -->
+            <div class="row no-gutters news-pagination">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">01</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">02</a></li>
+                    <li class="page-item"><a class="page-link" href="#">03</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">27</a></li>
+                    <li class="page-item"><a class="page-link" href="#">28</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end Paginate -->
+        </div>
+    </div>
+</div>
+<!-- Hoc bong va Su kien -->
+<div class="container calendar-news scholaship-event">
+	<div class="row">
+		<!-- News -->
+	    <div class="col-md-6 col-lg-6 col-sm-12 col-12">
+	        <h3>Học bổng</h3>
+	        <div class="row news-item">
+	            <div class="col-4 item-pic">
+	                <img src="images/hocbong.jpg" class="img-fluid" alt="News image">
+	            </div>
+	            <div class="col-8">
+	                <a href="#" class="text-left">Học bổng tiến sĩ, thạc sĩ Colab tại Đại học Công nghệ Ackland ở New Zealand, 2018</a>
+	                <div class="tips-date">
+	                    <p class="text-uppercase">
+	                        <span class="tips">TIPS, TRANSLATE </span>|  
+	                        <span class="datetime">MARCH 7, 2018</span> 
+	                    </p>
+	                </div>                        
+	            </div>
+	        </div>
+	        <hr>
+	        <div class="row news-item">
+	            <div class="col-4 item-pic">
+	                <img src="images/hocbong.jpg" class="img-fluid" alt="News image">
+	            </div>
+	            <div class="col-8">
+	                <a href="#" class="text-left">Học bổng tiến sĩ, thạc sĩ Colab tại Đại học Công nghệ Ackland ở New Zealand, 2018</a>
+	                <div class="tips-date">
+	                    <p class="text-uppercase">
+	                        <span class="tips">TIPS, TRANSLATE </span>|  
+	                        <span class="datetime">MARCH 7, 2018</span> 
+	                    </p>
+	                </div>                        
+	            </div>
+	        </div>
+	        <hr>
+	        <div class="row news-item">
+	            <div class="col-4 item-pic">
+	                <img src="images/hocbong.jpg" class="img-fluid" alt="News image">
+	            </div>
+	            <div class="col-8">
+	                <a href="#" class="text-left">Học bổng tiến sĩ, thạc sĩ Colab tại Đại học Công nghệ Ackland ở New Zealand, 2018</a>
+	                <div class="tips-date">
+	                    <p class="text-uppercase">
+	                        <span class="tips">TIPS, TRANSLATE </span>|  
+	                        <span class="datetime">MARCH 7, 2018</span> 
+	                    </p>
+	                </div>                        
+	            </div>
+	        </div>
+	        <hr>
+	        <div class="row news-item">
+	            <div class="col-4 item-pic">
+	                <img src="images/hocbong.jpg" class="img-fluid" alt="News image">
+	            </div>
+	            <div class="col-8">
+	                <a href="#" class="text-left">Học bổng tiến sĩ, thạc sĩ Colab tại Đại học Công nghệ Ackland ở New Zealand, 2018</a>
+	                <div class="tips-date">
+	                    <p class="text-uppercase">
+	                        <span class="tips">TIPS, TRANSLATE </span>|  
+	                        <span class="datetime">MARCH 7, 2018</span> 
+	                    </p>
+	                </div>                        
+	            </div>
+	        </div>
+	        <hr>
+	        <div class="row news-item">
+	            <div class="col-4 item-pic">
+	                <img src="images/hocbong.jpg" class="img-fluid" alt="News image">
+	            </div>
+	            <div class="col-8">
+	                <a href="#" class="text-left">Học bổng tiến sĩ, thạc sĩ Colab tại Đại học Công nghệ Ackland ở New Zealand, 2018</a>
+	                <div class="tips-date">
+	                    <p class="text-uppercase">
+	                        <span class="tips">TIPS, TRANSLATE </span>|  
+	                        <span class="datetime">MARCH 7, 2018</span> 
+	                    </p>
+	                </div>                        
+	            </div>
+	        </div>
+	        <div class="row float-right">
+	        	<a href="#" class="more">Xem thêm <i class="fa fa-arrow-right"></i></a>
+	        </div>
+	    </div>
+	    <!-- End Scholaship -->
+	    <!-- Events -->
+	    <div class="col-md-6 col-lg-6 col-sm-12 col-12">
+	        <h3 class="event">Sự kiện</h3>
+	        <div class="row event-item no-gutters">
+	            <div class="col-md-2 col-3 event-date">
+	                <p class="text-center">22</p>
+	                <span class="text-center">April 2018</span>
+	            </div>
+	            <div class="col-md-10 col-9 event-info">
+	                <a href="#" class="text-left">Fully Responsive Web Design & Development.</a>
+	                <div class="row">                           
+	                    <a href=""><span>Web Design</span></a>|<a href=""><span class="col">Koke</span></a>
+	                </div>
+	            </div>
+	        </div>
+	        <hr class="event">
+	        <div class="row event-item no-gutters">
+	            <div class="col-md-2 col-3 event-date">
+	                <p class="text-center">22</p>
+	                <span class="text-center">April 2018</span>
+	            </div>
+	            <div class="col-md-10 col-9 event-info">
+	                <a href="#" class="text-left">Fully Responsive Web Design & Development.</a>
+	                <div class="row">                           
+	                    <a href=""><span>Web Design</span></a>|<a href=""><span class="col">Koke</span></a>
+	                </div>
+	            </div>
+	        </div>
+	        <hr class="event">
+	        <div class="row event-item no-gutters">
+	            <div class="col-md-2 col-3 event-date">
+	                <p class="text-center">22</p>
+	                <span class="text-center">April 2018</span>
+	            </div>
+	            <div class="col-md-10 col-9 event-info">
+	                <a href="#" class="text-left">Fully Responsive Web Design & Development.</a>
+	                <div class="row">                           
+	                    <a href=""><span>Web Design</span></a>|<a href=""><span class="col">Koke</span></a>
+	                </div>
+	            </div>
+	        </div>
+	        <hr class="event">
+	        <div class="row event-item no-gutters">
+	            <div class="col-md-2 col-3 event-date">
+	                <p class="text-center">22</p>
+	                <span class="text-center">April 2018</span>
+	            </div>
+	            <div class="col-md-10 col-9 event-info">
+	                <a href="#" class="text-left">Fully Responsive Web Design & Development.</a>
+	                <div class="row">                           
+	                    <a href=""><span>Web Design</span></a>|<a href=""><span class="col">Koke</span></a>
+	                </div>
+	            </div>
+	        </div>
+	        <hr class="event">
+	        <div class="row event-item no-gutters">
+	            <div class="col-md-2 col-3 event-date">
+	                <p class="text-center">22</p>
+	                <span class="text-center">April 2018</span>
+	            </div>
+	            <div class="col-md-10 col-9 event-info">
+	                <a href="#" class="text-left">Fully Responsive Web Design & Development.</a>
+	                <div class="row">                           
+	                    <a href=""><span>Web Design</span></a>|<a href=""><span class="col">Koke</span></a>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row float-right">
+	        	<a href="#" class="more more-event">Xem thêm <i class="fa fa-arrow-right"></i></a>
+	        </div>
+	    </div>
+	    <!-- End Event -->
+	</div>
+	
+</div>
+
+<!-- Footer -->
+<footer>
+			<div class="container">
+				<div class="row row-ibl">
+					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp about">
+						<!-- <h4 class="f-title">Giới thiệu về <span class="company">Song Phát</span></h4> -->
+						<div class="about-company">
+							<img src="images/logo-foot.png" alt="" />
+							<p>184 Hong Ha Str, Ward. 9, Phu Nhuan District, Ho Chi Minh City</p>
+						</div>
+						<div class="f-line">
+							<i class="icon-hotline"></i> <strong>Hotline:</strong> (028) 6288 4260
+						</div>
+						<div class="f-line">
+							<i class="icon-email"></i> <strong>Email:</strong> info@1stop2learn.com
+						</div>
+						<div class="f-line">
+							<img src="images/logo-bct.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp our-blog" data-wow-delay="0.2s">
+						<h4 class="f-title">Our Blogs</h4>
+						<ul>
+							<li>
+								<div class="fea-img">
+									<img src="images/foot-our-blog-1.png" alt="">
+								</div>
+								<div class="content-news">
+									<h3 class="title_news">
+										<a href="#" title="">
+											New Science Research Facility in NewYork American
+										</a>
+									</h3>
+									<p class="post-cate">November 24 - 2018</p>
+								</div>
+							</li>
+							<li>
+								<div class="fea-img">
+									<img src="images/foot-our-blog-1.png" alt="">
+								</div>
+								<div class="content-news">
+									<h3 class="title_news">
+										<a href="#" title="">
+											New Science Research Facility in NewYork American
+										</a>
+									</h3>
+									<p class="post-cate">November 24 - 2018</p>
+								</div>
+							</li>
+							<li>
+								<div class="fea-img">
+									<img src="images/foot-our-blog-1.png" alt="">
+								</div>
+								<div class="content-news">
+									<h3 class="title_news">
+										<a href="#" title="">
+											New Science Research Facility in NewYork American
+										</a>
+									</h3>
+									<p class="post-cate">November 24 - 2018</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4  col-sm-6 col-xs-12 wow fadeInUp info-link" data-wow-delay="0.2s">
+						<h4 class="f-title">Liên kết với chúng tôi</h4>
+						<ul class="social-link">
+							<li>
+								<a href="#">
+									<img src="images/zalo.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/youtube.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/facebook.png" alt="">
+								</a>
+							</li>
+						</ul>
+						<h4 class="f-title">Newsletter</h4>
+						<p>Đăng ký nhận thông tin miễn phí từ chúng tôi</p>
+						<form class="subs-form">
+							<input type="text" placeholder="Nhập địa chỉ email của bạn">
+							<button type="submit">Go</button>
+						</form>
+						<h4 class="f-title">Mobile app</h4>
+						<ul class="social-link">
+							<li>
+								<a href="#">
+									<img src="images/app-icon.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>		
+</footer>
+<div class="foot">
+    <div class="container">
+        <span class="f-left">© Copyright 2018 by 1stop2learn. All Right Reserved.</span>
+        <span><img src="images/icon-foot.png" alt=""></span>
+    </div>
+</div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="js/wow.js" defer></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="fancybox/jquery.fancybox.pack.js" defer></script>
+    <script src="fancybox/helpers/jquery.fancybox-thumbs.js" defer></script>
+    <script src="js/flatpickr.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
