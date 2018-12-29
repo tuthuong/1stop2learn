@@ -152,6 +152,14 @@ var script = function () {
         });
     }
 
+    var uiSearchingDate = function(){
+        $('.searching-date').flatpickr({
+            dateFormat: "d/m/Y",
+            defaultDate: "today",
+           
+        });
+    }
+
     function doAnimations(elems) {
         var animEndEv = 'webkitAnimationEnd animationend';
         elems.each(function () {
@@ -623,7 +631,9 @@ var script = function () {
                 case 'fancybox':
                     fancybox();
                     break;
-                    
+                case 'uiSearchingDate':
+                    uiSearchingDate();
+                    break;    
 
                 default:
                     mMenu();
@@ -635,6 +645,7 @@ var script = function () {
                     uiDrop();
                     uiCalendar();
                     fancybox();
+                    uiSearchingDate();
             }
         }
     }

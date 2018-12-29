@@ -275,8 +275,29 @@
             }
         }
 
-    }   
-    
+    }  
+
+    .searching .form-group {
+        padding: 0;
+        button.btn-search{
+            width: 100%;
+            margin-left: 1rem;
+        } 
+    }
+    .event-content {
+        padding-left: 0 !important;
+        span.event-calendar{
+            padding-top: 0.5rem;
+        }
+    }
+    .scholaship-news{
+        hr{
+            width: 100% !important;
+        }
+        a.more{
+            margin-right: 1.5rem;
+        }
+    }
 }
 
 @media screen and (max-width:640px) {
