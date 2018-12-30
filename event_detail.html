@@ -125,7 +125,7 @@
 <div class="container">
 	<div class="row event_detail">
 		<!-- detail -->
-		<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+		<div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12">
 		<!-- Content with image gallery -->
         <div class="info-main">
                 <div class="pro-imgs">
@@ -183,7 +183,7 @@
                     </div>
 		</div>
 		<!-- Event Info -->
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+		<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
 			<div class="event_info">			
 				<h3>Thông tin sự kiện</h3>
 				<div class="row no-gutters">
@@ -192,7 +192,10 @@
 							<span><i class="fa fa-calendar"></i>Star Date</span>
 						</div>
 						<div class="col-6 float-right text-right item">
-							<span><i>10/01/2018</i></span>
+                            <input class="flatpickrRange" type="text" placeholder="Check-In" id="check-in" />
+                            <div class="date-time" id="text_start">
+                                <span class="day">Dd/Mm/Yyyy</span>																										
+                            </div>
 						</div>		
 						<hr>			
 					</div>
@@ -201,7 +204,10 @@
 							<span><i class="fa fa-calendar"></i>End Date</span>
 						</div>
 						<div class="col-6 float-right text-right item">
-							<span><i>01/01/2019</i></span>
+                            <input class="flatpickrRange" type="text" placeholder="Check-Out" id="check-out" />
+                            <div class="date-time" id="text_end">
+                                <span class="day">Dd/Mm/Yyyy</span>
+                            </div>
 						</div>		
 						<hr>			
 					</div>
@@ -625,6 +631,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 <script src="fancybox/jquery.fancybox.pack.js" defer></script>
 <script src="fancybox/helpers/jquery.fancybox-thumbs.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/rangePlugin.js"></script>
 <script src="js/flatpickr.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>

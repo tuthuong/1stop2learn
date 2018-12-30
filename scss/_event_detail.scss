@@ -41,24 +41,33 @@
 				display: block;
 				width: 100%;
 				height: auto;
+				position: relative;
 				span{ 
 					display: inline-block;
 					color: #b9b9b9;
 					i.fa{
 						color: #009eb4;
 						padding-right: 0.3rem;
-						padding-left: 1rem;    
+						// padding-left: 1rem;    
 					}
 					i{
 						font-style: normal;
-						padding-right: 1rem;
+						// padding-right: 1rem;
 					}
+				}
+				.flatpickr-input {
+					position: absolute;
+					height: 100%;
+					opacity: 0;
+					cursor: pointer;
+					top: 0;
+					left: 0;
 				}
 			}
 			hr{
 				display: inline-block;
-				width: 80%;
-    			margin-left: 1.8rem;
+				width: 90%;
+    			margin-left: 0.8rem;
     			margin-top: 0.5rem;
 			}	
 			a.btn-register{		

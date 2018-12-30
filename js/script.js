@@ -600,6 +600,131 @@ var script = function () {
             }
         });
     }
+    var bookingForm = function(){
+        
+        var momentFormat = 'DD.MM.YYYY';
+        var format = 'd.m.Y';
+        var altFormat = 'j. F Y';
+        var preparationDays = 2;
+        var disabledDays = [];
+        var i = 0;
+        var calendar = '';
+        var multipleClicks = 0;
+        var openNextPicker = 1;
+
+        $('.calender-btn').click( function() {
+            calendar = $(this).children('input').attr('id');  
+        });
+
+        var enumerateDaysBetweenDates = function(startDate, endDate) {
+            var dates = [];
+            var currDate = moment(startDate).startOf('day');
+            var lastDate = moment(endDate).startOf('day');
+            while(currDate.add(1, 'days').diff(lastDate) < 0) {
+                var date = moment(currDate.clone().toDate());
+                disabledDays.push(date.format(momentFormat));
+                dates.push( {bookedStart: startDate.format(momentFormat), booked: date.format(momentFormat), bookedEnd: endDate.format(momentFormat)});
+            }
+            return dates;
+        };
+        config = {
+            mode: "range",
+            animate: true,
+            altInput: true,
+            altFormat: altFormat,
+            dateFormat: format,
+            firstDayOfWeek: 1,
+            rangeSeparator: ' -> ',
+            locale: {
+                firstDayOfWeek: 1,
+                rangeSeparator: ' -> '
+            },
+            minDate: 'today',
+            disable: disabledDays,
+            onReady: function ( dateObj, dateStr, instance ) {
+                $('.clear-calendar').on( 'click', () => {
+                    picker1.clear();
+                    picker2.clear();
+                    availability.clear();
+                    picker1.close();
+                });
+                $('.open-calendar').on( 'click', () => {
+                    picker1.open();
+                });
+            },
+            onChange: function(selectedDates, dateStr, instance) {
+                var elem = instance.element;
+                var calendar = $(elem).attr('id');
+                var checkIn = '';
+                var checkOut = '';
+                var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                if(selectedDates[0]) {
+                    checkIn = flatpickr.formatDate(selectedDates[0], altFormat);
+                    $('#check-in').parent().find(".date-time").empty().html('<span class="day">' + selectedDates[0].getDate() + '/' + selectedDates[0].getMonth() + '/' + selectedDates[0].getFullYear() + '</span>'); 
+                }
+                if(selectedDates[1]) {
+                    checkOut = flatpickr.formatDate(selectedDates[1], altFormat);
+                    //    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                    $('#check-out').parent().find(".date-time").empty().html('<span class="day">' + selectedDates[1].getDate() + '/' + selectedDates[1].getMonth() + '/' + selectedDates[1].getFullYear() + '</span>');
+            
+                }
+                instance.close();
+                
+                if(calendar == 'check-in') {
+                    $('#check-in').next().val(checkIn);
+                    picker2.setDate(selectedDates);
+                if(checkOut == '') { 
+                    picker2.open();
+                } else {
+                    $('#check-out').next().val(checkOut);
+                }
+                calendar == 'check-out';
+                } 
+                else if(calendar == 'check-out') {
+                    picker1.setDate(selectedDates);
+                    $('#check-out').next().val(checkOut);
+                    $('#check-in').next().val(checkIn);
+                    if(checkOut == '') {
+                        picker2.setDate(selectedDates);
+                        picker2.close();
+                        picker1.open();
+                    }
+                }
+                
+                if(picker1.altInput.value == picker2.altInput.value) {
+                    //alert('Please choose differecnt star- and enddate!');           
+                    setTimeout( function() {
+                        picker1.setDate(selectedDates[0]);
+                        picker2.setDate(selectedDates[0]);
+                        // picker2.open();         
+                    }, 300);
+                }
+                
+            },
+            onMonthChange: function(selectedDates, dateStr, instance) {
+                var div = instance.calendarContainer;
+                
+                $(div).find('.flatpickr-innerContainer').addClass('animated fadeIn');
+                setTimeout(function() {
+                $(div).find('.flatpickr-innerContainer').removeClass('animated fadeIn');
+                },400);
+            }
+            
+        };
+
+        flatpickr.localize(flatpickr.l10ns.de);
+        var picker1 = $('#check-in').flatpickr(config);
+        var picker2 = $('#check-out').flatpickr(config);
+        win.scroll(function() {   
+            picker1.close();
+            picker2.close();
+          });
+        win.click(function(e) {
+            if($('.booking-select').has(e.target).length == 0 && !$('.booking-select').is(e.target)){
+                $(".dropdown-backdrop").hide();
+            }
+        });
+   }
     return {
 
         uiInit: function ($fun) {
@@ -634,7 +759,11 @@ var script = function () {
                 case 'uiSearchingDate':
                     uiSearchingDate();
                     break;    
+                case 'bookingForm':
+                    bookingForm();
+                    break;    
 
+                    
                 default:
                     mMenu();
                     backToTop();
@@ -646,6 +775,7 @@ var script = function () {
                     uiCalendar();
                     fancybox();
                     uiSearchingDate();
+                    bookingForm();
             }
         }
     }
