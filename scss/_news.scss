@@ -263,3 +263,12 @@
 		float: right;
 	}
 }
+@media (max-width:480px){
+	.news-banner{
+		min-height: 200px;
+		img{
+			position: absolute;
+		}
+	}
+	
+}

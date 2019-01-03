@@ -1599,7 +1599,6 @@ body:not(.homepage) .header-bottom .container::after {
   margin-top: 0.8rem; }
   .page-breadcrumb .breadcrumb a {
     font-size: 16px;
-    text-transform: uppercase;
     color: #bed62f;
     font-family: "Open Sans", sans-serif; }
   .page-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
@@ -2005,6 +2004,11 @@ body:not(.homepage) .header-bottom .container::after {
     width: 100%;
     float: right; }
 
+@media (max-width: 480px) {
+  .news-banner {
+    min-height: 200px; }
+    .news-banner img {
+      position: absolute; } }
 /*Menu*/
 /*Breadcrum*/
 .breadcrum-detail {
@@ -4210,21 +4214,27 @@ p.voted {
     .event_detail .event_info .info-items .item {
       display: block;
       width: 100%;
-      height: auto; }
+      height: auto;
+      position: relative; }
       .event_detail .event_info .info-items .item span {
         display: inline-block;
         color: #b9b9b9; }
         .event_detail .event_info .info-items .item span i.fa {
           color: #009eb4;
-          padding-right: 0.3rem;
-          padding-left: 1rem; }
+          padding-right: 0.3rem; }
         .event_detail .event_info .info-items .item span i {
-          font-style: normal;
-          padding-right: 1rem; }
+          font-style: normal; }
+      .event_detail .event_info .info-items .item .flatpickr-input {
+        position: absolute;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+        top: 0;
+        left: 0; }
     .event_detail .event_info .info-items hr {
       display: inline-block;
-      width: 80%;
-      margin-left: 1.8rem;
+      width: 90%;
+      margin-left: 0.8rem;
       margin-top: 0.5rem; }
     .event_detail .event_info .info-items a.btn-register {
       background: #009eb4;
