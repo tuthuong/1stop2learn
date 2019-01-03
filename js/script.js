@@ -160,6 +160,36 @@ var script = function () {
         });
     }
 
+    function numberWithCommas(number) {
+        var parts = number.toString().split(".");
+        parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        return parts.join(".").concat('đ');
+    }
+
+    var uiSliderPrice = function(){
+        $('#slider-price-range').slider({
+            range: true,
+            orientation: 'horizontal',
+            min: 240000,
+            max: 13560000,
+            values: [240000,13560000],
+            step: 100000,
+            slide: function(event,ui){
+                if (ui.values[0] == ui.values[1]) {
+                    return false;
+                }
+                var min_value = numberWithCommas(ui.values[0]);
+                var max_value = numberWithCommas(ui.values[1]);
+                // console.log("Min value:"+min_value+"  Max value:"+max_value);
+                $("#min_price").val(min_value);
+                $("#max_price").val(max_value);
+            }
+
+        });
+        
+    }
+
+
     function doAnimations(elems) {
         var animEndEv = 'webkitAnimationEnd animationend';
         elems.each(function () {
@@ -335,6 +365,45 @@ var script = function () {
                         dots: true,
                         arrows: false,
                         dotsClass: 'slick-dots'
+                    }
+                },
+            ],
+        })
+
+        $('.logo-center').slick({
+            autoplay: true,
+            slidesToShow: 8,
+            autoplaySpeed: 2000,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 8,                      
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 6,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 320,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 300,
+                    settings: {
+                        slidesToShow: 2,
                     }
                 },
             ],
@@ -634,7 +703,10 @@ var script = function () {
                 case 'uiSearchingDate':
                     uiSearchingDate();
                     break;    
-
+                case 'uiSliderPrice':
+                    uiSliderPrice();
+                    break;
+               
                 default:
                     mMenu();
                     backToTop();
@@ -646,6 +718,8 @@ var script = function () {
                     uiCalendar();
                     fancybox();
                     uiSearchingDate();
+                    uiSliderPrice();
+                
             }
         }
     }

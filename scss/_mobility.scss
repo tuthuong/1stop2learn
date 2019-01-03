@@ -298,6 +298,7 @@
             margin-right: 1.5rem;
         }
     }
+
 }
 
 @media screen and (max-width:640px) {
@@ -383,6 +384,11 @@
     }
     .news-banner .news-intro{
         height: 100px;
+    }
+    .area-domain{
+        .price-range{
+            width: 97% !important;
+        }
     }
 }
 

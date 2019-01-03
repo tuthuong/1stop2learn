@@ -3982,7 +3982,10 @@ p.voted {
       width: 100%; }
 
   .news-banner .news-intro {
-    height: 100px; } }
+    height: 100px; }
+
+  .area-domain .price-range {
+    width: 97% !important; } }
 @media screen and (max-width: 995px) {
   .slide-banner .pic img {
     margin-top: 10%; }
@@ -4245,6 +4248,185 @@ p.voted {
   display: inline-block;
   width: 100%;
   margin-bottom: 2rem; }
+
+.area-domain {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  /*Area filter*/
+  /*Area of course*/ }
+  .area-domain .area-filter h3 {
+    font-size: 18px;
+    color: #009eb4;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 1rem; }
+  .area-domain .area-filter label {
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    display: inline-block;
+    width: 100%; }
+  .area-domain .area-filter .price-range {
+    display: inline-block;
+    width: 92%;
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+  .area-domain .area-filter .fee-value-label {
+    display: inline-block;
+    width: 100%; }
+    .area-domain .area-filter .fee-value-label input {
+      background: none;
+      border: none;
+      padding-bottom: 1rem;
+      max-width: 50%;
+      padding-left: 0; }
+    .area-domain .area-filter .fee-value-label input.max-price {
+      text-align: right;
+      margin-right: -0.5rem; }
+  .area-domain .area-filter .ui-widget-header {
+    background: #bed62f; }
+  .area-domain .area-filter .ui-state-default {
+    background: none; }
+  .area-domain .area-filter .ui-slider-horizontal {
+    height: 8px;
+    margin-left: 0.5rem; }
+  .area-domain .area-filter .ui-slider-handle {
+    top: -0.65rem;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    border: 1px solid #dfdfdf; }
+  .area-domain .area-filter .card {
+    border: none; }
+    .area-domain .area-filter .card .card-header {
+      background: none;
+      border-bottom: none;
+      padding: 0.5rem 0rem; }
+      .area-domain .area-filter .card .card-header h4.card-link {
+        width: 100%;
+        display: inline-block; }
+      .area-domain .area-filter .card .card-header [data-toggle="collapse"]:after {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\f054";
+        transform: rotate(90deg);
+        transition: all linear 0.25s;
+        float: right;
+        margin-right: -2.8rem;
+        margin-top: 0.2rem; }
+      .area-domain .area-filter .card .card-header [data-toggle="collapse"].collapsed:after {
+        transform: rotate(0deg); }
+    .area-domain .area-filter .card .checkbox {
+      position: relative; }
+      .area-domain .area-filter .card .checkbox input[type="checkbox"] {
+        margin: 0;
+        display: inline;
+        opacity: 0;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        z-index: 9999;
+        cursor: pointer; }
+      .area-domain .area-filter .card .checkbox input[type=checkbox] + label:after {
+        content: "";
+        font-size: 11px;
+        line-height: 16px;
+        margin-bottom: 0;
+        color: #999;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        border-radius: 0; }
+      .area-domain .area-filter .card .checkbox input[type=checkbox]:checked + label:after {
+        font-family: "FontAwesome";
+        content: "\f00c";
+        color: #2484c6;
+        opacity: 1;
+        visibility: visible;
+        text-align: center; }
+    .area-domain .area-filter .card .card-body {
+      padding: 0 1rem; }
+      .area-domain .area-filter .card .card-body .sub-list-group li {
+        padding: 0.3rem 0; }
+        .area-domain .area-filter .card .card-body .sub-list-group li label {
+          width: 93%;
+          position: inherit; }
+        .area-domain .area-filter .card .card-body .sub-list-group li.checkbox input[type="checkbox"] {
+          margin-top: 2px; }
+  .area-domain .area-filter .area-list-course {
+    display: inline-block;
+    width: 100%; }
+    .area-domain .area-filter .area-list-course li, .area-domain .area-filter .area-list-course .badge {
+      font-size: 14px;
+      color: #666666;
+      font-weight: normal; }
+    .area-domain .area-filter .area-list-course label {
+      width: 78%;
+      font-weight: normal;
+      text-transform: capitalize;
+      padding: 0;
+      padding-left: 20px; }
+  .area-domain .list-course {
+    background: white; }
+    .area-domain .list-course .card {
+      height: 280px;
+      margin-top: 0;
+      margin-bottom: 2rem; }
+      .area-domain .list-course .card:hover .overlay1, .area-domain .list-course .card .overlay2, .area-domain .list-course .card .overlay3 {
+        height: 50%; }
+    .area-domain .list-course .card-item-type-4 .item3 {
+      background: #bed62f; }
+    .area-domain .list-course .card-item-type-4 .language {
+      color: #bed62f; }
+    .area-domain .list-course .card-item-type-4 .overlay3 {
+      background: #bed62f; }
+    .area-domain .list-course .btn-more {
+      margin-top: 0;
+      background: #0ab1c8; }
+      .area-domain .list-course .btn-more:hover {
+        background: #1dbb90; }
+
+/*Lich khai giang va khoa hoc moi*/
+.area-calendar-course {
+  margin-bottom: 4rem; }
+  .area-calendar-course h3 {
+    font-weight: bold; }
+
+/*Trung tam ngoai ngu*/
+.foreign-center {
+  display: inline-block;
+  width: 100%; }
+  .foreign-center h2 {
+    font-size: 36px;
+    color: #191919;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 2rem; }
+  .foreign-center .card {
+    display: inline-block;
+    border: none; }
+    .foreign-center .card .card-img-top img {
+      width: 100%;
+      height: 120px; }
+  .foreign-center .logo-center {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem; }
 
 footer {
   overflow: hidden;
