@@ -4259,6 +4259,23 @@ p.voted {
   width: 100%;
   margin-bottom: 2rem; }
 
+.area-domain-menu li a {
+  text-transform: uppercase; }
+.area-domain-menu li.active, .area-domain-menu li:hover {
+  background: #bed62f !important; }
+.area-domain-menu li ul {
+  background: #bed62f !important; }
+  .area-domain-menu li ul li {
+    list-style-type: disc;
+    margin-left: 2.2rem;
+    z-index: 300;
+    color: white; }
+    .area-domain-menu li ul li a {
+      margin-left: -2.2rem;
+      padding-left: 2.3rem; }
+.area-domain-menu li ul li:hover > a {
+  background: #99ac26; }
+
 .area-domain {
   display: inline-block;
   width: 100%;
@@ -4276,7 +4293,7 @@ p.voted {
     color: #333333;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 1rem 0;
+    padding-bottom: 0.3rem;
     display: inline-block;
     width: 100%; }
   .area-domain .area-filter .price-range {
@@ -4406,9 +4423,35 @@ p.voted {
       background: #bed62f; }
     .area-domain .list-course .btn-more {
       margin-top: 0;
-      background: #0ab1c8; }
+      background: #0ab1c8;
+      margin-bottom: 3rem; }
       .area-domain .list-course .btn-more:hover {
         background: #1dbb90; }
+    .area-domain .list-course .list {
+      margin-top: 0;
+      margin-bottom: 2.5rem; }
+    .area-domain .list-course a.btn {
+      font-size: 16px;
+      padding-left: 3rem;
+      padding-right: 3rem; }
+    .area-domain .list-course a.btn-all {
+      border: 1px solid #bed62f;
+      color: #bed62f; }
+    .area-domain .list-course a.btn-noibat {
+      border: 1px solid #1eaace;
+      color: #1eaace; }
+      .area-domain .list-course a.btn-noibat:hover {
+        background: #1eaace; }
+    .area-domain .list-course a.btn-moi {
+      border: 1px solid #ffb20e;
+      color: #ffb20e; }
+      .area-domain .list-course a.btn-moi:hover {
+        background: #ffb20e; }
+    .area-domain .list-course a.active {
+      background-color: #bed62f;
+      color: white; }
+    .area-domain .list-course a.btn:hover {
+      color: white; }
 
 /*Lich khai giang va khoa hoc moi*/
 .area-calendar-course {
@@ -4437,6 +4480,19 @@ p.voted {
     width: 100%;
     height: auto;
     margin-bottom: 2rem; }
+
+/*Cac linh vuc*/
+.category-course .services {
+  display: inline-block;
+  width: 100%;
+  padding-top: 0; }
+  .category-course .services .ser-item a:hover {
+    background: #1eaace; }
+  .category-course .services .ser-item .sername {
+    color: #1eaace; }
+
+.most-choice {
+  padding-top: 0; }
 
 footer {
   overflow: hidden;

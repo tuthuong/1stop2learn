@@ -785,8 +785,8 @@ var script = function () {
         var picker1 = $('#check-in').flatpickr(config);
         var picker2 = $('#check-out').flatpickr(config);
         win.scroll(function() {   
-            picker1.close();
-            picker2.close();
+            // picker1.close();
+            // picker2.close();
           });
         win.click(function(e) {
             if($('.booking-select').has(e.target).length == 0 && !$('.booking-select').is(e.target)){

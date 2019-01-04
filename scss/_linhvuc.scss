@@ -1,3 +1,28 @@
+.area-domain-menu{
+	li a{
+		text-transform: uppercase;
+	}
+	li.active, li:hover{
+		background: #bed62f !important;
+	}
+	li ul{
+		background: #bed62f !important;
+		li{
+			list-style-type: disc;
+			margin-left: 2.2rem;
+			z-index: 300;
+			color: white;
+			a{
+				margin-left: -2.2rem;
+				padding-left: 2.3rem;
+			}
+		}
+	}
+	li ul li:hover > a{
+		background: #99ac26;
+	}
+	
+}
 .area-domain{
 	display: inline-block;
 	width: 100%;
@@ -17,7 +42,8 @@
 			color: #333333;
 			font-weight: bold;
 			text-transform: uppercase;
-			padding: 1rem 0;
+			// padding: 1rem 0;
+			padding-bottom: 0.3rem;
 			display: inline-block;
     		width: 100%;
 		}
@@ -188,9 +214,44 @@
 		.btn-more{
 			margin-top: 0;
 			background: #0ab1c8;
+			margin-bottom: 3rem;
 			&:hover{
 				background: #1dbb90;
 			}
+		}
+		.list{
+			margin-top: 0;
+			margin-bottom: 2.5rem;
+		}
+		a.btn{
+			font-size: 16px;
+			padding-left: 3rem;
+    		padding-right: 3rem;
+		}
+		a.btn-all{
+			border: 1px solid #bed62f;
+			color: #bed62f;			
+		}
+		a.btn-noibat{
+			border: 1px solid #1eaace;
+			color: #1eaace;
+			&:hover{
+				background:  #1eaace;	
+			}
+		}
+		a.btn-moi{
+			border: 1px solid #ffb20e;
+			color: #ffb20e;
+			&:hover{
+				background:  #ffb20e;	
+			}
+		}
+		a.active{
+			background-color: #bed62f;
+			color: white;
+		}
+		a.btn:hover{
+			color: white;
 		}
 	}
 }
@@ -226,4 +287,23 @@
 		height: auto;
 		margin-bottom: 2rem;
 	}
+}
+/*Cac linh vuc*/
+.category-course{
+	.services{
+		display: inline-block;
+		width: 100%;
+		padding-top: 0;
+		.ser-item{
+			a:hover{
+				background: #1eaace;
+			}
+			.sername{
+				color:  #1eaace;
+			}
+		}
+	}
+}
+.most-choice{
+	padding-top: 0;
 }
