@@ -119,7 +119,7 @@
 <div class="second-slide-banner news-banner">
         <img src="images/tintuc-banner.jpg" alt="">
         <div class="container">
-            <div class="row no-gutters">
+            <div class="row">
                 <div class="news-intro col-md-5 col-xl-3 col-lg-4 col-sm-6 col-12">
                     <blockquote>
                         <h3>Ideas are worth spreading</h3>
@@ -144,143 +144,150 @@
 </div>
 <!-- Area/Field -->
 <div class="container">
+        <span class="btn btn-sm btn-default filters-toggle category-header-filter-button">Bộ lọc <i class="fa fa-angle-double-right"></i></span>
     <div class="area-domain">
         <div class="row">
             <!-- Bộ lọc tìm kiếm -->
-            <div class="area-filter col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                <form>
-                    <h3>Bộ lọc tìm kiếm</h3>                    
-                    <label>Học phí</label>
-                    <div id="slider-price-range" class="price-range" name="rangeInput"></div>
-                    <div class="fee-value-label">
-                          <input type="text" min=240000 max="13559000" oninput="validity.valid||(value='240000');" id="min_price" class="price-range-field float-left" disabled="true" placeholder="240,000đ" />
-                          <input type="text" min=240000 max="13560000" oninput="validity.valid||(value='13560000');" id="max_price" class="price-range-field float-right max-price" disabled="true" placeholder="13,560,000đ" />
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Tỉnh/Thành</label>
-                        <select class="form-control">
-                            <option>Tp. HCM</option>
-                            <option>Tp. Ha Noi</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Quận/Huyện</label>
-                        <select class="form-control">
-                            <option>Quận 1</option>
-                            <option>Quận 2</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Bậc đào tạo</label>
-                        <select class="form-control">
-                            <option>Đại học</option>
-                            <option>Cao đẳng</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Chuyên ngành - Lĩnh vực</label>
-                        <select class="form-control">
-                            <option>Kinh tế</option>
-                            <option>Kỹ thuật</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Danh mục khóa học</label>
-                        <div id="accordion-list-course">
-                            <div class="card area-list-course">
-                                <!-- Ngoai ngu -->
-                                <div class="card-header">
-                                    <h4 href="#list-ngoaingu" class="card-link checkbox" data-toggle="collapse" aria-expanded="true">
-                                        <input type="checkbox" class="ngoaingu" id="lb-ngoaingu"> 
-                                        <label for="lb-ngoaingu">Ngoại ngữ</label>
-                                        <span class="badge float-right mr-3 count-checked">(06)</span>
-                                    </h4>
-                                </div>
-                                <div class="collapse" id="list-ngoaingu">
-                                    <div class="card-body">
-                                        <ul class="sub-list-group">
-                                            <li class="checkbox">                                                
-                                                <input type="checkbox" id="tienganh" class="ngoaingu-item[]" value="tienganh">
-                                                <label for="tienganh">Tiếng anh</label>
-                                            </li>
-                                            <li class="checkbox">                                                
-                                                <input type="checkbox" id="tienghan" class="ngoaingu-item[]" value="tienghan">
-                                                <label for="tienghan">Tiếng hàn</label>
-                                            </li>
-                                            <li class="checkbox">                                                
-                                                <input type="checkbox" id="tiengduc" class="ngoaingu-item[]" value="tiengduc">
-                                                <label for="tiengduc">Tiếng đức</label>
-                                            </li>
-                                            <li class="checkbox">                                                
-                                                <input type="checkbox" id="tiengnhat" class="ngoaingu-item[]" value="tiengnhat">
-                                                <label for="tiengnhat">Tiếng nhật</label>
-                                            </li>
-                                           <li class="checkbox">                                                
-                                                <input type="checkbox" id="tienghoa" class="ngoaingu-item[]" value="tienghoa">
-                                                <label for="tienghoa">Tiếng hoa</label>
-                                            </li>
-                                            <li class="checkbox">                                                
-                                                <input type="checkbox" id="tiengphap" class="ngoaingu-item[]" value="tiengphap">
-                                                <label for="tiengphap">Tiếng pháp</label>
-                                            </li>                                                                           
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- Het Ngoai ngu -->
-                                <!-- Am nhac -->
-                                <div class="card-header">
-                                    <h4 href="#list-amnhac" class="card-link checkbox" data-toggle="collapse" aria-expanded="true">
-                                        <input type="checkbox" class="amnhac" id="lb-amnhac"> 
-                                        <label for="lb-amnhac">Âm nhạc</label>
-                                        <span class="badge float-right mr-3 count-checked">(02)</span>
-                                    </h4>
-                                </div>
-                                <div class="collapse" id="list-amnhac">
-                                    <div class="card-body">
-                                        <ul class="sub-list-group">
-                                            <li class="checkbox">                                                
-                                                <input type="checkbox" id="thanhnhac" class="amnhac-item[]" value="thanhnhac">
-                                                <label for="thanhnhac">Thanh nhạc</label>
-                                            </li>
-                                            <li class="checkbox">                                                
-                                                <input type="checkbox" id="nhaccu" class="amnhac-item[]" value="nhaccu">
-                                                <label for="nhaccu">Nhạc cụ</label>
-                                            </li>                                
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- het am nhac -->
-                                <!-- Kinh te -->
-                                <div class="card-header">
-                                    <h4 href="#list-kinhte" class="card-link checkbox" data-toggle="collapse" aria-expanded="true">
-                                        <input type="checkbox" class="kinhte" id="lb-kinhte"> 
-                                        <label for="lb-kinhte">Kinh tế</label>
-                                        <span class="badge float-right mr-3 count-checked">(02)</span>
-                                    </h4>
-                                </div>
-                                <div class="collapse" id="list-kinhte">
-                                    <div class="card-body">
-                                        <ul class="sub-list-group">
-                                            <li class="checkbox">                                                
-                                                <input type="checkbox" id="marketing" class="kinhte-item[]" value="marketing">
-                                                <label for="marketing">Marketing</label>
-                                            </li>
-                                            <li class="checkbox">                                                
-                                                <input type="checkbox" id="qtkd" class="kinhte-item[]" value="qtkd">
-                                                <label for="qtkd">Quản trị kinh doanh</label>
-                                            </li>                                
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- het kinh te -->
+            <div class="area-filter col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                <div class="sidebar sidebar-left filter-list">
+                    <div class="nav"><a class="btn filter-close"><i class="fa fa-angle-double-left"></i> Quay lại</a> Bộ Lọc</div>
+                    <div class="sidebar-filters">
+                        <form>
+                            <h3>Bộ lọc tìm kiếm</h3>                    
+                            <label>Học phí</label>
+                            <div id="slider-price-range" class="price-range" name="rangeInput"></div>
+                            <div class="fee-value-label">
+                                    <input type="text" min=240000 max="13559000" oninput="validity.valid||(value='240000');" id="min_price" class="price-range-field float-left" disabled="true" placeholder="240,000đ" />
+                                    <input type="text" min=240000 max="13560000" oninput="validity.valid||(value='13560000');" id="max_price" class="price-range-field float-right max-price" disabled="true" placeholder="13,560,000đ" />
                             </div>
-                        </div> 
-                    </div>                   
-                </form>
+                            
+                            <div class="form-group">
+                                <label>Tỉnh/Thành</label>
+                                <select class="form-control">
+                                    <option>Tp. HCM</option>
+                                    <option>Tp. Ha Noi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Quận/Huyện</label>
+                                <select class="form-control">
+                                    <option>Quận 1</option>
+                                    <option>Quận 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Bậc đào tạo</label>
+                                <select class="form-control">
+                                    <option>Đại học</option>
+                                    <option>Cao đẳng</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Chuyên ngành - Lĩnh vực</label>
+                                <select class="form-control">
+                                    <option>Kinh tế</option>
+                                    <option>Kỹ thuật</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Danh mục khóa học</label>
+                                <div id="accordion-list-course">
+                                    <div class="card area-list-course">
+                                        <!-- Ngoai ngu -->
+                                        <div class="card-header">
+                                            <h4 href="#list-ngoaingu" class="card-link checkbox" data-toggle="collapse" aria-expanded="true">
+                                                <input type="checkbox" class="ngoaingu" id="lb-ngoaingu"> 
+                                                <label for="lb-ngoaingu">Ngoại ngữ</label>
+                                                <span class="badge float-right mr-3 count-checked">(06)</span>
+                                            </h4>
+                                        </div>
+                                        <div class="collapse" id="list-ngoaingu">
+                                            <div class="card-body">
+                                                <ul class="sub-list-group">
+                                                    <li class="checkbox">                                                
+                                                        <input type="checkbox" id="tienganh" class="ngoaingu-item[]" value="tienganh">
+                                                        <label for="tienganh">Tiếng anh</label>
+                                                    </li>
+                                                    <li class="checkbox">                                                
+                                                        <input type="checkbox" id="tienghan" class="ngoaingu-item[]" value="tienghan">
+                                                        <label for="tienghan">Tiếng hàn</label>
+                                                    </li>
+                                                    <li class="checkbox">                                                
+                                                        <input type="checkbox" id="tiengduc" class="ngoaingu-item[]" value="tiengduc">
+                                                        <label for="tiengduc">Tiếng đức</label>
+                                                    </li>
+                                                    <li class="checkbox">                                                
+                                                        <input type="checkbox" id="tiengnhat" class="ngoaingu-item[]" value="tiengnhat">
+                                                        <label for="tiengnhat">Tiếng nhật</label>
+                                                    </li>
+                                                    <li class="checkbox">                                                
+                                                        <input type="checkbox" id="tienghoa" class="ngoaingu-item[]" value="tienghoa">
+                                                        <label for="tienghoa">Tiếng hoa</label>
+                                                    </li>
+                                                    <li class="checkbox">                                                
+                                                        <input type="checkbox" id="tiengphap" class="ngoaingu-item[]" value="tiengphap">
+                                                        <label for="tiengphap">Tiếng pháp</label>
+                                                    </li>                                                                           
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- Het Ngoai ngu -->
+                                        <!-- Am nhac -->
+                                        <div class="card-header">
+                                            <h4 href="#list-amnhac" class="card-link checkbox" data-toggle="collapse" aria-expanded="true">
+                                                <input type="checkbox" class="amnhac" id="lb-amnhac"> 
+                                                <label for="lb-amnhac">Âm nhạc</label>
+                                                <span class="badge float-right mr-3 count-checked">(02)</span>
+                                            </h4>
+                                        </div>
+                                        <div class="collapse" id="list-amnhac">
+                                            <div class="card-body">
+                                                <ul class="sub-list-group">
+                                                    <li class="checkbox">                                                
+                                                        <input type="checkbox" id="thanhnhac" class="amnhac-item[]" value="thanhnhac">
+                                                        <label for="thanhnhac">Thanh nhạc</label>
+                                                    </li>
+                                                    <li class="checkbox">                                                
+                                                        <input type="checkbox" id="nhaccu" class="amnhac-item[]" value="nhaccu">
+                                                        <label for="nhaccu">Nhạc cụ</label>
+                                                    </li>                                
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- het am nhac -->
+                                        <!-- Kinh te -->
+                                        <div class="card-header">
+                                            <h4 href="#list-kinhte" class="card-link checkbox" data-toggle="collapse" aria-expanded="true">
+                                                <input type="checkbox" class="kinhte" id="lb-kinhte"> 
+                                                <label for="lb-kinhte">Kinh tế</label>
+                                                <span class="badge float-right mr-3 count-checked">(02)</span>
+                                            </h4>
+                                        </div>
+                                        <div class="collapse" id="list-kinhte">
+                                            <div class="card-body">
+                                                <ul class="sub-list-group">
+                                                    <li class="checkbox">                                                
+                                                        <input type="checkbox" id="marketing" class="kinhte-item[]" value="marketing">
+                                                        <label for="marketing">Marketing</label>
+                                                    </li>
+                                                    <li class="checkbox">                                                
+                                                        <input type="checkbox" id="qtkd" class="kinhte-item[]" value="qtkd">
+                                                        <label for="qtkd">Quản trị kinh doanh</label>
+                                                    </li>                                
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- het kinh te -->
+                                    </div>
+                                </div> 
+                            </div>                   
+                        </form>
+
+                    </div>
+                </div> 
             </div>
             <!-- Khóa học - Courses -->
-            <div class="list-course col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 no-gutters">
+            <div class="list-course col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12 no-gutters">
                 <div id="portfoliolist" class="row">
                     <!-- Card 1 -->
                     <div class="col-md-4 col-lg-4 col-sm-6 col-12 featured-course" data-cat="featured-course">
@@ -1037,6 +1044,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
     <!-- <script src="js/jquery-migrate-1.2.1.min.js"></script> -->
     <script src="js/wow.js" defer></script>
     <script src="js/slick.min.js"></script>

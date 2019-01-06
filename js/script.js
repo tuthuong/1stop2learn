@@ -379,7 +379,7 @@ var script = function () {
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 8,                      
+                        slidesToShow: 6,                      
                     }
                 },
                 {
@@ -391,21 +391,21 @@ var script = function () {
                 {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 4,
-                    }
-                },
-                {
-                    breakpoint: 320,
-                    settings: {
                         slidesToShow: 2,
                     }
                 },
-                {
-                    breakpoint: 300,
-                    settings: {
-                        slidesToShow: 2,
-                    }
-                },
+                // {
+                //     breakpoint: 375,
+                //     settings: {
+                //         slidesToShow: 2,
+                //     }
+                // },
+                // {
+                //     breakpoint: 300,
+                //     settings: {
+                //         slidesToShow: 2,
+                //     }
+                // },
             ],
         })
 
@@ -794,6 +794,28 @@ var script = function () {
             }
         });
    }
+   var filter = function(){
+    var menu = $('.filter-drop');
+    var open = $('.filter-options-title');
+    var sideBar_booking = $()
+    $(window).click(function(e) {
+        if(menu.has(e.target).length == 0 && !menu.is(e.target) && open.has(e.target).length == 0 && !open.is(e.target)){
+            menu.removeClass('highlight');
+            open.removeClass('open');
+        }
+        
+    });
+    $( ".filter-options-title" ).click(function(e) {
+        $(this).toggleClass( "open" );
+        $(".filter-drop").toggleClass( "highlight" );
+    });
+    $(".filters-toggle, .mb-booking .btn").click(function(e) {
+        $('html').addClass("state-filter");
+    });
+     $(".filter-close, .apply, .popup-close").click(function(e) {
+        $('html').removeClass("state-filter");
+    });
+}
     return {
 
         uiInit: function ($fun) {
@@ -835,7 +857,9 @@ var script = function () {
                 case 'bookingForm':
                     bookingForm();
                     break;    
-
+                case 'filter':
+                    filter();
+                    break;
                 default:
                     mMenu();
                     backToTop();
@@ -849,6 +873,7 @@ var script = function () {
                     uiSearchingDate();
                     uiSliderPrice();
                     bookingForm();
+                    filter();
             }
         }
     }
