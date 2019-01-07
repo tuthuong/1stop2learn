@@ -4474,7 +4474,13 @@ p.voted {
     border: none; }
     .foreign-center .card .card-img-top img {
       width: 100%;
-      height: 120px; }
+      height: 120px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%); }
+      .foreign-center .card .card-img-top img:hover {
+        -webkit-filter: none;
+        filter: none;
+        background-color: #f7f7f7; }
   .foreign-center .logo-center {
     display: inline-block;
     width: 100%;
