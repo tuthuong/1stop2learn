@@ -4585,8 +4585,7 @@ p.voted {
       filter: grayscale(100%); }
       .foreign-center .card .card-img-top img:hover {
         -webkit-filter: none;
-        filter: none;
-        background-color: #f7f7f7; }
+        filter: none; }
   .foreign-center .logo-center {
     display: inline-block;
     width: 100%;
