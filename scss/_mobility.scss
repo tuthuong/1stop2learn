@@ -33,9 +33,13 @@
     .school-and-center .slick-slide{
         height: 350px;
     }
-    // .school-and-center .card .card-block{
-    //     bottom: 50px;
-    // }
+    .news-banner{
+		min-height: 3900px;
+		img{
+			position: absolute;
+        }
+        
+	}
 }
 
 @media screen and (max-width:576px) {
@@ -384,7 +388,7 @@
         }
     }
     .news-banner .news-intro{
-        height: 100px;
+        margin-top: 1% !important;
     }
     .area-domain{
         .price-range{

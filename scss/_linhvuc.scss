@@ -3,10 +3,10 @@
 		text-transform: uppercase;
 	}
 	li.active, li:hover{
-		background: #bed62f !important;
+		// background: #bed62f !important;
 	}
 	li ul{
-		background: #bed62f !important;
+		// background: #bed62f !important;
 		li{
 			list-style-type: disc;
 			margin-left: 2.2rem;
@@ -19,7 +19,7 @@
 		}
 	}
 	li ul li:hover > a{
-		background: #99ac26;
+		// background: #99ac26;
 	}
 	
 }

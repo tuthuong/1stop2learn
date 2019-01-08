@@ -160,39 +160,60 @@
 		margin-left: -1rem;
 	}
 }
-.news-banner{
-	position: relative;
-	max-height: 400px;
+.second-slide-banner{
+	// position: relative;
+	// display: inline-block;
 	width: 100%;
-	img{
-		width: 100%;
-		height: 100%;
-	}
-	.news-intro{
-		position: absolute;
-		top: 20%;
-		opacity: 1;
-		blockquote{
+	max-height: 390px;
+	.news-banner{		
+		// position: relative;	
+		max-height: 100%;
+		max-width: 100%;
+		.bn-slide{		
+			position: relative;		
 			width: 100%;
-			// height: 100%;
-			background: white;
-			max-height: 150px;
-			border-left: 0.5rem solid #009eb4;
-			h3{
-				color: #009eb4;
-				font-size: 24px;
-				font-family: "Open Sans";
-				font-weight: bold;
-				padding: 1rem 2rem 0.5rem 2rem;
+			height: 100%;
+			.img-bg{
+				position: absolute;
+				width: 100%;
+				height: 390px;
+				img{		
+					width: 100%;
+					height: 100%;
+					text-align: center;
+				}
 			}
-			p{
-				padding-left: 2rem;
-				padding-bottom: 1rem;
+			.news-intro{
+				display: inline-block;
+				margin-top: 7%;				
+				blockquote{
+					width: 100%;
+					background: white;
+					height: auto;
+					border-left: 0.5rem solid #009eb4;
+					h3{
+						color: #009eb4;
+						font-size: 24px;
+						font-family: "Open Sans";
+						font-weight: bold;
+						padding: 1rem 2rem 0.5rem 2rem;
+					}
+					p{
+						padding-left: 2rem;
+						padding-bottom: 1.2rem;
+						padding-right: 2rem;
+					}
+				}
+				
 			}
+			
 		}
-		
+			
+			
 	}
+
 }
+	
 .main-news{
 	width: 100%;
 	height: auto;
@@ -200,15 +221,16 @@
 		display: inline-block;
 		width: 100%;
 		height: auto;
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 		a.news-ima{
 			display: inline-block;
 			overflow: hidden;
 			width: 100%;
-			height: 220px;
+			min-height: auto;
 			img{
 				width: 100%;
-				height: 100%;			
+				height: 100%;
+				object-fit: cover;			
 				transition: 0.5s ease;				
 			}	
 			&:hover img{
@@ -221,6 +243,7 @@
 			height: auto;
 			box-sizing: border-box;
 			padding-left: 1.5rem;
+			text-transform: initial;
 			h3{
 				display: inline-block;
 				width: 100%;
@@ -228,6 +251,9 @@
 				font-family: "Open Sans";
 				font-weight: bold;
 				font-size: 18px;
+				a{
+					text-transform: lowercase;
+				}
 				a:hover{
 					color: #009eb4;
 				}
@@ -245,6 +271,7 @@
 			p{
 				font-size: 14px;
 				color: #a6a6a6;
+				text-align: justify;
 			}
 			a.view-more{
 				display: inline-block;
@@ -262,13 +289,4 @@
 		width: 100%;
 		float: right;
 	}
-}
-@media (max-width:480px){
-	.news-banner{
-		min-height: 200px;
-		img{
-			position: absolute;
-		}
-	}
-	
 }
