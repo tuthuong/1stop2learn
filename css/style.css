@@ -2573,6 +2573,10 @@ p.voted {
       font-weight: bold;
       outline: 0px !important;
       background: #009eb4; }
+    .searching .form-group button.btn-hocbong {
+      margin-top: 1rem;
+      width: 70%;
+      margin-left: 15%; }
     .searching .form-group .form-control:disabled, .searching .form-group .form-control[readonly] {
       background: none; }
 
@@ -4008,7 +4012,12 @@ p.voted {
     margin-top: 1% !important; }
 
   .area-domain .price-range {
-    width: 97% !important; } }
+    width: 97% !important; }
+
+  .searching button.btn-hocbong {
+    margin-top: 0rem !important;
+    width: 100% !important;
+    margin-left: 1rem !important; } }
 @media screen and (max-width: 995px) {
   .slide-banner .pic img {
     margin-top: 10%; }
