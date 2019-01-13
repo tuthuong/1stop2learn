@@ -1991,7 +1991,10 @@ body:not(.homepage) .header-bottom .container::after {
         color: #bed62f;
         font-family: "Open Sans";
         font-weight: bold;
-        font-size: 18px; }
+        font-size: 18px;
+        min-height: 60px;
+        max-height: 60px;
+        overflow: hidden; }
         .main-news .news-item .news-item-content h3 a {
           text-transform: lowercase; }
         .main-news .news-item .news-item-content h3 a:hover {
@@ -2007,7 +2010,10 @@ body:not(.homepage) .header-bottom .container::after {
       .main-news .news-item .news-item-content p {
         font-size: 14px;
         color: #a6a6a6;
-        text-align: justify; }
+        text-align: justify;
+        min-height: 60px;
+        max-height: 60px;
+        overflow: hidden; }
       .main-news .news-item .news-item-content a.view-more {
         display: inline-block;
         width: 100%;
@@ -2601,8 +2607,7 @@ p.voted {
           transform: scale(1.2); }
     .events .events-item .event-content {
       display: inline-block;
-      width: 100%;
-      padding-left: 1.3rem; }
+      width: 100%; }
       .events .events-item .event-content span {
         display: inline-block;
         width: 100%;
@@ -2618,7 +2623,10 @@ p.voted {
         font-family: "Open Sans";
         font-weight: bold;
         font-size: 18px;
-        padding: 0.5rem 0; }
+        padding: 0.5rem 0;
+        min-height: 62px;
+        max-height: 62px;
+        overflow: hidden; }
         .events .events-item .event-content h3 a:hover {
           color: #009eb4; }
       .events .events-item .event-content p {
@@ -2626,7 +2634,10 @@ p.voted {
         width: 100%;
         font-size: 14px;
         color: #a6a6a6;
-        padding: 0.5rem 0 0 0; }
+        padding: 0.5rem 0 0 0;
+        min-height: 50px;
+        max-height: 50px;
+        overflow: hidden; }
       .events .events-item .event-content a.btn {
         background-color: #a6a6a6;
         color: white;
@@ -2679,13 +2690,20 @@ p.voted {
     color: #202020;
     font-family: "Open Sans";
     font-weight: bold;
-    padding-bottom: 0.5rem; }
+    padding-bottom: 0.5rem;
+    min-height: 40px;
+    max-height: 40px;
+    overflow: hidden;
+    display: block; }
     .scholaship-news .news-item a:hover {
       color: #009eb4; }
   .scholaship-news .news-item p {
     color: #a6a6a6;
     margin: 0;
-    padding-top: 0.3rem; }
+    padding-top: 0.3rem;
+    min-height: 48px;
+    max-height: 48px;
+    overflow: hidden; }
   .scholaship-news .news-item span {
     display: inline-block;
     width: 100%;
@@ -4331,7 +4349,8 @@ p.voted {
   height: auto;
   box-sizing: border-box;
   border: 1px solid #009eb4;
-  border-radius: 5px; }
+  border-radius: 5px;
+  padding: 0 10px; }
   .event_detail .event_info h3 {
     display: inline-block;
     width: 100%;
