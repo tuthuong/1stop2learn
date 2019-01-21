@@ -629,14 +629,5 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
 	<script src="js/script.js"></script>
-	<script>
-		var content_height = $('.news-item-content').map(function(){
-			return $(this).height();
-		}).get();
-		var max_height = Math.max.apply(null,content_height);
-		console.log('Content height:'+max_height);
-		$('.news-ima img').height(max_height);
-		console.log("image height:");
-	</script>
 </body>
 </html>
