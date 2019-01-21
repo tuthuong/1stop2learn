@@ -57,7 +57,7 @@
 }
 .events{
 	// display: inline-block;
-	width: 100%;
+	//width: 100%;
 	margin-top: 2rem;
 	.events-item{
 		width: 100%;
@@ -81,7 +81,7 @@
 		.event-content{
 			display: inline-block;
 			width: 100%;
-			padding-left: 1.3rem;
+			// padding-left: 1.3rem;
 			span{
 				display: inline-block;
 				width: 100%;		
@@ -100,7 +100,10 @@
 		   	 	font-family: "Open Sans";
 		    	font-weight: bold;
 		    	font-size: 18px;
-		    	padding: 0.5rem 0;
+				padding: 0.5rem 0;
+				min-height: 62px;
+				max-height: 62px;
+				overflow: hidden;
 		    	a:hover{
 		    		color: #009eb4;
 		    	}
@@ -110,7 +113,10 @@
 				width: 100%;
 				font-size: 14px;
 		    	color: #a6a6a6;
-		    	padding: 0.5rem 0 0 0;
+				padding: 0.5rem 0 0 0;
+				min-height: 50px;
+				max-height: 50px;
+				overflow: hidden;
 			}
 			a.btn{				
 				background-color: #a6a6a6;
@@ -172,21 +178,31 @@
 			padding-left: 1rem;
 			padding-right: 1.5rem;
 		}
-		a{
-			font-size: 14px;
-			color: #202020;
-			font-family: "Open Sans";
-			font-weight: bold;
-			padding-bottom: 0.5rem;
-    		// display: inline-block;
-    		&:hover{
-    			color: #009eb4;
-    		}
+		.item-info{
+			a{
+				font-size: 14px;
+				color: #202020;
+				font-family: "Open Sans";
+				font-weight: bold;
+				padding-bottom: 0.5rem;
+				min-height: 40px;
+				max-height: 40px;
+				overflow: hidden;
+				// display: inline-block;
+				display: block;
+				&:hover{
+					color: #009eb4;
+				}
+			}
 		}
+		
 		p{
 			color:#a6a6a6;
 			margin: 0;
-    		padding-top: 0.3rem;
+			padding-top: 0.3rem;
+			min-height: 48px;
+			max-height: 48px;
+			overflow: hidden;
 		}
 		span{
 				display: inline-block;
