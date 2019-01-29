@@ -4665,6 +4665,15 @@ p.voted {
 .scholaship-detail {
   width: 100%;
   height: auto; }
+  .scholaship-detail h1 {
+    font-size: 24px;
+    color: #333333;
+    font-weight: 700; }
+  .scholaship-detail .area-center {
+    font-size: 18px;
+    color: #009eb4;
+    margin-bottom: 15px;
+    margin-top: 10px; }
   .scholaship-detail img {
     display: inline;
     width: 100%;
@@ -4680,18 +4689,39 @@ p.voted {
       font-size: 18px;
       font-weight: bold;
       padding: 1rem 0; }
+    .scholaship-detail .content-detail p {
+      color: #666;
+      line-height: 27px; }
   .scholaship-detail .section-info {
     width: 100%;
     height: auto;
     box-sizing: border-box;
     border: 1px solid #009eb4;
     border-radius: 5px;
-    font-family: "Open Sans"; }
+    font-family: "Open Sans";
+    overflow: hidden; }
     .scholaship-detail .section-info .item {
       display: inline-block;
       width: 100%;
       padding-bottom: 0.5rem;
       padding-top: 0.75rem; }
+      .scholaship-detail .section-info .item:nth-child(even) {
+        background: #fafafa; }
+      .scholaship-detail .section-info .item.action-bottom .buy-now {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 30px;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-weight: 700;
+        border-radius: 5px;
+        background-color: #ffa90f;
+        border: 1px solid #ffa90f;
+        padding: 12px 34px;
+        margin-right: 15px;
+        width: calc(100% - 88px); }
+      .scholaship-detail .section-info .item.action-bottom .addtocart {
+        padding: 15px 26px; }
       .scholaship-detail .section-info .item p {
         padding: 0;
         margin: 0; }
@@ -4701,9 +4731,10 @@ p.voted {
   .scholaship-detail .ila-course {
     display: inline-block;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 2rem;
     border: 1px solid #009eb4;
-    border-radius: 7px; }
+    border-radius: 7px;
+    background: #fafafa; }
     .scholaship-detail .ila-course h3 {
       display: inline-block;
       padding-left: 1.25rem;
